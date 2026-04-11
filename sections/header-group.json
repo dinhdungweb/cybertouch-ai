@@ -1,1 +1,61 @@
-{"type":"header","name":"Header Group","sections":{"header_inline_m6Fym9":{"type":"header-inline","custom_css":[".hdt-main-header.hdt-header-tranparent-false,.hdt-header-menu-bottom .hdt-main-header,.scrolled-past-header .hdt-header-tranparent-true {border-bottom: 1px solid #bd31fc;}"],"name":"t:sections.header.header_inline.name","settings":{"header_layout":"logo_left","header_fullwidth":false,"header_height":60,"logo":"shopify:\/\/shop_images\/cai_Transparent.png","logo_width":200,"header_colors":"scheme-d3d44db8-3bcf-499e-a2ed-d652eaa913f1","main_menu":"main-menu","lazy_mn":true,"menu_position":"center","menu_size":"sm","menu_weight":"normal","text_transform":false,"dropdown_arrow":false,"active_link":false,"spacing_nav":25,"open_event":"hover","header_menu_colors":"scheme-d3d44db8-3bcf-499e-a2ed-d652eaa913f1","enabled_user":false,"enabled_compare":false,"enabled_wishlist":false,"header_height_mb":60,"logo_width_mb":130,"show_menu_mb":false,"menu_categories":"","main_menu_mobile":"","show_img_categories":false,"lazy_mn_mb":true,"only_click_icon":false,"header_mobile_colors":"","note_mobile":"<span class=\"hdt-inline-flex hdt-text-base hdt-font-medium\" style=\"border-bottom: solid 1px rgb(var(--color-line-border));margin-bottom: 11px\">Need help ? <\/span><span class=\"hdt-flex hdt-flex-col hdt-text-base hdt-font-medium\" style=\"line-height: 24px;\"><span>Address: 1234 Fashion Street, Suite 567,<br> New York, NY 10001<\/span><span>Email: <b>info@cybertouch.ai<\/b><\/span><span>Phone: <b>(212) 555-1234<\/b><\/span><\/span>","header_transparent":false,"header_transparent_colors":"","sticky_type":"always","sticky_glass":true}}},"order":["header_inline_m6Fym9"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "header_inline_m6Fym9": {
+      "type": "header-inline",
+      "custom_css": [
+        ".hdt-main-header.hdt-header-tranparent-false,.hdt-header-menu-bottom .hdt-main-header,.scrolled-past-header .hdt-header-tranparent-true {border-bottom: 1px solid #bd31fc;}"
+      ],
+      "name": "t:sections.header.header_inline.name",
+      "settings": {
+        "header_layout": "logo_left",
+        "header_fullwidth": false,
+        "header_height": 60,
+        "logo": "shopify://shop_images/cai_Transparent.png",
+        "logo_width": 200,
+        "header_colors": "scheme-d3d44db8-3bcf-499e-a2ed-d652eaa913f1",
+        "main_menu": "main-menu",
+        "lazy_mn": true,
+        "menu_position": "center",
+        "menu_size": "base",
+        "menu_weight": "normal",
+        "text_transform": true,
+        "dropdown_arrow": false,
+        "active_link": true,
+        "spacing_nav": 25,
+        "open_event": "hover",
+        "header_menu_colors": "scheme-d3d44db8-3bcf-499e-a2ed-d652eaa913f1",
+        "enabled_user": false,
+        "enabled_compare": false,
+        "enabled_wishlist": false,
+        "header_height_mb": 60,
+        "logo_width_mb": 130,
+        "show_menu_mb": false,
+        "menu_categories": "",
+        "main_menu_mobile": "",
+        "show_img_categories": false,
+        "lazy_mn_mb": true,
+        "only_click_icon": false,
+        "header_mobile_colors": "",
+        "note_mobile": "<span class=\"hdt-inline-flex hdt-text-base hdt-font-medium\" style=\"border-bottom: solid 1px rgb(var(--color-line-border));margin-bottom: 11px\">Need help ? </span><span class=\"hdt-flex hdt-flex-col hdt-text-base hdt-font-medium\" style=\"line-height: 24px;\"><span>Address: 1234 Fashion Street, Suite 567,<br> New York, NY 10001</span><span>Email: <b>info@cybertouch.ai</b></span><span>Phone: <b>(212) 555-1234</b></span></span>",
+        "header_transparent": false,
+        "header_transparent_colors": "",
+        "sticky_type": "always",
+        "sticky_glass": true
+      }
+    }
+  },
+  "order": [
+    "header_inline_m6Fym9"
+  ]
+}
