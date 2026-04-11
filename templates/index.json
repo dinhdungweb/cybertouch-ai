@@ -654,6 +654,29 @@
       "name": "Trust & Safety",
       "settings": {}
     },
+    "final_cta_cyber_qpNxCN": {
+      "type": "final-cta-cyber",
+      "name": "Final CTA Cyber",
+      "settings": {
+        "heading": "<div>Cyber-M1</div>Upgrade Your Experience",
+        "subheading": "Where AI technology meets private sensation",
+        "button_text": "Promotional Price — $99",
+        "button_link": "",
+        "footer_text": "Available for shipping within the United States and Canada"
+      }
+    },
+    "custom_liquid_TWke7V": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "section_fullwidth": true,
+        "custom_liquid": "<div id=\"product-scroll\"></div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_rate": 0
+      }
+    },
     "featured_product_3z9xYm": {
       "type": "featured-product",
       "blocks": {
@@ -810,17 +833,6 @@
         "padding_bottom": 52,
         "padding_rate": 75
       }
-    },
-    "final_cta_cyber_qpNxCN": {
-      "type": "final-cta-cyber",
-      "name": "Final CTA Cyber",
-      "settings": {
-        "heading": "<div>Cyber-M1</div>Upgrade Your Experience",
-        "subheading": "Where AI technology meets private sensation",
-        "button_text": "Promotional Price — $99",
-        "button_link": "",
-        "footer_text": "Available for shipping within the United States and Canada"
-      }
     }
   },
   "order": [
@@ -835,6 +847,7 @@
     "experience_impact_DqM9Yj",
     "trust_safety_MgjGKx",
     "final_cta_cyber_qpNxCN",
+    "custom_liquid_TWke7V",
     "featured_product_3z9xYm"
   ]
 }
