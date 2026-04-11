@@ -678,6 +678,90 @@
         "padding_rate": 0
       }
     },
+    "trusted_reviews_mgJd7n": {
+      "type": "trusted-reviews",
+      "blocks": {
+        "review_VrPcMW": {
+          "type": "review",
+          "settings": {
+            "review_text": "I am extremely impressed with both this company and its products."
+          }
+        },
+        "review_dYfKwT": {
+          "type": "review",
+          "settings": {
+            "review_text": "I am extremely impressed with both this company and its products."
+          }
+        },
+        "review_bEaa7T": {
+          "type": "review",
+          "settings": {
+            "review_text": "Their Remote app is easy and convenient to use"
+          }
+        },
+        "review_6FYTe7": {
+          "type": "review",
+          "settings": {
+            "review_text": "100% would recommend Domi 2"
+          }
+        },
+        "review_Q4GHwy": {
+          "type": "review",
+          "settings": {
+            "review_text": "I would purchase Lovense stock!!!"
+          }
+        },
+        "review_tJK7nA": {
+          "type": "review",
+          "settings": {
+            "review_text": "Lush 3 gets me squirting like a fire hydrant!"
+          }
+        },
+        "review_7Y89q9": {
+          "type": "review",
+          "settings": {
+            "review_text": "You can't go wrong with Max 2!!"
+          }
+        },
+        "review_XzMdE4": {
+          "type": "review",
+          "settings": {
+            "review_text": "Definitely going to recommend their toys and app to anyone that will listen!!"
+          }
+        },
+        "review_Mtjh4L": {
+          "type": "review",
+          "settings": {
+            "review_text": "The Nora toy is high quality and nice"
+          }
+        },
+        "review_bp78ef": {
+          "type": "review",
+          "settings": {
+            "review_text": "Best toys ever"
+          }
+        }
+      },
+      "block_order": [
+        "review_VrPcMW",
+        "review_dYfKwT",
+        "review_bEaa7T",
+        "review_6FYTe7",
+        "review_Q4GHwy",
+        "review_tJK7nA",
+        "review_7Y89q9",
+        "review_XzMdE4",
+        "review_Mtjh4L",
+        "review_bp78ef"
+      ],
+      "name": "Trusted Reviews",
+      "settings": {
+        "main_title": "Trusted",
+        "heading_pre": "Trusted by over",
+        "highlight_text": "10,000+",
+        "heading_post": "customers worldwide"
+      }
+    },
     "featured_product_3z9xYm": {
       "type": "featured-product",
       "blocks": {
@@ -688,7 +772,7 @@
             "product_title_xLAeEV": {
               "type": "_product-title",
               "settings": {
-                "hdt_pr_title_size": "h5"
+                "hdt_pr_title_size": "base"
               },
               "blocks": {}
             },
@@ -864,83 +948,6 @@
         "padding_bottom": 52,
         "padding_rate": 75
       }
-    },
-    "trusted_reviews_mgJd7n": {
-      "type": "trusted-reviews",
-      "blocks": {
-        "review_dYfKwT": {
-          "type": "review",
-          "settings": {
-            "review_text": "I am extremely impressed with both this company and its products."
-          }
-        },
-        "review_bEaa7T": {
-          "type": "review",
-          "settings": {
-            "review_text": "Their Remote app is easy and convenient to use"
-          }
-        },
-        "review_6FYTe7": {
-          "type": "review",
-          "settings": {
-            "review_text": "100% would recommend Domi 2"
-          }
-        },
-        "review_Q4GHwy": {
-          "type": "review",
-          "settings": {
-            "review_text": "I would purchase Lovense stock!!!"
-          }
-        },
-        "review_tJK7nA": {
-          "type": "review",
-          "settings": {
-            "review_text": "Lush 3 gets me squirting like a fire hydrant!"
-          }
-        },
-        "review_7Y89q9": {
-          "type": "review",
-          "settings": {
-            "review_text": "You can't go wrong with Max 2!!"
-          }
-        },
-        "review_XzMdE4": {
-          "type": "review",
-          "settings": {
-            "review_text": "Definitely going to recommend their toys and app to anyone that will listen!!"
-          }
-        },
-        "review_Mtjh4L": {
-          "type": "review",
-          "settings": {
-            "review_text": "The Nora toy is high quality and nice"
-          }
-        },
-        "review_bp78ef": {
-          "type": "review",
-          "settings": {
-            "review_text": "Best toys ever"
-          }
-        }
-      },
-      "block_order": [
-        "review_dYfKwT",
-        "review_bEaa7T",
-        "review_6FYTe7",
-        "review_Q4GHwy",
-        "review_tJK7nA",
-        "review_7Y89q9",
-        "review_XzMdE4",
-        "review_Mtjh4L",
-        "review_bp78ef"
-      ],
-      "name": "Trusted Reviews",
-      "settings": {
-        "main_title": "Trusted",
-        "heading_pre": "Trusted by over",
-        "highlight_text": "10,000+",
-        "heading_post": "customers worldwide"
-      }
     }
   },
   "order": [
@@ -956,7 +963,7 @@
     "trust_safety_MgjGKx",
     "final_cta_cyber_qpNxCN",
     "custom_liquid_TWke7V",
-    "featured_product_3z9xYm",
-    "trusted_reviews_mgJd7n"
+    "trusted_reviews_mgJd7n",
+    "featured_product_3z9xYm"
   ]
 }
