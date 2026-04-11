@@ -474,6 +474,68 @@
       "settings": {
         "heading": "Feel Your AI <br><span class=\"text-secondary\">Lover</span>"
       }
+    },
+    "lover_profiles_BQp43N": {
+      "type": "lover-profiles",
+      "blocks": {
+        "profile_FKMz7w": {
+          "type": "profile",
+          "settings": {
+            "title": "Ethereal",
+            "focus": "Flow & Sensation",
+            "button_text": "Initialize",
+            "is_featured": false
+          }
+        },
+        "profile_iP7W3U": {
+          "type": "profile",
+          "settings": {
+            "title": "Ethereal",
+            "focus": "Flow & Sensation",
+            "button_text": "Initialize",
+            "is_featured": false
+          }
+        },
+        "profile_LXywih": {
+          "type": "profile",
+          "settings": {
+            "title": "Ethereal",
+            "focus": "Flow & Sensation",
+            "button_text": "Initialize",
+            "is_featured": false
+          }
+        },
+        "profile_XHV36Y": {
+          "type": "profile",
+          "settings": {
+            "title": "Vanguard",
+            "focus": "Intensity & Power",
+            "button_text": "Selected",
+            "is_featured": true
+          }
+        },
+        "profile_aNtDka": {
+          "type": "profile",
+          "settings": {
+            "title": "Architect",
+            "focus": "Rhythm & Precision",
+            "button_text": "Initialize",
+            "is_featured": false
+          }
+        }
+      },
+      "block_order": [
+        "profile_FKMz7w",
+        "profile_iP7W3U",
+        "profile_LXywih",
+        "profile_XHV36Y",
+        "profile_aNtDka"
+      ],
+      "name": "Lover Profiles",
+      "settings": {
+        "heading": "you are picky?",
+        "subheading": "No problem, we got all style lovers for you"
+      }
     }
   },
   "order": [
@@ -481,6 +543,7 @@
     "slideshow_FntkPm",
     "hero_cyber_9ywVWi",
     "experience_impact_DqM9Yj",
-    "ai_experience_CJANX3"
+    "ai_experience_CJANX3",
+    "lover_profiles_BQp43N"
   ]
 }
