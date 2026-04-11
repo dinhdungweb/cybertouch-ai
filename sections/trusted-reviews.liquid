@@ -15,14 +15,15 @@
     <div class="absolute inset-y-0 right-0 w-48 md:w-80 bg-gradient-to-l from-surface-container-lowest via-surface-container-lowest/80 to-transparent z-10"></div>
 
     <div class="flex flex-col gap-6">
-      {%- for i in (1..6) -%}
+      {%- assign total_blocks = section.blocks.size -%}
+      {%- for i in (1..5) -%}
         <div class="swiper reviews-swiper-{{ i }} marquee-mode">
           <div class="swiper-wrapper">
             {%- comment -%} Multiplying slides to ensure seamless loop {%- endcomment -%}
-            {%- for j in (1..6) -%}
+            {%- for j in (1..8) -%}
               {%- for block in section.blocks -%}
-                {%- assign row_mod = forloop.index | modulo: 6 | plus: 1 -%}
-                {%- if row_mod == i -%}
+                {%- assign row_index = forloop.index | modulo: 5 | plus: 1 -%}
+                {%- if row_index == i -%}
                   <div class="swiper-slide !w-auto" {{ block.shopify_attributes }}>
                     <div class="px-8 py-3 bg-surface-container-high border border-outline-variant/30 rounded-full whitespace-nowrap text-on-surface-variant font-body text-sm md:text-base hover:border-secondary transition-all pointer-events-none select-none shadow-sm">
                       {{ block.settings.review_text }}
@@ -47,12 +48,11 @@
 <script>
   function initReviewsSwiper() {
     const swiperConfigs = [
-      { speed: 10000, reverse: false },
-      { speed: 14000, reverse: true },
-      { speed: 12000, reverse: false },
-      { speed: 15000, reverse: true },
       { speed: 11000, reverse: false },
-      { speed: 13000, reverse: true }
+      { speed: 15000, reverse: true },
+      { speed: 13000, reverse: false },
+      { speed: 16000, reverse: true },
+      { speed: 12000, reverse: false }
     ];
 
     swiperConfigs.forEach((config, index) => {
