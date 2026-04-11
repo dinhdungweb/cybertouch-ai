@@ -758,7 +758,7 @@
       "name": "Trusted Reviews",
       "settings": {
         "main_title": "Trusted",
-        "heading_pre": "Trusted by over",
+        "heading_pre": "by over",
         "highlight_text": "10,000+",
         "heading_post": "customers worldwide"
       }
