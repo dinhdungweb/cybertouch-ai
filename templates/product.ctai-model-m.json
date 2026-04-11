@@ -666,18 +666,6 @@
         "footer_text": "Available for shipping within the United States and Canada"
       }
     },
-    "custom_liquid_TWke7V": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "section_fullwidth": true,
-        "custom_liquid": "<div id=\"product-scroll\"></div>",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_rate": 0
-      }
-    },
     "trusted_reviews_mgJd7n": {
       "type": "trusted-reviews",
       "blocks": {
@@ -760,6 +748,18 @@
         "heading_pre": "Trusted by over",
         "highlight_text": "10,000+",
         "heading_post": "customers worldwide"
+      }
+    },
+    "custom_liquid_TWke7V": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "section_fullwidth": true,
+        "custom_liquid": "<div id=\"product-scroll\"></div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_rate": 0
       }
     },
     "featured_product_3z9xYm": {
@@ -963,8 +963,8 @@
     "experience_impact_DqM9Yj",
     "trust_safety_MgjGKx",
     "final_cta_cyber_qpNxCN",
-    "custom_liquid_TWke7V",
     "trusted_reviews_mgJd7n",
+    "custom_liquid_TWke7V",
     "featured_product_3z9xYm"
   ]
 }
