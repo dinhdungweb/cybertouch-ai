@@ -887,7 +887,8 @@
                 "show_icon": true,
                 "mess": "Guaranteed Safe Checkout",
                 "source": "1",
-                "wimg": 350,
+                "image": "shopify://shop_images/Picture1.png",
+                "wimg": 480,
                 "svg": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
                 "height": 30
               },
@@ -924,7 +925,7 @@
             "enable_video_looping": false,
             "image_ratio": "adapt_image",
             "image_size": true,
-            "image_zoom": "zoom",
+            "image_zoom": "no",
             "image_zoom_type": "external",
             "zoom_level": 2,
             "max_zoom_lightbox": 3,

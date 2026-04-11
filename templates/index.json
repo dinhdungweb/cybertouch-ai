@@ -778,6 +778,7 @@
             },
             "product_badges_kMw3gg": {
               "type": "_product-badges",
+              "disabled": true,
               "settings": {
                 "special": "",
                 "min": 10,
@@ -795,6 +796,7 @@
             },
             "product_countdown_fQiPYd": {
               "type": "_product-countdown",
+              "disabled": true,
               "settings": {
                 "color_scheme": "",
                 "icon": "none",
