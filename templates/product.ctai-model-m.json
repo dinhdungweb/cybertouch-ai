@@ -484,8 +484,8 @@
           "type": "profile",
           "settings": {
             "image": "shopify://shop_images/Luna.jpg",
-            "title": "Ethereal",
-            "focus": "Flow & Sensation",
+            "title": "Luna",
+            "focus": "Your lovely assistant",
             "button_text": "Initialize",
             "is_featured": false
           }
