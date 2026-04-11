@@ -567,15 +567,6 @@
         "description": "<p>Our proprietary dual-motor propulsion system creates speical motion patterns that standard motors cannot replicate.</p>"
       }
     },
-    "experience_impact_DqM9Yj": {
-      "type": "experience-impact",
-      "name": "Experience Impact",
-      "settings": {
-        "bg_image": "shopify://shop_images/PObackground.png",
-        "heading": "Boost Your <div>rigidity & endurance</div>",
-        "description": "<p>Unique Suction Motor design helps strengthen your pelvic floor muscles with every use.</p>"
-      }
-    },
     "training_stats_bhXVHW": {
       "type": "training-stats",
       "blocks": {
@@ -606,6 +597,60 @@
         "heading": "Smarter Performance <br>With Lover AI",
         "description": "<p>More than just a AI device—She is your dream lover. She remembers every conversation, every preference, and understands you better with each passing moment.</p>"
       }
+    },
+    "experience_impact_DqM9Yj": {
+      "type": "experience-impact",
+      "name": "Experience Impact",
+      "settings": {
+        "bg_image": "shopify://shop_images/PObackground.png",
+        "heading": "Boost Your <div>rigidity & endurance</div>",
+        "description": "<p>Unique Suction Motor design helps strengthen your pelvic floor muscles with every use.</p>"
+      }
+    },
+    "trust_safety_MgjGKx": {
+      "type": "trust-safety",
+      "blocks": {
+        "safety_item_tAnqLj": {
+          "type": "safety_item",
+          "settings": {
+            "icon": "verified_user",
+            "title": "Body-Safe",
+            "description": "Medical Grade Silicone"
+          }
+        },
+        "safety_item_M4Ch3n": {
+          "type": "safety_item",
+          "settings": {
+            "icon": "clean_hands",
+            "title": "Easy Clean",
+            "description": "Removable for Cleaning"
+          }
+        },
+        "safety_item_tHfAL4": {
+          "type": "safety_item",
+          "settings": {
+            "icon": "inventory_2",
+            "title": "body temperature",
+            "description": "One-click heating"
+          }
+        },
+        "safety_item_qzccfa": {
+          "type": "safety_item",
+          "settings": {
+            "icon": "encrypted",
+            "title": "Secure",
+            "description": "Encrypted Account Content"
+          }
+        }
+      },
+      "block_order": [
+        "safety_item_tAnqLj",
+        "safety_item_M4Ch3n",
+        "safety_item_tHfAL4",
+        "safety_item_qzccfa"
+      ],
+      "name": "Trust & Safety",
+      "settings": {}
     }
   },
   "order": [
@@ -617,6 +662,7 @@
     "lover_profiles_BQp43N",
     "performance_motion_pipD3c",
     "training_stats_bhXVHW",
-    "experience_impact_DqM9Yj"
+    "experience_impact_DqM9Yj",
+    "trust_safety_MgjGKx"
   ]
 }
