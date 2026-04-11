@@ -658,6 +658,7 @@
       "type": "final-cta-cyber",
       "name": "Final CTA Cyber",
       "settings": {
+        "product_image": "shopify://shop_images/product-image-with-subtle-reflection.png",
         "heading": "<div>Cyber-M1</div>Upgrade Your Experience",
         "subheading": "Where AI technology meets private sensation",
         "button_text": "Promotional Price — $99",
