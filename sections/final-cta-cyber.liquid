@@ -2,9 +2,9 @@
   <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/10 blur-[150px] rounded-full"></div>
   <div class="container mx-auto px-8 text-center relative z-10">
     {%- if section.settings.product_image != blank -%}
-      <img class="w-full max-w-xl mx-auto mb-16 drop-shadow-[0_0_80px_rgba(0,238,252,0.3)]" src="{{ section.settings.product_image | image_url: width: 1200 }}" alt="{{ section.settings.product_image.alt | escape }}" width="{{ section.settings.product_image.width }}" height="{{ section.settings.product_image.height }}">
+      <img class="w-full max-w-sm mx-auto mb-16 drop-shadow-[0_0_80px_rgba(0,238,252,0.3)]" src="{{ section.settings.product_image | image_url: width: 1200 }}" alt="{{ section.settings.product_image.alt | escape }}" width="{{ section.settings.product_image.width }}" height="{{ section.settings.product_image.height }}">
     {%- else -%}
-      <img class="w-full max-w-xl mx-auto mb-16 drop-shadow-[0_0_80px_rgba(0,238,252,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABqcUfT53DF0peVovJRgnepte9zirCGUVqrUioXCGH-B7YQoOtQ-eOeZkGQMuE2txgU5O5lBUn9soFEWAoOs-q9m3ipOz5-uOYz8u1VeGMKVHfdsWBfNlPZIj3kZ5O6nuSLd7krzBse_w2PRJ12jXZywVLgP_JzgoFHugY8qStuo47J2aM8-jkzOFWGdJkcEsCp_TtyVQpw0svg7sMtEyoeoRU8zpM0RoSNrpHfhDmbyBbjfHB79Py6KHtoVOQHuxqSAKxUxJDwGTZ" alt="Product Final CTA" width="800" height="1200">
+      <img class="w-full max-w-sm mx-auto mb-16 drop-shadow-[0_0_80px_rgba(0,238,252,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABqcUfT53DF0peVovJRgnepte9zirCGUVqrUioXCGH-B7YQoOtQ-eOeZkGQMuE2txgU5O5lBUn9soFEWAoOs-q9m3ipOz5-uOYz8u1VeGMKVHfdsWBfNlPZIj3kZ5O6nuSLd7krzBse_w2PRJ12jXZywVLgP_JzgoFHugY8qStuo47J2aM8-jkzOFWGdJkcEsCp_TtyVQpw0svg7sMtEyoeoRU8zpM0RoSNrpHfhDmbyBbjfHB79Py6KHtoVOQHuxqSAKxUxJDwGTZ" alt="Product Final CTA" width="800" height="1200">
     {%- endif -%}
     
     <h2 class="font-headline text-4xl md:text-7xl font-bold uppercase tracking-tighter mb-4 leading-none">
