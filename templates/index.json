@@ -427,11 +427,60 @@
         "button_2_text": "",
         "button_2_link": ""
       }
+    },
+    "experience_impact_DqM9Yj": {
+      "type": "experience-impact",
+      "name": "Experience Impact",
+      "settings": {
+        "bg_image": "shopify://shop_images/PObackground.png",
+        "heading": "Boost Your <div>rigidity & endurance</div>",
+        "description": "<p>Unique Suction Motor design helps strengthen your pelvic floor muscles with every use.</p>"
+      }
+    },
+    "ai_experience_CJANX3": {
+      "type": "ai-experience",
+      "blocks": {
+        "feature_FActin": {
+          "type": "feature",
+          "settings": {
+            "icon": "keyboard_voice",
+            "title": "Voice Interaction",
+            "description": "<p>Real-time voice communication processing makes it feel like you're talking to a real person.</p>"
+          }
+        },
+        "feature_AKyR3p": {
+          "type": "feature",
+          "settings": {
+            "icon": "psychology",
+            "title": "Video Interaction",
+            "description": "<p>The lover on the screen will perform various actions in response to your commands.</p>"
+          }
+        },
+        "feature_i4PAHa": {
+          "type": "feature",
+          "settings": {
+            "icon": "dynamic_form",
+            "title": "Tangible Interaction",
+            "description": "<p>Our device will recognize all your interactions and eventually become your sense of touch.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature_FActin",
+        "feature_AKyR3p",
+        "feature_i4PAHa"
+      ],
+      "name": "AI Experience",
+      "settings": {
+        "heading": "Feel Your AI <br><span class=\"text-secondary\">Lover</span>"
+      }
     }
   },
   "order": [
     "slideshow_PDcXkr",
     "slideshow_FntkPm",
-    "hero_cyber_9ywVWi"
+    "hero_cyber_9ywVWi",
+    "experience_impact_DqM9Yj",
+    "ai_experience_CJANX3"
   ]
 }
