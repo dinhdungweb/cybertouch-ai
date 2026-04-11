@@ -1,5 +1,12 @@
-<section class="py-32 bg-surface-container-lowest border-t border-outline-variant/10">
-  <div class="container mx-auto px-8 text-center max-w-4xl">
+<section class="relative py-32 bg-surface-container-lowest border-t border-outline-variant/10 overflow-hidden">
+  {%- if section.settings.background_image != blank -%}
+    <div class="absolute inset-0 z-0">
+      <img class="w-full h-full object-cover" src="{{ section.settings.background_image | image_url: width: 2000 }}" alt="{{ section.settings.background_image.alt | escape }}" width="{{ section.settings.background_image.width }}" height="{{ section.settings.background_image.height }}">
+      <div class="absolute inset-0 bg-black/{{ section.settings.overlay_opacity }}"></div>
+    </div>
+  {%- endif -%}
+
+  <div class="container mx-auto px-8 text-center max-w-4xl relative z-10">
     <div class="font-headline text-secondary text-sm tracking-[0.3em] uppercase mb-12">
       {{ section.settings.sub_caption }}
     </div>
@@ -34,6 +41,21 @@
       "id": "main_heading",
       "label": "Main Heading",
       "default": "Looking for something more immersive and personal?"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay Opacity",
+      "min": 0,
+      "max": 90,
+      "step": 10,
+      "default": 60,
+      "unit": "%"
     }
   ],
   "presets": [
