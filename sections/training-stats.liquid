@@ -29,9 +29,9 @@
         <div class="hud-corner corner-tl"></div>
         <div class="hud-corner corner-br"></div>
         {%- if section.settings.image != blank -%}
-          <img class="w-full" src="{{ section.settings.image | image_url: width: 1000 }}" alt="{{ section.settings.image.alt | escape }}">
+          <img class="w-full" src="{{ section.settings.image | image_url: width: 1000 }}" alt="{{ section.settings.image.alt | escape }}" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}">
         {%- else -%}
-          <img class="w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdrXBIF8_Yfon7wzDDbij2bwNK6IEq5wZw67iX-AY0bZChh2FTQm_oLibuT8E0hjNS8uZ1rbRW9fJDKFL-2Q23OI4fEcCCIs8qN7aMjeiIzFOSpHiYkNspvfpif-ohS6Pf7GvcYUvAi7BIGiJeKvNiSTOCYcMLQLgyzp4nTeaJ9hXLoam6hQIOtsyLvkmYpGyHKq1s6bwyDl5zVLQSLuc3qcp1ux8b7hMfoqCWleH5OAY015-CCG1SykBsLR_riHDxSBFEOQu0Fekx" alt="Training Stats Data">
+          <img class="w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdrXBIF8_Yfon7wzDDbij2bwNK6IEq5wZw67iX-AY0bZChh2FTQm_oLibuT8E0hjNS8uZ1rbRW9fJDKFL-2Q23OI4fEcCCIs8qN7aMjeiIzFOSpHiYkNspvfpif-ohS6Pf7GvcYUvAi7BIGiJeKvNiSTOCYcMLQLgyzp4nTeaJ9hXLoam6hQIOtsyLvkmYpGyHKq1s6bwyDl5zVLQSLuc3qcp1ux8b7hMfoqCWleH5OAY015-CCG1SykBsLR_riHDxSBFEOQu0Fekx" alt="Training Stats Data" width="1000" height="800">
         {%- endif -%}
       </div>
     </div>
@@ -49,7 +49,7 @@
       "default": "Firmware Update 4.0"
     },
     {
-      "type": "inline_richtext",
+      "type": "textarea",
       "id": "heading",
       "label": "Heading",
       "default": "Smarter Performance <br>With Lover AI"
