@@ -7,8 +7,8 @@
       {{ section.settings.subheading }}
     </div>
   </div>
-  
-  <div class="relative w-full px-4 md:px-12">
+
+  <div class="relative w-full px-8 md:px-12">
     <div class="swiper lover-profiles-swiper overflow-visible">
       <div class="swiper-wrapper">
         {%- for block in section.blocks -%}
@@ -16,9 +16,21 @@
             <div class="h-full bg-surface-container p-8 border {% if block.settings.is_featured %}border-primary/40{% else %}border-outline-variant/30{% endif %} group hover:border-primary/50 transition-all relative">
               <div class="w-full aspect-square mb-8 relative overflow-hidden bg-surface-container-highest">
                 {%- if block.settings.image != blank -%}
-                  <img class="w-full h-full object-cover {% unless block.settings.is_featured %}grayscale group-hover:grayscale-0{% else %}group-hover:scale-110{% endunless %} transition-all" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.image.alt | escape }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}">
+                  <img
+                    class="w-full h-full object-cover {% unless block.settings.is_featured %}grayscale group-hover:grayscale-0{% else %}group-hover:scale-110{% endunless %} transition-all"
+                    src="{{ block.settings.image | image_url: width: 600 }}"
+                    alt="{{ block.settings.image.alt | escape }}"
+                    width="{{ block.settings.image.width }}"
+                    height="{{ block.settings.image.height }}"
+                  >
                 {%- else -%}
-                  <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtt664ql0Laww7dnj7TudfwdvlaOEA2O4XgRnjj_TL7Rju0N04omUutwodgsGspQ517YEi-6Ed8mVNah2ikFXxzggJetQBjcCfU6EzCHYuN_OlgurphEemm8PDPe76Zyvvyb_zuktWO25JNQw_CSBfHJ6wHsZXpXsVrQ79e8YHmQycnjZdlSLpK2D8eyevutsjolGIN_EmcCpYhxmGecywmOy14V0UXs1ce02dpD7dM0AEFBhAIf00J9WXBmL2GtbyJE5FarUb0Cvd" alt="Profile Image" width="600" height="600">
+                  <img
+                    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtt664ql0Laww7dnj7TudfwdvlaOEA2O4XgRnjj_TL7Rju0N04omUutwodgsGspQ517YEi-6Ed8mVNah2ikFXxzggJetQBjcCfU6EzCHYuN_OlgurphEemm8PDPe76Zyvvyb_zuktWO25JNQw_CSBfHJ6wHsZXpXsVrQ79e8YHmQycnjZdlSLpK2D8eyevutsjolGIN_EmcCpYhxmGecywmOy14V0UXs1ce02dpD7dM0AEFBhAIf00J9WXBmL2GtbyJE5FarUb0Cvd"
+                    alt="Profile Image"
+                    width="600"
+                    height="600"
+                  >
                 {%- endif -%}
               </div>
               <h4 class="font-headline text-2xl font-bold uppercase tracking-widest mb-2 {% if block.settings.is_featured %}text-primary{% endif %}">
@@ -27,7 +39,7 @@
               <p class="text-sm text-on-surface-variant mb-6 uppercase tracking-wider">
                 Focus: {{ block.settings.focus }}
               </p>
-              
+
               {%- if block.settings.is_featured -%}
                 <button class="w-full py-4 kinetic-gradient text-black text-sm font-headline uppercase tracking-widest">
                   {{ block.settings.button_text }}
@@ -42,7 +54,7 @@
         {%- endfor -%}
       </div>
     </div>
-    
+
     <!-- Navigation Buttons -->
     <button class="swiper-prev-btn absolute left-4 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center bg-black/50 text-primary hover:text-secondary group transition-colors hidden md:flex rounded-full border border-primary/20">
       <span class="material-symbols-outlined text-4xl">chevron_left</span>
@@ -54,7 +66,7 @@
 </section>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     new Swiper('.lover-profiles-swiper', {
       slidesPerView: 1.2,
       spaceBetween: 24,
@@ -70,8 +82,8 @@
         },
         1024: {
           slidesPerView: 3,
-        }
-      }
+        },
+      },
     });
   });
 </script>

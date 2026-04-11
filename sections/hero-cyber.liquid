@@ -13,15 +13,21 @@
       <div class="text-on-surface-variant text-xl mb-10 max-w-lg font-body">
         {{ section.settings.subheading }}
       </div>
-      
+
       <div class="flex flex-col sm:flex-row gap-4">
         {%- if section.settings.button_1_text != blank -%}
-          <a href="{{ section.settings.button_1_link }}" class="text-center kinetic-gradient text-on-primary-fixed px-10 py-5 font-headline font-bold uppercase tracking-widest hover:shadow-[0_0_30px_rgba(0,238,252,0.3)] transition-all">
+          <a
+            href="{{ section.settings.button_1_link }}"
+            class="text-center kinetic-gradient text-on-primary-fixed px-10 py-5 font-headline font-bold uppercase tracking-widest hover:shadow-[0_0_30px_rgba(0,238,252,0.3)] transition-all"
+          >
             {{ section.settings.button_1_text }}
           </a>
         {%- endif -%}
         {%- if section.settings.button_2_text != blank -%}
-          <a href="{{ section.settings.button_2_link }}" class="text-center border border-secondary/30 text-secondary px-10 py-5 font-headline font-bold uppercase tracking-widest hover:bg-secondary/5 transition-all">
+          <a
+            href="{{ section.settings.button_2_link }}"
+            class="text-center border border-secondary/30 text-secondary px-10 py-5 font-headline font-bold uppercase tracking-widest hover:bg-secondary/5 transition-all"
+          >
             {{ section.settings.button_2_text }}
           </a>
         {%- endif -%}
@@ -31,13 +37,28 @@
     <div class="order-1 md:order-2 relative flex justify-center items-center">
       {%- if section.settings.media_type == 'video' and section.settings.video != blank -%}
         <div class="w-full max-w-2xl drop-shadow-[0_0_50px_rgba(224,141,255,0.2)]">
-          {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'w-full h-auto' }}
+          {{
+            section.settings.video
+            | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'w-full h-auto'
+          }}
         </div>
       {%- else -%}
         {%- if section.settings.image != blank -%}
-          <img class="w-full max-w-2xl drop-shadow-[0_0_50px_rgba(224,141,255,0.2)]" src="{{ section.settings.image | image_url: width: 1200 }}" alt="{{ section.settings.image.alt | escape }}" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}">
+          <img
+            class="w-full max-w-2xl drop-shadow-[0_0_50px_rgba(224,141,255,0.2)]"
+            src="{{ section.settings.image | image_url: width: 1200 }}"
+            alt="{{ section.settings.image.alt | escape }}"
+            width="{{ section.settings.image.width }}"
+            height="{{ section.settings.image.height }}"
+          >
         {%- else -%}
-          <img class="w-full max-w-2xl drop-shadow-[0_0_50px_rgba(224,141,255,0.2)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUYTT5A7wF-F6h4fd145AlwA29Pgsd6xJ0IL9FuhScTblraiSSD5yD6rJa9CNB0ZvY31zHYEdMULajDray0aGJyS3k4nraciWU08Z9qqgaaRaNA9cYgI_oeyI-oZIKYv0IkY2hyAzGMjrJwSmudwg3Zsr8QRhzkYpFf5Lx6kQLjGQrh_mcWL7OGGDDtUPKNVSVz3tfR6y-52AF8ttUauXOhnCR9O0RKio-wu4oUcaLS3bN3DU1gHmfGm3sF2dZOxW449wWOCpPnoC-" alt="Hero Image" width="1200" height="auto">
+          <img
+            class="w-full max-w-2xl drop-shadow-[0_0_50px_rgba(224,141,255,0.2)]"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUYTT5A7wF-F6h4fd145AlwA29Pgsd6xJ0IL9FuhScTblraiSSD5yD6rJa9CNB0ZvY31zHYEdMULajDray0aGJyS3k4nraciWU08Z9qqgaaRaNA9cYgI_oeyI-oZIKYv0IkY2hyAzGMjrJwSmudwg3Zsr8QRhzkYpFf5Lx6kQLjGQrh_mcWL7OGGDDtUPKNVSVz3tfR6y-52AF8ttUauXOhnCR9O0RKio-wu4oUcaLS3bN3DU1gHmfGm3sF2dZOxW449wWOCpPnoC-"
+            alt="Hero Image"
+            width="1200"
+            height="auto"
+          >
         {%- endif -%}
       {%- endif -%}
     </div>
