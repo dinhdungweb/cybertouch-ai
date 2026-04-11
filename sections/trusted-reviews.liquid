@@ -11,20 +11,20 @@
   <!-- Reviews Ticker Wrapper -->
   <div class="relative w-full overflow-hidden">
     <!-- Masking Overlays -->
-    <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-surface-container-lowest to-transparent z-10"></div>
-    <div class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-surface-container-lowest to-transparent z-10"></div>
+    <div class="absolute inset-y-0 left-0 w-48 md:w-80 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/80 to-transparent z-10"></div>
+    <div class="absolute inset-y-0 right-0 w-48 md:w-80 bg-gradient-to-l from-surface-container-lowest via-surface-container-lowest/80 to-transparent z-10"></div>
 
     <div class="flex flex-col gap-6">
-      {%- for i in (1..3) -%}
+      {%- for i in (1..6) -%}
         <div class="swiper reviews-swiper-{{ i }} marquee-mode">
           <div class="swiper-wrapper">
             {%- comment -%} Multiplying slides to ensure seamless loop {%- endcomment -%}
             {%- for j in (1..6) -%}
               {%- for block in section.blocks -%}
-                {%- assign row_mod = forloop.index | modulo: 3 | plus: 1 -%}
+                {%- assign row_mod = forloop.index | modulo: 6 | plus: 1 -%}
                 {%- if row_mod == i -%}
                   <div class="swiper-slide !w-auto" {{ block.shopify_attributes }}>
-                    <div class="px-8 py-3 bg-surface-container-high border border-outline-variant/30 rounded-full whitespace-nowrap text-on-surface-variant font-body text-sm md:text-base hover:border-secondary transition-all pointer-events-none select-none">
+                    <div class="px-8 py-3 bg-surface-container-high border border-outline-variant/30 rounded-full whitespace-nowrap text-on-surface-variant font-body text-sm md:text-base hover:border-secondary transition-all pointer-events-none select-none shadow-sm">
                       {{ block.settings.review_text }}
                     </div>
                   </div>
@@ -48,27 +48,33 @@
   function initReviewsSwiper() {
     const swiperConfigs = [
       { speed: 10000, reverse: false },
-      { speed: 12000, reverse: true },
-      { speed: 11000, reverse: false }
+      { speed: 14000, reverse: true },
+      { speed: 12000, reverse: false },
+      { speed: 15000, reverse: true },
+      { speed: 11000, reverse: false },
+      { speed: 13000, reverse: true }
     ];
 
     swiperConfigs.forEach((config, index) => {
-      new Swiper(`.reviews-swiper-${index + 1}`, {
-        slidesPerView: 'auto',
-        spaceBetween: 24,
-        loop: true,
-        speed: config.speed,
-        autoplay: {
-          delay: 0,
-          disableOnInteraction: false,
-          reverseDirection: config.reverse
-        },
-        freeMode: {
-          enabled: true,
-          momentum: false,
-        },
-        allowTouchMove: false
-      });
+      const selector = `.reviews-swiper-${index + 1}`;
+      if (document.querySelector(selector)) {
+        new Swiper(selector, {
+          slidesPerView: 'auto',
+          spaceBetween: 24,
+          loop: true,
+          speed: config.speed,
+          autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+            reverseDirection: config.reverse
+          },
+          freeMode: {
+            enabled: true,
+            momentum: false,
+          },
+          allowTouchMove: false
+        });
+      }
     });
   }
 
