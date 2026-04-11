@@ -428,13 +428,13 @@
         "button_2_link": ""
       }
     },
-    "experience_impact_DqM9Yj": {
-      "type": "experience-impact",
-      "name": "Experience Impact",
+    "cyber_problem_jBh3aj": {
+      "type": "cyber-problem",
+      "name": "Cyber Problem",
       "settings": {
-        "bg_image": "shopify://shop_images/PObackground.png",
-        "heading": "Boost Your <div>rigidity & endurance</div>",
-        "description": "<p>Unique Suction Motor design helps strengthen your pelvic floor muscles with every use.</p>"
+        "sub_caption": "want something new?",
+        "heading_highlight": "Tired of seraching videos<div>all night?</div>",
+        "main_heading": "Looking for something more immersive and personal?"
       }
     },
     "ai_experience_CJANX3": {
@@ -566,15 +566,57 @@
         "heading": "Beyond <br>Traditional <br><span class=\"text-secondary\">Motion</span>",
         "description": "<p>Our proprietary dual-motor propulsion system creates speical motion patterns that standard motors cannot replicate.</p>"
       }
+    },
+    "experience_impact_DqM9Yj": {
+      "type": "experience-impact",
+      "name": "Experience Impact",
+      "settings": {
+        "bg_image": "shopify://shop_images/PObackground.png",
+        "heading": "Boost Your <div>rigidity & endurance</div>",
+        "description": "<p>Unique Suction Motor design helps strengthen your pelvic floor muscles with every use.</p>"
+      }
+    },
+    "training_stats_bhXVHW": {
+      "type": "training-stats",
+      "blocks": {
+        "stat_3tPULb": {
+          "type": "stat",
+          "settings": {
+            "value": "100%",
+            "label": "Memory stay",
+            "style": "secondary"
+          }
+        },
+        "stat_rACmDp": {
+          "type": "stat",
+          "settings": {
+            "value": "1.5 s",
+            "label": "Response Latency",
+            "style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "stat_3tPULb",
+        "stat_rACmDp"
+      ],
+      "name": "Training Stats",
+      "settings": {
+        "sub_caption": "Firmware Update 4.0",
+        "heading": "Smarter Performance <br>With Lover AI",
+        "description": "<p>More than just a AI device—She is your dream lover. She remembers every conversation, every preference, and understands you better with each passing moment.</p>"
+      }
     }
   },
   "order": [
     "slideshow_PDcXkr",
     "slideshow_FntkPm",
     "hero_cyber_9ywVWi",
-    "experience_impact_DqM9Yj",
+    "cyber_problem_jBh3aj",
     "ai_experience_CJANX3",
     "lover_profiles_BQp43N",
-    "performance_motion_pipD3c"
+    "performance_motion_pipD3c",
+    "training_stats_bhXVHW",
+    "experience_impact_DqM9Yj"
   ]
 }
