@@ -32,7 +32,7 @@
         "text_transform": true,
         "dropdown_arrow": false,
         "active_link": true,
-        "spacing_nav": 25,
+        "spacing_nav": 30,
         "open_event": "hover",
         "header_menu_colors": "scheme-d3d44db8-3bcf-499e-a2ed-d652eaa913f1",
         "enabled_user": false,
