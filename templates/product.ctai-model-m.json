@@ -503,8 +503,9 @@
         "profile_LXywih": {
           "type": "profile",
           "settings": {
-            "title": "Ethereal",
-            "focus": "Flow & Sensation",
+            "image": "shopify://shop_images/Chloe.jpg",
+            "title": "Chole",
+            "focus": "You want Elegant? Or wild?",
             "button_text": "Initialize",
             "is_featured": false
           }
