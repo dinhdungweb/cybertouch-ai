@@ -1,47 +1,49 @@
-<section class="relative py-32 bg-surface-container-lowest overflow-hidden border-t border-outline-variant/10">
+<section class="relative py-32 overflow-hidden" style="background-color: #000000;">
   <!-- Background Image Layer -->
   <div class="absolute inset-0 z-0">
     {%- if section.settings.background_image != blank -%}
-      <img class="w-full h-full object-cover opacity-20 transition-opacity duration-700" src="{{ section.settings.background_image | image_url: width: 2400 }}" alt="Reviews Background" width="2400" height="1200">
-    {%- else -%}
-      <img class="w-full h-full object-cover opacity-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSlfvcGAdCPSCJJwxDZad5N4Iy-_7Q-oX-y-i9G-pQbNxnn1L7ebSL0rN2QTHnz1HS_f8nQPwXJJHYh2odXCIy8VXvnmNFg4OnbMZkqA54e2SBQ0EWowS240RA_MKL9wIuwlAXE4mainoW9yzkxJXDnVohoqZEJUn6R_GJ0NpWtd5ZWVYEizXHelZCRgs0ImcPeepV3Z1PdcLJTE0aRLCo6iP869ZsEvdbh5WCmZ0glpQi8u0M6AwaH9IKKtckZ9baQu0fAZ8PWE3G" alt="Default Background">
+      <img class="w-full h-full object-cover opacity-20" src="{{ section.settings.background_image | image_url: width: 2400 }}" alt="Reviews Background" width="2400" height="1200">
     {%- endif -%}
-    <div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest via-transparent to-surface-container-lowest"></div>
+    <div class="absolute inset-0" style="background: linear-gradient(to bottom, #000000, transparent 30%, transparent 70%, #000000);"></div>
   </div>
 
   <!-- Header -->
   <div class="container mx-auto px-8 mb-20 text-center relative z-20">
-    <h2 class="font-headline text-5xl md:text-7xl font-bold uppercase tracking-[0.1em] text-on-surface/80 mb-4 drop-shadow-lg">
+    <h2 class="font-headline text-5xl md:text-7xl font-bold uppercase tracking-[0.1em] mb-4 drop-shadow-lg" style="color: rgba(255,255,255,0.8);">
       {{ section.settings.main_title }}
     </h2>
-    <p class="font-body text-sm md:text-lg text-on-surface-variant uppercase tracking-[0.2em] font-medium">
-      {{ section.settings.heading_pre }} 
-      <span class="text-[#ff0095] font-bold drop-shadow-[0_0_20px_rgba(255,0,149,0.6)] mx-2 text-2xl md:text-4xl align-middle">
+    <p class="font-body text-sm md:text-lg uppercase tracking-[0.2em] font-medium" style="color: #ababab;">
+      {{ section.settings.heading_pre }}
+      <span style="color: #ff0095; filter: drop-shadow(0 0 20px rgba(255,0,149,0.6)); font-size: 1.8em; vertical-align: middle; font-weight: bold; margin: 0 8px;">
         {{ section.settings.highlight_text }}
-      </span> 
+      </span>
       {{ section.settings.heading_post }}
     </p>
   </div>
 
   <!-- Reviews Ticker Wrapper -->
-  <div class="relative w-full overflow-hidden z-10">
-    <!-- Masking Overlays -->
-    <div class="reviews-mask absolute inset-y-0 left-0 w-48 md:w-[400px] bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/70 to-transparent z-40 pointer-events-none"></div>
-    <div class="reviews-mask absolute inset-y-0 right-0 w-48 md:w-[400px] bg-gradient-to-l from-surface-container-lowest via-surface-container-lowest/70 to-transparent z-40 pointer-events-none"></div>
+  <div class="reviews-ticker-wrapper relative w-full overflow-hidden z-10">
+    <!-- Masking Overlays (inline styles for guaranteed rendering) -->
+    <div class="reviews-fade-left"></div>
+    <div class="reviews-fade-right"></div>
 
-    <div class="flex flex-col gap-8">
+    <div class="flex flex-col" style="gap: 20px;">
       {%- for i in (1..5) -%}
-        <div class="swiper reviews-swiper-{{ i }} marquee-mode !overflow-visible">
-          <div class="swiper-wrapper">
-            {%- comment -%} Multiplying slides and using all blocks for every row to ensure they all run {%- endcomment -%}
-            {%- for j in (1..10) -%}
-              {%- for block in section.blocks -%}
-                <div class="swiper-slide !w-auto" {{ block.shopify_attributes }}>
-                  <div class="px-10 py-4 bg-white/5 backdrop-blur-[10px] border border-white/10 rounded-full whitespace-nowrap text-on-surface/90 font-body text-sm md:text-base hover:border-[#ff0095]/40 hover:bg-white/10 transition-all pointer-events-none select-none shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
-                    {{ block.settings.review_text }}
-                  </div>
-                </div>
-              {%- endfor -%}
+        <div class="marquee-row marquee-row-{{ i }} {% if i == 2 or i == 4 %}marquee-reverse{% endif %}">
+          <div class="marquee-content">
+            {%- for block in section.blocks -%}
+              <span class="review-pill" {{ block.shopify_attributes }}>{{ block.settings.review_text }}</span>
+            {%- endfor -%}
+            {%- for block in section.blocks -%}
+              <span class="review-pill">{{ block.settings.review_text }}</span>
+            {%- endfor -%}
+          </div>
+          <div class="marquee-content" aria-hidden="true">
+            {%- for block in section.blocks -%}
+              <span class="review-pill">{{ block.settings.review_text }}</span>
+            {%- endfor -%}
+            {%- for block in section.blocks -%}
+              <span class="review-pill">{{ block.settings.review_text }}</span>
             {%- endfor -%}
           </div>
         </div>
@@ -51,58 +53,96 @@
 </section>
 
 <style>
-  .marquee-mode .swiper-wrapper {
-    transition-timing-function: linear !important;
+  /* Marquee Row */
+  .marquee-row {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
   }
-  /* Force masking overlays to be on top */
-  .reviews-mask {
+
+  .marquee-content {
+    display: flex;
+    gap: 24px;
+    padding-right: 24px;
+    flex-shrink: 0;
+    animation: marquee-scroll 40s linear infinite;
+  }
+
+  /* Speed variations for each row */
+  .marquee-row-1 .marquee-content { animation-duration: 35s; }
+  .marquee-row-2 .marquee-content { animation-duration: 45s; }
+  .marquee-row-3 .marquee-content { animation-duration: 40s; }
+  .marquee-row-4 .marquee-content { animation-duration: 50s; }
+  .marquee-row-5 .marquee-content { animation-duration: 38s; }
+
+  /* Reverse direction for rows 2 and 4 */
+  .marquee-reverse .marquee-content {
+    animation-direction: reverse;
+  }
+
+  /* Review pill style */
+  .review-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 32px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    user-select: none;
     pointer-events: none;
-    z-index: 40 !important;
+    transition: border-color 0.3s;
+  }
+
+  @media (min-width: 768px) {
+    .review-pill {
+      font-size: 16px;
+    }
+  }
+
+  /* Fade masks on left and right */
+  .reviews-fade-left,
+  .reviews-fade-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: 20;
+    pointer-events: none;
+  }
+
+  @media (min-width: 768px) {
+    .reviews-fade-left,
+    .reviews-fade-right {
+      width: 350px;
+    }
+  }
+
+  .reviews-fade-left {
+    left: 0;
+    background: linear-gradient(to right, #000000 0%, #000000cc 30%, transparent 100%);
+  }
+
+  .reviews-fade-right {
+    right: 0;
+    background: linear-gradient(to left, #000000 0%, #000000cc 30%, transparent 100%);
+  }
+
+  /* Marquee keyframes */
+  @keyframes marquee-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 </style>
-
-<script>
-  function initReviewsSwiper() {
-    const swiperConfigs = [
-      { speed: 12000, reverse: false },
-      { speed: 18000, reverse: true },
-      { speed: 15000, reverse: false },
-      { speed: 20000, reverse: true },
-      { speed: 14000, reverse: false }
-    ];
-
-    swiperConfigs.forEach((config, index) => {
-      const selector = `.reviews-swiper-${index + 1}`;
-      const element = document.querySelector(selector);
-      if (element) {
-        // Destroy existing instance if any
-        if (element.swiper) element.swiper.destroy();
-        
-        new Swiper(selector, {
-          slidesPerView: 'auto',
-          spaceBetween: 40,
-          loop: true,
-          speed: config.speed,
-          autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
-            reverseDirection: config.reverse
-          },
-          freeMode: {
-            enabled: true,
-            momentum: false,
-          },
-          allowTouchMove: false
-        });
-      }
-    });
-  }
-
-  document.addEventListener('DOMContentLoaded', initReviewsSwiper);
-  document.addEventListener('shopify:section:load', function(event) {
-    initReviewsSwiper();
-  });
-</script>
 
 {% schema %}
 {
