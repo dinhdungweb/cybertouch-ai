@@ -483,6 +483,7 @@
         "profile_FKMz7w": {
           "type": "profile",
           "settings": {
+            "image": "shopify://shop_images/Luna.jpg",
             "title": "Ethereal",
             "focus": "Flow & Sensation",
             "button_text": "Initialize",
