@@ -510,16 +510,26 @@
             "is_featured": false
           }
         },
+        "profile_aNtDka": {
+          "type": "profile",
+          "settings": {
+            "title": "Architect",
+            "focus": "Rhythm & Precision",
+            "button_text": "Initialize",
+            "is_featured": false
+          }
+        },
         "profile_XHV36Y": {
           "type": "profile",
           "settings": {
-            "title": "Vanguard",
-            "focus": "Intensity & Power",
+            "image": "shopify://shop_images/Cherry.jpg",
+            "title": "Cherry",
+            "focus": "She want more",
             "button_text": "Selected",
             "is_featured": false
           }
         },
-        "profile_aNtDka": {
+        "profile_drz3gV": {
           "type": "profile",
           "settings": {
             "title": "Architect",
@@ -533,8 +543,9 @@
         "profile_FKMz7w",
         "profile_iP7W3U",
         "profile_LXywih",
+        "profile_aNtDka",
         "profile_XHV36Y",
-        "profile_aNtDka"
+        "profile_drz3gV"
       ],
       "name": "Lover Profiles",
       "settings": {
