@@ -1,1 +1,969 @@
-{"sections":{"1763825343c8f25db0":{"type":"_blocks","blocks":{"ai_gen_block_010a83e_e6UReE":{"type":"ai_gen_block_010a83e","settings":{"scroll_offset":100,"max_width":1400,"padding_vertical":15,"padding_horizontal":20,"padding_vertical_mobile":12,"padding_horizontal_mobile":16,"image_size":60,"image_size_mobile":50,"image_radius":4,"title_size":16,"title_size_mobile":14,"title_weight":600,"price_size":14,"price_size_mobile":13,"button_text":"View product","button_padding_vertical":12,"button_padding_horizontal":24,"button_padding_vertical_mobile":10,"button_padding_horizontal_mobile":20,"button_font_size":14,"button_font_size_mobile":13,"button_radius":4,"background_color":"#232323","border_color":"#e5e5e5","text_color":"#f2f2f2","price_color":"#f2f2f2","button_bg_color":"#9835f2","button_hover_bg_color":"#000000","button_text_color":"#ffffff"},"blocks":{}}},"block_order":["ai_gen_block_010a83e_e6UReE"],"settings":{}},"17638247713bee8112":{"type":"_blocks","settings":{}},"breadcrumb":{"type":"brc-nav-product","disabled":true,"settings":{"back_next_pr":true,"color_scheme":"scheme-c9476b69-abc7-454f-a946-2d5a9f5f3a37","padding_top":30,"padding_bottom":30,"padding_rate":75}},"tabs":{"type":"main-product-tabs","blocks":{"tab_des_tKqkJj":{"type":"tab_des","settings":{"title":"Description"}},"tab_add_HXf3yk":{"type":"tab_add","settings":{"title":"Additional Information"}},"tab_html_fjtD4a":{"type":"tab_html","settings":{"title":"Return Policies","content":"","page":"privacy-policy"}},"tab_html_GUBKNW":{"type":"tab_html","settings":{"title":"Custom tab","content":"","page":"wash-care"}}},"block_order":["tab_des_tKqkJj","tab_add_HXf3yk","tab_html_fjtD4a","tab_html_GUBKNW"],"disabled":true,"settings":{"tabs_design":"accordion","enable_first_tab":false,"color_scheme":"scheme-c9476b69-abc7-454f-a946-2d5a9f5f3a37","full_width":false,"padding_top":0,"padding_bottom":80,"padding_rate":50}},"sidebar":{"type":"sidebar-product","disabled":true,"settings":{"color_scheme":"","space":50}},"hero_image_yjygN6":{"type":"hero-image","blocks":{"heading_NPNVj8":{"type":"heading","name":"t:blocks.heading.name","settings":{"heading":"<h2>not just a adult toy<\/h2><h2><\/h2>","hidden_br_mobile":false,"hidden_on_mobile":false,"line_height":"","heading_size":"h2","font_weight":"","text_color":"hdt-s-text","font_size_heading_lg":30,"font_size_heading_md":25,"font_size_heading":20,"font_weight_heading":600,"letter_spacing_heading":0},"blocks":{}},"paragraph_RtxDXb":{"type":"paragraph","name":"Paragraph","settings":{"text":"<h4>AI-powered immersive private experience<br\/><\/h4>","ffamily":"","lheight":"","fsize":0,"fweight":"","text_color":"","custom":false,"color":"","class_custom":""},"blocks":{}},"spacer_4MhB8E":{"type":"spacer","name":"t:blocks.spacer.name","settings":{"direction":false,"space_lg":12,"space_md":10,"space":10},"blocks":{}},"button_7NJh34":{"type":"button","name":"t:blocks.button.name","disabled":true,"settings":{"label":"Buy now","link":"shopify:\/\/products\/cyber-touch-ai-lover-m1","open_in_new_tab":false,"full_width":false,"style_class":"link","font_size":"custom custom-inline","font_weight":"normal","font_size_btn":20,"padding_btn":30,"min_width_btn":100,"min_width_dt_btn":100,"min_height_btn":40,"icon":"none","icon_position":"after","icon_height":14,"icon_spacing":5},"blocks":{}}},"block_order":["heading_NPNVj8","paragraph_RtxDXb","spacer_4MhB8E","button_7NJh34"],"name":"t:sections.hero-image.name","settings":{"image":"shopify:\/\/shop_images\/jieshaochapin1_21_9.png","image_mb":"shopify:\/\/shop_images\/jieshaochapin1_4_5.png","link_img":"","target":false,"image_height":"full","fixed_height":860,"image_height_mb":"adapt_image","fixed_height_mb":300,"image_behavior":"none","use_overlay":false,"use_bg_content":false,"content_position":"start-center","content_align":"center","content_position_mb":"start-center","content_align_mb":"center","full_width":true,"boxed_fullwidth":false,"color_scheme":"scheme-1","padding_top":0,"padding_bottom":0,"padding_rate":0}},"hero_image_aGXTz3":{"type":"hero-image","blocks":{"heading_jQjMfe":{"type":"heading","name":"t:blocks.heading.name","settings":{"heading":"<h2>Voice, Visual, Physical - sync<\/h2><h2><\/h2>","hidden_br_mobile":false,"hidden_on_mobile":false,"line_height":"","heading_size":"h2","font_weight":"","text_color":"hdt-s-text","font_size_heading_lg":30,"font_size_heading_md":25,"font_size_heading":20,"font_weight_heading":600,"letter_spacing_heading":0},"blocks":{}},"paragraph_ePKUTd":{"type":"paragraph","name":"Paragraph","settings":{"text":"<h4>Chat, Flirt, touch and feel<br\/><br\/><\/h4>","ffamily":"","lheight":"","fsize":0,"fweight":"","text_color":"","custom":false,"color":"","class_custom":""},"blocks":{}},"spacer_NRbayR":{"type":"spacer","name":"t:blocks.spacer.name","settings":{"direction":false,"space_lg":12,"space_md":12,"space":10},"blocks":{}},"button_fjWYM9":{"type":"button","name":"t:blocks.button.name","disabled":true,"settings":{"label":"Buy now","link":"shopify:\/\/products\/cyber-touch-ai-lover-m1","open_in_new_tab":false,"full_width":false,"style_class":"link","font_size":"custom custom-inline","font_weight":"normal","font_size_btn":20,"padding_btn":30,"min_width_btn":100,"min_width_dt_btn":100,"min_height_btn":40,"icon":"none","icon_position":"after","icon_height":14,"icon_spacing":5},"blocks":{}}},"block_order":["heading_jQjMfe","paragraph_ePKUTd","spacer_NRbayR","button_fjWYM9"],"name":"t:sections.hero-image.name","settings":{"image":"shopify:\/\/shop_images\/jieshaochanpin2_21_9.png","image_mb":"shopify:\/\/shop_images\/jieshaochanpin2_4_5.png","link_img":"","target":false,"image_height":"full","fixed_height":860,"image_height_mb":"adapt_image","fixed_height_mb":300,"image_behavior":"none","use_overlay":false,"use_bg_content":false,"content_position":"start-center","content_align":"center","content_position_mb":"start-center","content_align_mb":"center","full_width":true,"boxed_fullwidth":false,"color_scheme":"scheme-1","padding_top":0,"padding_bottom":0,"padding_rate":0}},"hero_image_ifY9j4":{"type":"hero-image","blocks":{"heading_Gj83AC":{"type":"heading","name":"t:blocks.heading.name","settings":{"heading":"<h2>Unique twin V8 motors<\/h2><h2><\/h2>","hidden_br_mobile":false,"hidden_on_mobile":false,"line_height":"","heading_size":"h2","font_weight":"","text_color":"hdt-s-text","font_size_heading_lg":30,"font_size_heading_md":25,"font_size_heading":20,"font_weight_heading":600,"letter_spacing_heading":0},"blocks":{}},"paragraph_MC3QKb":{"type":"paragraph","name":"Paragraph","settings":{"text":"<h4>Lick, Suck, Squeeze until come<\/h4>","ffamily":"","lheight":"","fsize":0,"fweight":"","text_color":"","custom":false,"color":"","class_custom":""},"blocks":{}},"spacer_MLFbAP":{"type":"spacer","name":"t:blocks.spacer.name","settings":{"direction":false,"space_lg":12,"space_md":12,"space":10},"blocks":{}},"button_4Vnw6k":{"type":"button","name":"t:blocks.button.name","disabled":true,"settings":{"label":"Buy now","link":"shopify:\/\/products\/cyber-touch-ai-lover-m1","open_in_new_tab":false,"full_width":false,"style_class":"link","font_size":"custom custom-inline","font_weight":"normal","font_size_btn":20,"padding_btn":30,"min_width_btn":100,"min_width_dt_btn":100,"min_height_btn":40,"icon":"none","icon_position":"after","icon_height":14,"icon_spacing":5},"blocks":{}}},"block_order":["heading_Gj83AC","paragraph_MC3QKb","spacer_MLFbAP","button_4Vnw6k"],"name":"t:sections.hero-image.name","settings":{"image":"shopify:\/\/shop_images\/jieshaochanpin3_21_9.png","image_mb":"shopify:\/\/shop_images\/1ctai4_5.jpg","link_img":"","target":false,"image_height":"full","fixed_height":860,"image_height_mb":"adapt_image","fixed_height_mb":300,"image_behavior":"none","use_overlay":false,"use_bg_content":false,"content_position":"start-center","content_align":"center","content_position_mb":"start-center","content_align_mb":"center","full_width":true,"boxed_fullwidth":false,"color_scheme":"scheme-1","padding_top":0,"padding_bottom":0,"padding_rate":0}},"hero_image_pQhM3R":{"type":"hero-image","blocks":{"heading_WFN9x3":{"type":"heading","name":"t:blocks.heading.name","settings":{"heading":"<h2>Ergonomic design<\/h2><h2><\/h2>","hidden_br_mobile":false,"hidden_on_mobile":false,"line_height":"","heading_size":"h2","font_weight":"","text_color":"hdt-s-text","font_size_heading_lg":30,"font_size_heading_md":25,"font_size_heading":20,"font_weight_heading":600,"letter_spacing_heading":0},"blocks":{}},"paragraph_TdV4C6":{"type":"paragraph","name":"Paragraph","settings":{"text":"<h4>Hands-free，Built for immersion<\/h4>","ffamily":"","lheight":"","fsize":0,"fweight":"","text_color":"","custom":false,"color":"","class_custom":""},"blocks":{}},"spacer_rhbktJ":{"type":"spacer","name":"t:blocks.spacer.name","settings":{"direction":false,"space_lg":12,"space_md":12,"space":10},"blocks":{}},"button_BGw4jn":{"type":"button","name":"t:blocks.button.name","disabled":true,"settings":{"label":"Buy now","link":"shopify:\/\/products\/cyber-touch-ai-lover-m1","open_in_new_tab":false,"full_width":false,"style_class":"link","font_size":"custom custom-inline","font_weight":"normal","font_size_btn":20,"padding_btn":30,"min_width_btn":100,"min_width_dt_btn":100,"min_height_btn":40,"icon":"none","icon_position":"after","icon_height":14,"icon_spacing":5},"blocks":{}}},"block_order":["heading_WFN9x3","paragraph_TdV4C6","spacer_rhbktJ","button_BGw4jn"],"name":"t:sections.hero-image.name","settings":{"image":"shopify:\/\/shop_images\/jieshaochapin4_21_9.png","image_mb":"shopify:\/\/shop_images\/jieshaochapin4_4_5.png","link_img":"","target":false,"image_height":"full","fixed_height":860,"image_height_mb":"adapt_image","fixed_height_mb":300,"image_behavior":"none","use_overlay":false,"use_bg_content":false,"content_position":"start-center","content_align":"center","content_position_mb":"start-center","content_align_mb":"center","full_width":true,"boxed_fullwidth":false,"color_scheme":"scheme-1","padding_top":0,"padding_bottom":0,"padding_rate":0}},"hero_image_cRWETP":{"type":"hero-image","blocks":{"heading_9EBrqy":{"type":"heading","name":"t:blocks.heading.name","settings":{"heading":"<h2>Your one and only dream lover<\/h2><h2><\/h2>","hidden_br_mobile":false,"hidden_on_mobile":false,"line_height":"","heading_size":"h2","font_weight":"","text_color":"hdt-s-text","font_size_heading_lg":30,"font_size_heading_md":25,"font_size_heading":20,"font_weight_heading":600,"letter_spacing_heading":0},"blocks":{}},"paragraph_9LPaEY":{"type":"paragraph","name":"Paragraph","settings":{"text":"<h4>Private by nature. Trusted by design.<br\/><\/h4>","ffamily":"","lheight":"","fsize":0,"fweight":"","text_color":"","custom":false,"color":"","class_custom":""},"blocks":{}},"spacer_PhqRR7":{"type":"spacer","name":"t:blocks.spacer.name","settings":{"direction":false,"space_lg":12,"space_md":12,"space":10},"blocks":{}},"button_DjFdkN":{"type":"button","name":"t:blocks.button.name","disabled":true,"settings":{"label":"Buy now","link":"shopify:\/\/products\/cyber-touch-ai-lover-m1","open_in_new_tab":false,"full_width":false,"style_class":"link","font_size":"custom custom-inline","font_weight":"normal","font_size_btn":20,"padding_btn":30,"min_width_btn":100,"min_width_dt_btn":100,"min_height_btn":40,"icon":"none","icon_position":"after","icon_height":14,"icon_spacing":5},"blocks":{}}},"block_order":["heading_9EBrqy","paragraph_9LPaEY","spacer_PhqRR7","button_DjFdkN"],"name":"t:sections.hero-image.name","settings":{"image":"shopify:\/\/shop_images\/jieshaochapin5_21_9.png","image_mb":"shopify:\/\/shop_images\/jieshaochapin5_4_5.png","link_img":"","target":false,"image_height":"full","fixed_height":860,"image_height_mb":"adapt_image","fixed_height_mb":300,"image_behavior":"none","use_overlay":false,"use_bg_content":false,"content_position":"start-center","content_align":"center","content_position_mb":"start-center","content_align_mb":"center","full_width":true,"boxed_fullwidth":false,"color_scheme":"scheme-1","padding_top":0,"padding_bottom":0,"padding_rate":0}},"main-product":{"type":"main-product","blocks":{"group_product_rjwCiM":{"type":"_group-product","settings":{},"blocks":{"product_title_JjxmKw":{"type":"_product-title","settings":{"hdt_pr_title_size":"h4"},"blocks":{}},"product_badges_3qxfaW":{"type":"_product-badges","settings":{"special":"","min":4,"max":80,"content":"Selling fast! [count] people have this in their carts.","icon_svg":"flash","ani":"none"},"blocks":{}},"product_price_VhBaXe":{"type":"_product-price","settings":{},"blocks":{}},"product_countdown_kTqkaR":{"type":"_product-countdown","settings":{"color_scheme":"","icon":"none","svg_upload":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" class=\"hdt-ani-tada is--infinite hdt-inine-block\" width=\"14\" height=\"14\" viewBox=\"0 0 14 14\"><path d=\"M6.7796 0.828412C3.1501 0.828412 0.193808 3.7847 0.193808 7.41421C0.193808 11.0437 3.1501 14 6.7796 14C10.4091 14 13.3654 11.0437 13.3654 7.41421C13.3654 3.7847 10.4091 0.828412 6.7796 0.828412ZM6.7796 12.5365C3.95503 12.5365 1.65732 10.2388 1.65732 7.41421C1.65732 4.58963 3.95503 2.29192 6.7796 2.29192C9.60418 2.29192 11.9019 4.58963 11.9019 7.41421C11.9019 10.2388 9.60418 12.5365 6.7796 12.5365ZM0.252349 2.65048C-0.0549885 2.38705 -0.0842587 1.91873 0.179173 1.61871C0.669449 1.05526 1.24754 0.550345 1.88416 0.125928C2.22077 -0.100916 2.67446 -0.0131058 2.9013 0.323501C3.12814 0.660109 3.04033 1.1138 2.70373 1.34064C2.17686 1.69188 1.70122 2.1163 1.29144 2.58462C1.14509 2.75293 0.947516 2.83342 0.742624 2.83342C0.564631 2.83384 0.392712 2.76872 0.259666 2.65048H0.252349ZM10.8555 1.34064C10.5189 1.1138 10.4311 0.660109 10.6579 0.323501C10.8847 -0.0131058 11.3384 -0.100916 11.675 0.125928C12.3117 0.550345 12.8824 1.05526 13.38 1.61871C13.6435 1.92604 13.6142 2.38705 13.3069 2.65048C13.2349 2.71418 13.1511 2.76303 13.0602 2.79421C12.9693 2.82539 12.8732 2.83829 12.7773 2.83217C12.6814 2.82605 12.5876 2.80102 12.5015 2.75854C12.4153 2.71606 12.3383 2.65695 12.2751 2.58462C11.859 2.1117 11.3844 1.69368 10.8628 1.34064H10.8555ZM8.71875 8.1606C9.01877 8.43135 9.04804 8.89235 8.77729 9.19237C8.63094 9.35336 8.43337 9.44117 8.22848 9.44117C8.05286 9.44117 7.88455 9.38263 7.74552 9.25823L6.28933 7.96302C6.13566 7.82399 6.04053 7.62642 6.04053 7.41421V4.48719C6.04053 4.08472 6.36982 3.75543 6.77228 3.75543C7.17475 3.75543 7.50404 4.08472 7.50404 4.48719V7.08492L8.71875 8.1606Z\"><\/path><\/svg>","ani":"hdt-ani-tada","content":"HURRY UP! SALE ENDS IN:","alignment":"center","effect_cd":"move_top"},"blocks":{}},"product_variant_picker_RJxUVf":{"type":"_product-variant-picker","settings":{"color_picker_type":"image","color_size":"large","picker_type":"block","size_chart_source":"page","size_chart_page":"size-chart","title":"Variant picker"},"blocks":{}},"quantity_selector_6zJAfX":{"type":"_quantity-selector","settings":{},"blocks":{}},"product_buy_button_9gRLMx":{"type":"_product-buy-button","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true,"show_wishlist":false,"show_compare":false,"show_price_variant":true},"blocks":{}},"product_back_instock_qNYiT7":{"type":"_product_back_instock","settings":{"only_show_soldout":true},"blocks":{}},"product_extra_link_n7Vykn":{"type":"_product-extra-link","disabled":true,"settings":{},"blocks":{"compare_color_Lz6TAK":{"type":"_compare_color","settings":{"html":"<svg class=\"hdt-inline-block\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"20\" height=\"20\" viewbox=\"0 0 20 20\" fill=\"none\"><path d=\"M10 12.2903C13.3939 12.2903 16.1451 9.539 16.1451 6.14513C16.1451 2.75127 13.3939 0 10 0C6.60614 0 3.85487 2.75127 3.85487 6.14513C3.85487 9.539 6.60614 12.2903 10 12.2903Z\" fill=\"url(#paint0_radial_242_2855)\"><\/path><path d=\"M13.8549 20C17.2487 20 20 17.2487 20 13.8549C20 10.461 17.2487 7.70973 13.8549 7.70973C10.461 7.70973 7.70973 10.461 7.70973 13.8549C7.70973 17.2487 10.461 20 13.8549 20Z\" fill=\"url(#paint1_radial_242_2855)\"><\/path><path d=\"M6.14513 20C9.539 20 12.2903 17.2487 12.2903 13.8549C12.2903 10.461 9.539 7.70973 6.14513 7.70973C2.75127 7.70973 0 10.461 0 13.8549C0 17.2487 2.75127 20 6.14513 20Z\" fill=\"url(#paint2_radial_242_2855)\"><\/path><path d=\"M12.2902 13.8548C12.291 14.7731 12.0857 15.6799 11.6893 16.5083C11.2929 17.3366 10.7156 18.0654 10 18.6409C9.03122 17.8594 8.32217 16.8025 7.96643 15.6097C7.61069 14.4169 7.62498 13.1443 8.00741 11.9598C9.29929 12.4005 10.7008 12.4005 11.9927 11.9598C12.1905 12.572 12.2909 13.2114 12.2902 13.8548Z\" fill=\"url(#paint3_radial_242_2855)\"><\/path><path d=\"M15.8474 8.04018C15.5522 8.94737 15.0504 9.77362 14.3815 10.4538C13.7126 11.134 12.8948 11.6495 11.9927 11.9598C11.6232 10.8231 10.9309 9.81845 10.0003 9.06839C10.8091 8.4178 11.7693 7.98236 12.7917 7.80258C13.814 7.62281 14.8652 7.70454 15.8474 8.04018Z\" fill=\"url(#paint4_radial_242_2855)\"><\/path><path d=\"M10.0003 9.06857C9.06943 9.81853 8.37698 10.8232 8.00741 11.96C7.10526 11.6497 6.28749 11.1341 5.61856 10.4539C4.94963 9.77369 4.44782 8.9474 4.15268 8.04018C5.13503 7.70459 6.1863 7.62291 7.2087 7.80275C8.23109 7.98258 9.1914 8.41809 10.0003 9.06875V9.06857Z\" fill=\"url(#paint5_radial_242_2855)\"><\/path><path d=\"M11.9927 11.9598C10.7008 12.4005 9.29929 12.4005 8.00741 11.9598C8.37698 10.823 9.06943 9.81835 10.0003 9.06839C10.9309 9.81845 11.6232 10.8231 11.9927 11.9598Z\" fill=\"url(#paint6_radial_242_2855)\"><\/path><defs><radialgradient id=\"paint0_radial_242_2855\" cx=\"0\" cy=\"0\" r=\"1\" gradientunits=\"userSpaceOnUse\" gradienttransform=\"translate(6.40911 7.48269) scale(14.0721)\"><stop stop-color=\"#E85155\"><\/stop><stop offset=\"1\" stop-color=\"#C21D2C\"><\/stop><\/radialgradient><radialgradient id=\"paint1_radial_242_2855\" cx=\"0\" cy=\"0\" r=\"1\" gradientunits=\"userSpaceOnUse\" gradienttransform=\"translate(6.72106 6.70551) scale(14.288)\"><stop stop-color=\"#4793EB\"><\/stop><stop offset=\"1\" stop-color=\"#2367EC\"><\/stop><\/radialgradient><radialgradient id=\"paint2_radial_242_2855\" cx=\"0\" cy=\"0\" r=\"1\" gradientunits=\"userSpaceOnUse\" gradienttransform=\"translate(5.39669 6.84565) scale(15.3389)\"><stop stop-color=\"#FED200\"><\/stop><stop offset=\"1\" stop-color=\"#F59815\"><\/stop><\/radialgradient><radialgradient id=\"paint3_radial_242_2855\" cx=\"0\" cy=\"0\" r=\"1\" gradientunits=\"userSpaceOnUse\" gradienttransform=\"translate(19.1618 0.299752) scale(37.5697 25.7572)\"><stop stop-color=\"#34CA82\"><\/stop><stop offset=\"1\" stop-color=\"#37A477\"><\/stop><\/radialgradient><radialgradient id=\"paint4_radial_242_2855\" cx=\"0\" cy=\"0\" r=\"1\" gradientunits=\"userSpaceOnUse\" gradienttransform=\"translate(-6.9596 -14.6409) scale(29.3932 40.4368)\"><stop stop-color=\"#CE47C6\"><\/stop><stop offset=\"1\" stop-color=\"#651DC2\"><\/stop><\/radialgradient><radialgradient id=\"paint5_radial_242_2855\" cx=\"0\" cy=\"0\" r=\"1\" gradientunits=\"userSpaceOnUse\" gradienttransform=\"translate(14.0224 -14.9113) scale(28.6079 39.3588)\"><stop stop-color=\"#FD9B02\"><\/stop><stop offset=\"1\" stop-color=\"#FF7302\"><\/stop><\/radialgradient><radialgradient id=\"paint6_radial_242_2855\" cx=\"0\" cy=\"0\" r=\"1\" gradientunits=\"userSpaceOnUse\" gradienttransform=\"translate(8.22384 5.02871) scale(8.12464)\"><stop stop-color=\"#C2763E\"><\/stop><stop offset=\"1\" stop-color=\"#8A552E\"><\/stop><\/radialgradient><\/defs><\/svg>"},"blocks":{}},"product_ask_question_jVhieD":{"type":"_product-ask-question","settings":{"show_phone":true},"blocks":{}},"product_delivery_return_YGMXYQ":{"type":"_product-delivery-return","settings":{"page_delivery":"shipping-delivery"},"blocks":{}},"share_buttons_FAVCWk":{"type":"_share_buttons","settings":{},"blocks":{}}},"block_order":["compare_color_Lz6TAK","product_ask_question_jVhieD","product_delivery_return_YGMXYQ","share_buttons_FAVCWk"]},"delivery_return_jwgTaG":{"type":"_delivery_return","disabled":true,"settings":{"icon_delivery":"ship","content_devivery":"<p>Estimate delivery times:<strong> 12-26 days<\/strong> (International),<strong> 3-6 days<\/strong> (United States).<\/p>","icon_return":"return_order","content_return":"<p>Return within <strong>30 days<\/strong> of purchase. Duties & taxes are non-refundable.<\/p>"},"blocks":{}},"product_trust_badge_V8a7Hy":{"type":"_product-trust-badge","settings":{"show_icon":true,"mess":"Guaranteed Safe Checkout","source":"1","wimg":350,"svg":"visa,paypal,master,american_express","height":30},"blocks":{}},"group_accordion_ntjByh":{"type":"_group_accordion","name":"t:sections.main-product-tabs.blocks.group_accordion.name","settings":{},"blocks":{"accordion_description_btCMTA":{"type":"_accordion_description","name":"t:sections.main-product-tabs.blocks.accordion_description.name","settings":{"open":false,"title":"Description"},"blocks":{}},"accordion_review_DgwVgK":{"type":"_accordion_review","name":"t:sections.main-product-tabs.blocks.accordion_review.name","settings":{"open":false,"title":"Review"},"blocks":{}},"accordion_add_R4KHYG":{"type":"_accordion_add","name":"t:sections.main-product-tabs.blocks.accordion_add.name","settings":{"open":false,"title":"Additional information"},"blocks":{}}},"block_order":["accordion_description_btCMTA","accordion_review_DgwVgK","accordion_add_R4KHYG"]}},"block_order":["product_title_JjxmKw","product_badges_3qxfaW","product_price_VhBaXe","product_countdown_kTqkaR","product_variant_picker_RJxUVf","quantity_selector_6zJAfX","product_buy_button_9gRLMx","product_back_instock_qNYiT7","product_extra_link_n7Vykn","delivery_return_jwgTaG","product_trust_badge_V8a7Hy","group_accordion_ntjByh"]},"main-product":{"type":"_product-medias","static":true,"settings":{"display_by_block":true,"color_scheme":"scheme-1","desktop_media_layout":"thumbnail_bottom","media_size":"medium","mobile_media_layout":"thumbnails","enable_thumb_efect":true,"show_first_media":false,"use_select_varaint_change_media":true,"enable_media_autoplay":false,"enable_video_looping":false,"image_ratio":"adapt_image","image_size":true,"image_zoom":"no","image_zoom_type":"external","zoom_level":2,"max_zoom_lightbox":3,"navUI":true,"nav_des":"default","nav_shape":"rounded"},"blocks":{}}},"block_order":["group_product_rjwCiM"],"settings":{"sticky_atc":false,"product_list_fbt":[],"fbt_color_scheme":"","color_scheme":"scheme-1","full_width":false,"padding_top":100,"padding_bottom":100,"padding_rate":50}},"related-products":{"type":"related-products","disabled":true,"settings":{"sec_heading":"People Also Bought","heading_tag":"h3","heading_size":"h3","text_color":"hdt-s-text","heading_align":"center","sec_subheading":"","subheading_size":"lg","heading_reverse":false,"heading_gap":18,"sec_heading_spacing":50,"limit":10,"product_des":"1","image_ratio":"square","image_size":true,"show_vendor":false,"col_dk":"4","col_tb":"3","col_mb":"2","navUI":true,"btn_vi":"hover","nav_des":"default","nav_shape":"rounded","nav_size":"small","nav_pos":"middle_in","nav_icon":"chrvon","dotUI":false,"color_scheme":"scheme-1","full_width":false,"padding_top":72,"padding_bottom":72,"padding_rate":75}},"recently-products":{"type":"recently-products","disabled":true,"settings":{"sec_heading":"Recently Viewed","heading_tag":"h3","heading_size":"h3","text_color":"hdt-s-text","heading_align":"center","sec_subheading":"","subheading_size":"lg","heading_reverse":false,"heading_gap":18,"sec_heading_spacing":50,"limit":10,"product_des":"1","image_ratio":"custom-pr","image_size":true,"show_vendor":false,"col_dk":"4","col_tb":"3","col_mb":"2","navUI":true,"btn_vi":"hover","nav_des":"default","nav_shape":"rounded","nav_size":"small","nav_pos":"middle_in","nav_icon":"chrvon","dotUI":false,"color_scheme":"scheme-1","full_width":false,"padding_top":0,"padding_bottom":100,"padding_rate":75}},"featured_collection_carousel_DB3n83":{"type":"featured-collection-carousel","blocks":{"featured-collection-carousel":{"type":"_collection_heading","static":true,"settings":{"one_line":false,"alignment":"center","row_gap":15,"margin_bottom":30},"blocks":{"heading_KiRXVy":{"type":"heading","settings":{"heading":"<h4>Choose Your Product<\/h4>","hidden_br_mobile":false,"hidden_on_mobile":false,"line_height":"","heading_size":"h4","font_weight":"","text_color":"hdt-s-text","font_size_heading_lg":50,"font_size_heading_md":30,"font_size_heading":24,"font_weight_heading":600,"letter_spacing_heading":0},"blocks":{}}},"block_order":["heading_KiRXVy"]}},"name":"t:sections.collection_products.carousel_name","settings":{"collection":"store","product_list":[],"product_des":"2","image_ratio":"adapt_image","image_size":true,"show_vendor":false,"pr_border":"on_item","products_count":8,"col_dk":"4","col_tb":"3","col_mb":"2","half_item":false,"navUI":false,"btn_vi":"hover","nav_des":"default","nav_shape":"rounded","nav_size":"small","nav_pos":"on_border","nav_icon":"chrvon","dotUI":false,"dots_des":"default","dots_align":"center","dot_distance":30,"section_fullwidth":false,"color_scheme":"","padding_top":52,"padding_bottom":52,"padding_rate":75}}},"order":["1763825343c8f25db0","17638247713bee8112","breadcrumb","tabs","sidebar","hero_image_yjygN6","hero_image_aGXTz3","hero_image_ifY9j4","hero_image_pQhM3R","hero_image_cRWETP","main-product","related-products","recently-products","featured_collection_carousel_DB3n83"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_PDcXkr": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_item_G6ftBK": {
+          "type": "_slide-item",
+          "settings": {
+            "image": "shopify://shop_images/3_19_9.png",
+            "image_mb": "shopify://shop_images/2_3_bf951c66-52b3-43c6-a024-4750c1254190.png",
+            "url": "",
+            "banner_target": false,
+            "color_scheme": "scheme-1",
+            "content_position": "start-center",
+            "alignment": "center",
+            "content_position_mb": "start-center",
+            "alignment_mb": "center",
+            "background_content": false,
+            "bg_opacity": 0,
+            "box_square": false,
+            "content_rounded": false,
+            "use_border_content": false,
+            "border_opacity": 0,
+            "border_style": "none",
+            "border_pd_dk": 0,
+            "padding_vertical": 30,
+            "padding_horizontal": 30,
+            "min_width_content": 350,
+            "border_pd": 0
+          },
+          "blocks": {
+            "heading_gpXfLP": {
+              "type": "heading",
+              "name": "t:blocks.heading.name",
+              "settings": {
+                "heading": "<p>Feel Your dream Lover - Now</p><p></p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "heading_size": "h2",
+                "font_weight": "bold",
+                "text_color": "hdt-text-secondary",
+                "font_size_heading_lg": 50,
+                "font_size_heading_md": 30,
+                "font_size_heading": 24,
+                "font_weight_heading": 600,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "heading_k6MXmC": {
+              "type": "heading",
+              "name": "t:blocks.heading.name",
+              "settings": {
+                "heading": "<p>Meets Physical Sensation.</p><p></p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "heading_size": "h5",
+                "font_weight": "",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 50,
+                "font_size_heading_md": 30,
+                "font_size_heading": 24,
+                "font_weight_heading": 600,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "spacer_hmkPrT": {
+              "type": "spacer",
+              "name": "t:blocks.spacer.name",
+              "settings": {
+                "direction": false,
+                "space_lg": 12,
+                "space_md": 12,
+                "space": 12
+              },
+              "blocks": {}
+            },
+            "button_group_JiFHQm": {
+              "type": "_button_group",
+              "name": "Button Group",
+              "settings": {
+                "alignment": "center",
+                "spacing": "5"
+              },
+              "blocks": {
+                "button_7NPDwt": {
+                  "type": "button",
+                  "settings": {
+                    "label": "Learn More",
+                    "link": "shopify://products/cyber-touch-ai-lover-m1",
+                    "open_in_new_tab": false,
+                    "full_width": false,
+                    "style_class": "link",
+                    "font_size": "xl",
+                    "font_weight": "bold",
+                    "font_size_btn": 14,
+                    "padding_btn": 30,
+                    "min_width_btn": 100,
+                    "min_width_dt_btn": 100,
+                    "min_height_btn": 40,
+                    "icon": "arrow_right",
+                    "icon_position": "after",
+                    "icon_height": 14,
+                    "icon_spacing": 5
+                  },
+                  "blocks": {}
+                },
+                "button_4dCRRg": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "label": "Buy",
+                    "link": "shopify://collections/store",
+                    "open_in_new_tab": false,
+                    "full_width": false,
+                    "style_class": "link",
+                    "font_size": "xl",
+                    "font_weight": "bold",
+                    "font_size_btn": 14,
+                    "padding_btn": 30,
+                    "min_width_btn": 100,
+                    "min_width_dt_btn": 100,
+                    "min_height_btn": 40,
+                    "icon": "arrow_right",
+                    "icon_position": "after",
+                    "icon_height": 14,
+                    "icon_spacing": 5
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_7NPDwt",
+                "button_4dCRRg"
+              ]
+            }
+          },
+          "block_order": [
+            "heading_gpXfLP",
+            "heading_k6MXmC",
+            "spacer_hmkPrT",
+            "button_group_JiFHQm"
+          ]
+        },
+        "slide_item_p3kJBE": {
+          "type": "_slide-item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/M1homeP2_19_9.png",
+            "image_mb": "shopify://shop_images/M1homeP2_2_3.png",
+            "url": "",
+            "banner_target": false,
+            "color_scheme": "scheme-1",
+            "content_position": "start-center",
+            "alignment": "center",
+            "content_position_mb": "start-center",
+            "alignment_mb": "center",
+            "background_content": false,
+            "bg_opacity": 0,
+            "box_square": false,
+            "content_rounded": false,
+            "use_border_content": false,
+            "border_opacity": 0,
+            "border_style": "none",
+            "border_pd_dk": 0,
+            "padding_vertical": 30,
+            "padding_horizontal": 30,
+            "min_width_content": 350,
+            "border_pd": 0
+          },
+          "blocks": {
+            "heading_pwtTD7": {
+              "type": "heading",
+              "name": "t:blocks.heading.name",
+              "settings": {
+                "heading": "<p>Voice becomes sensation</p><p></p><p></p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "heading_size": "h2",
+                "font_weight": "bold",
+                "text_color": "hdt-text-secondary",
+                "font_size_heading_lg": 50,
+                "font_size_heading_md": 30,
+                "font_size_heading": 24,
+                "font_weight_heading": 600,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "heading_ChAEh9": {
+              "type": "heading",
+              "name": "t:blocks.heading.name",
+              "settings": {
+                "heading": "<p>Engineered for private experiences beyond imagination.</p><p></p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "heading_size": "h5",
+                "font_weight": "",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 50,
+                "font_size_heading_md": 30,
+                "font_size_heading": 24,
+                "font_weight_heading": 600,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "spacer_W3eXaJ": {
+              "type": "spacer",
+              "name": "t:blocks.spacer.name",
+              "settings": {
+                "direction": false,
+                "space_lg": 12,
+                "space_md": 12,
+                "space": 12
+              },
+              "blocks": {}
+            },
+            "button_group_zaPxQh": {
+              "type": "_button_group",
+              "name": "Button Group",
+              "settings": {
+                "alignment": "center",
+                "spacing": "5"
+              },
+              "blocks": {
+                "button_WbLhdU": {
+                  "type": "button",
+                  "settings": {
+                    "label": "Learn More",
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "full_width": false,
+                    "style_class": "link",
+                    "font_size": "xl",
+                    "font_weight": "bold",
+                    "font_size_btn": 14,
+                    "padding_btn": 30,
+                    "min_width_btn": 100,
+                    "min_width_dt_btn": 100,
+                    "min_height_btn": 40,
+                    "icon": "arrow_right",
+                    "icon_position": "after",
+                    "icon_height": 14,
+                    "icon_spacing": 5
+                  },
+                  "blocks": {}
+                },
+                "button_66b7yi": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "label": "Buy",
+                    "link": "shopify://collections/store",
+                    "open_in_new_tab": false,
+                    "full_width": false,
+                    "style_class": "link",
+                    "font_size": "xl",
+                    "font_weight": "bold",
+                    "font_size_btn": 14,
+                    "padding_btn": 30,
+                    "min_width_btn": 100,
+                    "min_width_dt_btn": 100,
+                    "min_height_btn": 40,
+                    "icon": "arrow_right",
+                    "icon_position": "after",
+                    "icon_height": 14,
+                    "icon_spacing": 5
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_WbLhdU",
+                "button_66b7yi"
+              ]
+            }
+          },
+          "block_order": [
+            "heading_pwtTD7",
+            "heading_ChAEh9",
+            "spacer_W3eXaJ",
+            "button_group_zaPxQh"
+          ]
+        }
+      },
+      "block_order": [
+        "slide_item_G6ftBK",
+        "slide_item_p3kJBE"
+      ],
+      "disabled": true,
+      "name": "t:sections.slideshow.name",
+      "settings": {
+        "image_height": "adapt_image",
+        "fixed_height": 860,
+        "image_height_mb": "adapt_image",
+        "fixed_height_mb": 300,
+        "is_fade": true,
+        "loop": false,
+        "auto_play": 5,
+        "pause_hover": true,
+        "navUI": false,
+        "nav_des": "default",
+        "nav_rounded_full": false,
+        "dotUI": true,
+        "dot_vertical": true,
+        "dot_style": "dashed",
+        "dot_align": "center",
+        "dot_space": 30,
+        "color_scheme": "",
+        "full_width": true,
+        "rounded": "none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_rate": 75
+      }
+    },
+    "slideshow_FntkPm": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_item_jAM7yb": {
+          "type": "_slide-item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/cyainv_D.jpg",
+            "image_mb": "shopify://shop_images/cyainv_M.jpg",
+            "url": "",
+            "banner_target": false,
+            "color_scheme": "",
+            "content_position": "center",
+            "alignment": "center",
+            "content_position_mb": "center-start",
+            "alignment_mb": "center",
+            "background_content": false,
+            "bg_opacity": 0,
+            "box_square": false,
+            "content_rounded": false,
+            "use_border_content": false,
+            "border_opacity": 0,
+            "border_style": "none",
+            "border_pd_dk": 0,
+            "padding_vertical": 30,
+            "padding_horizontal": 30,
+            "min_width_content": 350,
+            "border_pd": 0
+          },
+          "blocks": {
+            "heading_TMgYbW": {
+              "type": "heading",
+              "name": "t:blocks.heading.name",
+              "settings": {
+                "heading": "<p>Heading</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "heading_size": "h2",
+                "font_weight": "",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 50,
+                "font_size_heading_md": 30,
+                "font_size_heading": 24,
+                "font_weight_heading": 600,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_TMgYbW"
+          ]
+        }
+      },
+      "block_order": [
+        "slide_item_jAM7yb"
+      ],
+      "disabled": true,
+      "name": "t:sections.slideshow.name",
+      "settings": {
+        "image_height": "adapt_image",
+        "fixed_height": 860,
+        "image_height_mb": "adapt_image",
+        "fixed_height_mb": 300,
+        "is_fade": false,
+        "loop": false,
+        "auto_play": 0,
+        "pause_hover": false,
+        "navUI": false,
+        "nav_des": "default",
+        "nav_rounded_full": false,
+        "dotUI": false,
+        "dot_vertical": false,
+        "dot_style": "default",
+        "dot_align": "center",
+        "dot_space": 30,
+        "color_scheme": "",
+        "full_width": true,
+        "rounded": "none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_rate": 75
+      }
+    },
+    "hero_cyber_9ywVWi": {
+      "type": "hero-cyber",
+      "name": "Hero Cyber",
+      "settings": {
+        "heading": "Cyber-M1<br>Feel Your AI Lover<br><span class=\"text-transparent bg-clip-text kinetic-gradient\">fantasies Pleasure</span>",
+        "subheading": "<p>First AI-powered experience becomes touchable. </p><p>Now, You can see, say, hear and feel.</p>",
+        "media_type": "video",
+        "video": "shopify://files/videos/dreamina-2026-04-10-2404-make a advertisment video for our produc....mp4",
+        "button_1_text": "Shop Now",
+        "button_1_link": "#product-scroll",
+        "button_2_text": "",
+        "button_2_link": ""
+      }
+    },
+    "cyber_problem_jBh3aj": {
+      "type": "cyber-problem",
+      "name": "Cyber Problem",
+      "settings": {
+        "sub_caption": "want something new?",
+        "heading_highlight": "Tired of seraching videos<div>all night?</div>",
+        "main_heading": "Looking for something more immersive and personal?",
+        "background_image": "shopify://shop_images/PObackground.png",
+        "overlay_opacity": 60
+      }
+    },
+    "ai_experience_CJANX3": {
+      "type": "ai-experience",
+      "blocks": {
+        "feature_FActin": {
+          "type": "feature",
+          "settings": {
+            "icon": "keyboard_voice",
+            "title": "Voice Interaction",
+            "description": "<p>Real-time voice communication processing makes it feel like you're talking to a real person.</p>"
+          }
+        },
+        "feature_AKyR3p": {
+          "type": "feature",
+          "settings": {
+            "icon": "psychology",
+            "title": "Video Interaction",
+            "description": "<p>The lover on the screen will perform various actions in response to your commands.</p>"
+          }
+        },
+        "feature_i4PAHa": {
+          "type": "feature",
+          "settings": {
+            "icon": "dynamic_form",
+            "title": "Tangible Interaction",
+            "description": "<p>Our device will recognize all your interactions and eventually become your sense of touch.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature_FActin",
+        "feature_AKyR3p",
+        "feature_i4PAHa"
+      ],
+      "name": "AI Experience",
+      "settings": {
+        "heading": "Feel Your AI <br><span class=\"text-secondary\">Lover</span>"
+      }
+    },
+    "lover_profiles_BQp43N": {
+      "type": "lover-profiles",
+      "blocks": {
+        "profile_FKMz7w": {
+          "type": "profile",
+          "settings": {
+            "title": "Ethereal",
+            "focus": "Flow & Sensation",
+            "button_text": "Initialize",
+            "is_featured": false
+          }
+        },
+        "profile_iP7W3U": {
+          "type": "profile",
+          "settings": {
+            "title": "Ethereal",
+            "focus": "Flow & Sensation",
+            "button_text": "Initialize",
+            "is_featured": false
+          }
+        },
+        "profile_LXywih": {
+          "type": "profile",
+          "settings": {
+            "title": "Ethereal",
+            "focus": "Flow & Sensation",
+            "button_text": "Initialize",
+            "is_featured": false
+          }
+        },
+        "profile_XHV36Y": {
+          "type": "profile",
+          "settings": {
+            "title": "Vanguard",
+            "focus": "Intensity & Power",
+            "button_text": "Selected",
+            "is_featured": false
+          }
+        },
+        "profile_aNtDka": {
+          "type": "profile",
+          "settings": {
+            "title": "Architect",
+            "focus": "Rhythm & Precision",
+            "button_text": "Initialize",
+            "is_featured": false
+          }
+        }
+      },
+      "block_order": [
+        "profile_FKMz7w",
+        "profile_iP7W3U",
+        "profile_LXywih",
+        "profile_XHV36Y",
+        "profile_aNtDka"
+      ],
+      "name": "Lover Profiles",
+      "settings": {
+        "heading": "you are picky?",
+        "subheading": "No problem, we got all style lovers for you"
+      }
+    },
+    "performance_motion_pipD3c": {
+      "type": "performance-motion",
+      "blocks": {
+        "stat_WHw9V3": {
+          "type": "stat",
+          "settings": {
+            "label": "motion patterns",
+            "value": "Lick, Suck, Squeeze",
+            "style": "secondary"
+          }
+        },
+        "stat_yaWQx6": {
+          "type": "stat",
+          "settings": {
+            "label": "Rhythm",
+            "value": "Multiple Realistic Frequencies",
+            "style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "stat_WHw9V3",
+        "stat_yaWQx6"
+      ],
+      "name": "Performance Motion",
+      "settings": {
+        "heading": "Beyond <br>Traditional <br><span class=\"text-secondary\">Motion</span>",
+        "description": "<p>Our proprietary dual-motor propulsion system creates speical motion patterns that standard motors cannot replicate.</p>"
+      }
+    },
+    "training_stats_bhXVHW": {
+      "type": "training-stats",
+      "blocks": {
+        "stat_3tPULb": {
+          "type": "stat",
+          "settings": {
+            "value": "100%",
+            "label": "Memory stay",
+            "style": "secondary"
+          }
+        },
+        "stat_rACmDp": {
+          "type": "stat",
+          "settings": {
+            "value": "1.5 s",
+            "label": "Response Latency",
+            "style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "stat_3tPULb",
+        "stat_rACmDp"
+      ],
+      "name": "Training Stats",
+      "settings": {
+        "sub_caption": "Firmware Update 4.0",
+        "heading": "Smarter Performance <br>With Lover AI",
+        "description": "<p>More than just a AI device—She is your dream lover. She remembers every conversation, every preference, and understands you better with each passing moment.</p>"
+      }
+    },
+    "experience_impact_DqM9Yj": {
+      "type": "experience-impact",
+      "name": "Experience Impact",
+      "settings": {
+        "bg_image": "shopify://shop_images/unnamed.png",
+        "heading": "Boost Your <div>rigidity & endurance</div>",
+        "description": "<p>Unique Suction Motor design helps strengthen your pelvic floor muscles with every use.</p>"
+      }
+    },
+    "trust_safety_MgjGKx": {
+      "type": "trust-safety",
+      "blocks": {
+        "safety_item_tAnqLj": {
+          "type": "safety_item",
+          "settings": {
+            "icon": "verified_user",
+            "title": "Body-Safe",
+            "description": "Medical Grade Silicone"
+          }
+        },
+        "safety_item_M4Ch3n": {
+          "type": "safety_item",
+          "settings": {
+            "icon": "clean_hands",
+            "title": "Easy Clean",
+            "description": "Removable for Cleaning"
+          }
+        },
+        "safety_item_tHfAL4": {
+          "type": "safety_item",
+          "settings": {
+            "icon": "inventory_2",
+            "title": "body temp",
+            "description": "One-click heating"
+          }
+        },
+        "safety_item_qzccfa": {
+          "type": "safety_item",
+          "settings": {
+            "icon": "encrypted",
+            "title": "Secure",
+            "description": "Encrypted Account Content"
+          }
+        }
+      },
+      "block_order": [
+        "safety_item_tAnqLj",
+        "safety_item_M4Ch3n",
+        "safety_item_tHfAL4",
+        "safety_item_qzccfa"
+      ],
+      "name": "Trust & Safety",
+      "settings": {}
+    },
+    "final_cta_cyber_qpNxCN": {
+      "type": "final-cta-cyber",
+      "name": "Final CTA Cyber",
+      "settings": {
+        "product_image": "shopify://shop_images/product-image-with-subtle-reflection.png",
+        "heading": "<div>Cyber-M1</div>Upgrade Your Experience",
+        "subheading": "Where AI technology meets private sensation",
+        "button_text": "Promotional Price — $99",
+        "button_link": "",
+        "footer_text": "Available for shipping within the United States and Canada"
+      }
+    },
+    "custom_liquid_TWke7V": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "section_fullwidth": true,
+        "custom_liquid": "<div id=\"product-scroll\"></div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_rate": 0
+      }
+    },
+    "trusted_reviews_mgJd7n": {
+      "type": "trusted-reviews",
+      "blocks": {
+        "review_VrPcMW": {
+          "type": "review",
+          "settings": {
+            "review_text": "I am extremely impressed with both this company and its products."
+          }
+        },
+        "review_dYfKwT": {
+          "type": "review",
+          "settings": {
+            "review_text": "I am extremely impressed with both this company and its products."
+          }
+        },
+        "review_bEaa7T": {
+          "type": "review",
+          "settings": {
+            "review_text": "Their Remote app is easy and convenient to use"
+          }
+        },
+        "review_6FYTe7": {
+          "type": "review",
+          "settings": {
+            "review_text": "100% would recommend Domi 2"
+          }
+        },
+        "review_Q4GHwy": {
+          "type": "review",
+          "settings": {
+            "review_text": "I would purchase Lovense stock!!!"
+          }
+        },
+        "review_tJK7nA": {
+          "type": "review",
+          "settings": {
+            "review_text": "Lush 3 gets me squirting like a fire hydrant!"
+          }
+        },
+        "review_7Y89q9": {
+          "type": "review",
+          "settings": {
+            "review_text": "You can't go wrong with Max 2!!"
+          }
+        },
+        "review_XzMdE4": {
+          "type": "review",
+          "settings": {
+            "review_text": "Definitely going to recommend their toys and app to anyone that will listen!!"
+          }
+        },
+        "review_Mtjh4L": {
+          "type": "review",
+          "settings": {
+            "review_text": "The Nora toy is high quality and nice"
+          }
+        },
+        "review_bp78ef": {
+          "type": "review",
+          "settings": {
+            "review_text": "Best toys ever"
+          }
+        }
+      },
+      "block_order": [
+        "review_VrPcMW",
+        "review_dYfKwT",
+        "review_bEaa7T",
+        "review_6FYTe7",
+        "review_Q4GHwy",
+        "review_tJK7nA",
+        "review_7Y89q9",
+        "review_XzMdE4",
+        "review_Mtjh4L",
+        "review_bp78ef"
+      ],
+      "name": "Trusted Reviews",
+      "settings": {
+        "main_title": "Trusted",
+        "heading_pre": "Trusted by over",
+        "highlight_text": "10,000+",
+        "heading_post": "customers worldwide"
+      }
+    },
+    "featured_product_3z9xYm": {
+      "type": "featured-product",
+      "blocks": {
+        "group_product_jLJAG3": {
+          "type": "_group-product",
+          "settings": {},
+          "blocks": {
+            "product_title_xLAeEV": {
+              "type": "_product-title",
+              "settings": {
+                "hdt_pr_title_size": "base"
+              },
+              "blocks": {}
+            },
+            "product_badges_kMw3gg": {
+              "type": "_product-badges",
+              "settings": {
+                "special": "",
+                "min": 10,
+                "max": 80,
+                "content": "Selling fast! [count] people have this in their carts.",
+                "icon_svg": "flash",
+                "ani": "none"
+              },
+              "blocks": {}
+            },
+            "product_price_ncPbVE": {
+              "type": "_product-price",
+              "settings": {},
+              "blocks": {}
+            },
+            "product_countdown_fQiPYd": {
+              "type": "_product-countdown",
+              "settings": {
+                "color_scheme": "",
+                "icon": "none",
+                "svg_upload": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"hdt-ani-tada is--infinite hdt-inine-block\" width=\"14\" height=\"14\" viewBox=\"0 0 14 14\"><path d=\"M6.7796 0.828412C3.1501 0.828412 0.193808 3.7847 0.193808 7.41421C0.193808 11.0437 3.1501 14 6.7796 14C10.4091 14 13.3654 11.0437 13.3654 7.41421C13.3654 3.7847 10.4091 0.828412 6.7796 0.828412ZM6.7796 12.5365C3.95503 12.5365 1.65732 10.2388 1.65732 7.41421C1.65732 4.58963 3.95503 2.29192 6.7796 2.29192C9.60418 2.29192 11.9019 4.58963 11.9019 7.41421C11.9019 10.2388 9.60418 12.5365 6.7796 12.5365ZM0.252349 2.65048C-0.0549885 2.38705 -0.0842587 1.91873 0.179173 1.61871C0.669449 1.05526 1.24754 0.550345 1.88416 0.125928C2.22077 -0.100916 2.67446 -0.0131058 2.9013 0.323501C3.12814 0.660109 3.04033 1.1138 2.70373 1.34064C2.17686 1.69188 1.70122 2.1163 1.29144 2.58462C1.14509 2.75293 0.947516 2.83342 0.742624 2.83342C0.564631 2.83384 0.392712 2.76872 0.259666 2.65048H0.252349ZM10.8555 1.34064C10.5189 1.1138 10.4311 0.660109 10.6579 0.323501C10.8847 -0.0131058 11.3384 -0.100916 11.675 0.125928C12.3117 0.550345 12.8824 1.05526 13.38 1.61871C13.6435 1.92604 13.6142 2.38705 13.3069 2.65048C13.2349 2.71418 13.1511 2.76303 13.0602 2.79421C12.9693 2.82539 12.8732 2.83829 12.7773 2.83217C12.6814 2.82605 12.5876 2.80102 12.5015 2.75854C12.4153 2.71606 12.3383 2.65695 12.2751 2.58462C11.859 2.1117 11.3844 1.69368 10.8628 1.34064H10.8555ZM8.71875 8.1606C9.01877 8.43135 9.04804 8.89235 8.77729 9.19237C8.63094 9.35336 8.43337 9.44117 8.22848 9.44117C8.05286 9.44117 7.88455 9.38263 7.74552 9.25823L6.28933 7.96302C6.13566 7.82399 6.04053 7.62642 6.04053 7.41421V4.48719C6.04053 4.08472 6.36982 3.75543 6.77228 3.75543C7.17475 3.75543 7.50404 4.08472 7.50404 4.48719V7.08492L8.71875 8.1606Z\"></path></svg>",
+                "ani": "hdt-ani-flash",
+                "content": "HURRY UP! SALE ENDS IN:",
+                "alignment": "center",
+                "effect_cd": "move_top"
+              },
+              "blocks": {}
+            },
+            "product_variant_picker_38CYRz": {
+              "type": "_product-variant-picker",
+              "settings": {
+                "color_picker_type": "color_rounded",
+                "color_size": "small",
+                "picker_type": "block",
+                "size_chart_source": "page",
+                "size_chart_page": "",
+                "title": "Variant picker"
+              },
+              "blocks": {}
+            },
+            "quantity_selector_bxE9gA": {
+              "type": "_quantity-selector",
+              "settings": {},
+              "blocks": {}
+            },
+            "product_buy_button_Pgyajq": {
+              "type": "_product-buy-button",
+              "settings": {
+                "show_dynamic_checkout": true,
+                "show_gift_card_recipient": true,
+                "show_wishlist": true,
+                "show_compare": false,
+                "show_price_variant": true
+              },
+              "blocks": {}
+            },
+            "group_accordion_Gfdcq7": {
+              "type": "_group_accordion",
+              "name": "t:sections.main-product-tabs.blocks.group_accordion.name",
+              "settings": {},
+              "blocks": {
+                "accordion_description_KRjWUC": {
+                  "type": "_accordion_description",
+                  "name": "t:sections.main-product-tabs.blocks.accordion_description.name",
+                  "settings": {
+                    "open": false,
+                    "title": "Description"
+                  },
+                  "blocks": {}
+                },
+                "accordion_add_bW7QiK": {
+                  "type": "_accordion_add",
+                  "name": "t:sections.main-product-tabs.blocks.accordion_add.name",
+                  "settings": {
+                    "open": false,
+                    "title": "Additional information"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "accordion_description_KRjWUC",
+                "accordion_add_bW7QiK"
+              ]
+            },
+            "product_back_instock_LCE6GJ": {
+              "type": "_product_back_instock",
+              "settings": {
+                "only_show_soldout": true
+              },
+              "blocks": {}
+            },
+            "delivery_return_hQQktT": {
+              "type": "_delivery_return",
+              "disabled": true,
+              "settings": {
+                "icon_delivery": "ship",
+                "content_devivery": "<p>Estimate delivery times:<strong> 12-26 days</strong> (International),<strong> 3-6 days</strong> (United States).</p>",
+                "icon_return": "return_order",
+                "content_return": "<p>Return within <strong>30 days</strong> of purchase. Duties & taxes are non-refundable.</p>"
+              },
+              "blocks": {}
+            },
+            "product_trust_badge_JbCikt": {
+              "type": "_product-trust-badge",
+              "settings": {
+                "show_icon": true,
+                "mess": "Guaranteed Safe Checkout",
+                "source": "1",
+                "wimg": 350,
+                "svg": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
+                "height": 30
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_title_xLAeEV",
+            "product_badges_kMw3gg",
+            "product_price_ncPbVE",
+            "product_countdown_fQiPYd",
+            "product_variant_picker_38CYRz",
+            "quantity_selector_bxE9gA",
+            "product_buy_button_Pgyajq",
+            "group_accordion_Gfdcq7",
+            "product_back_instock_LCE6GJ",
+            "delivery_return_hQQktT",
+            "product_trust_badge_JbCikt"
+          ]
+        },
+        "featured-product": {
+          "type": "_product-medias",
+          "static": true,
+          "settings": {
+            "display_by_block": true,
+            "color_scheme": "scheme-1",
+            "desktop_media_layout": "thumbnail_bottom",
+            "media_size": "large",
+            "mobile_media_layout": "thumbnails",
+            "enable_thumb_efect": true,
+            "show_first_media": false,
+            "use_select_varaint_change_media": true,
+            "enable_media_autoplay": false,
+            "enable_video_looping": false,
+            "image_ratio": "adapt_image",
+            "image_size": true,
+            "image_zoom": "zoom",
+            "image_zoom_type": "external",
+            "zoom_level": 2,
+            "max_zoom_lightbox": 3,
+            "navUI": true,
+            "nav_des": "default",
+            "nav_shape": "rounded"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "group_product_jLJAG3"
+      ],
+      "name": "t:sections.feature-product.name",
+      "settings": {
+        "product": "cyber-touch-ai-lover-m1",
+        "product_list_fbt": [],
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 0,
+        "padding_bottom": 52,
+        "padding_rate": 75
+      }
+    }
+  },
+  "order": [
+    "slideshow_PDcXkr",
+    "slideshow_FntkPm",
+    "hero_cyber_9ywVWi",
+    "cyber_problem_jBh3aj",
+    "ai_experience_CJANX3",
+    "lover_profiles_BQp43N",
+    "performance_motion_pipD3c",
+    "training_stats_bhXVHW",
+    "experience_impact_DqM9Yj",
+    "trust_safety_MgjGKx",
+    "final_cta_cyber_qpNxCN",
+    "custom_liquid_TWke7V",
+    "trusted_reviews_mgJd7n",
+    "featured_product_3z9xYm"
+  ]
+}
