@@ -423,7 +423,7 @@
         "media_type": "video",
         "video": "shopify://files/videos/polaris-voyage-helios-black-silver (1).mp4",
         "button_1_text": "Shop Now",
-        "button_1_link": "",
+        "button_1_link": "#product-scroll",
         "button_2_text": "",
         "button_2_link": ""
       }
