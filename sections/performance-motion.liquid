@@ -10,7 +10,7 @@
         </div>
         <div class="space-y-4">
           {%- for block in section.blocks -%}
-            <div class="p-4 border-l-2 {% if block.settings.style == 'secondary' %}border-secondary bg-secondary/5{% else %}border-primary bg-primary/5{% endif %}" {{ block.shopify_attributes }}>
+            <div class="p-4 border-l-2 {% if block.settings.style == 'secondary' %}border-secondary bg-secondary/15{% else %}border-primary bg-primary/15{% endif %}" {{ block.shopify_attributes }}>
               <span class="font-headline font-bold text-xs tracking-widest uppercase">{{ block.settings.label }}</span>
               <div class="text-xl font-headline text-white mt-1">{{ block.settings.value }}</div>
             </div>
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="lg:col-span-2 relative">
-        <div class="absolute inset-0 bg-secondary/10 blur-[100px] rounded-full"></div>
+        <div class="absolute inset-0 bg-secondary/20 blur-[120px] rounded-full animate-pulse"></div>
         {%- if section.settings.image != blank -%}
           <img class="relative z-10 w-full border border-outline-variant/30" src="{{ section.settings.image | image_url: width: 1200 }}" alt="{{ section.settings.image.alt | escape }}" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}">
         {%- else -%}
