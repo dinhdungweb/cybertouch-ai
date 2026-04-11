@@ -40,15 +40,7 @@
                 Focus: {{ block.settings.focus }}
               </p>
 
-              {%- if block.settings.is_featured -%}
-                <button class="w-full py-3 kinetic-gradient text-black text-xs font-headline uppercase tracking-widest">
-                  {{ block.settings.button_text }}
-                </button>
-              {%- else -%}
-                <button class="w-full py-3 border border-secondary/20 text-xs font-headline uppercase tracking-widest group-hover:bg-secondary group-hover:text-black transition-all">
-                  {{ block.settings.button_text }}
-                </button>
-              {%- endif -%}
+
             </div>
           </div>
         {%- endfor -%}
