@@ -89,13 +89,25 @@
         --color-surface-container: #191919;
         --color-primary: #e08dff;
         --color-secondary: #00eefc;
+
+        /* Font overrides for the entire theme */
+        --font-body-family: 'Manrope', sans-serif;
+        --font-heading-family: 'Space Grotesk', sans-serif;
+        --f_family_1: 'Manrope', sans-serif;
+        --f_family_2: 'Space Grotesk', sans-serif;
+        --f_family_3: 'Space Grotesk', sans-serif;
+        --f_family: var(--font-body-family);
     }
     
     body { 
         background-color: #0e0e0e; 
         color: #ffffff; 
-        font-family: 'Manrope', sans-serif; 
+        font-family: var(--font-body-family); 
         overflow-x: hidden; 
+    }
+
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: var(--font-heading-family) !important;
     }
     
     .material-symbols-outlined { 
