@@ -1,4 +1,4 @@
-<section class="relative py-48 bg-surface-container-lowest overflow-hidden">
+<section class="relative py-32 md:py-80 bg-surface-container-lowest overflow-hidden">
   <div class="absolute inset-0 opacity-40">
     {%- if section.settings.bg_image != blank -%}
       <img class="w-full h-full object-cover" src="{{ section.settings.bg_image | image_url: width: 2000 }}" alt="{{ section.settings.bg_image.alt | escape }}" width="{{ section.settings.bg_image.width }}" height="{{ section.settings.bg_image.height }}">
