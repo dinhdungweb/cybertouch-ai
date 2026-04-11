@@ -26,23 +26,21 @@
   <!-- Reviews Ticker Wrapper -->
   <div class="relative w-full overflow-hidden z-10">
     <!-- Masking Overlays -->
-    <div class="absolute inset-y-0 left-0 w-48 md:w-[400px] bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/70 to-transparent z-20 pointer-events-none"></div>
-    <div class="absolute inset-y-0 right-0 w-48 md:w-[400px] bg-gradient-to-l from-surface-container-lowest via-surface-container-lowest/70 to-transparent z-20 pointer-events-none"></div>
+    <div class="reviews-mask absolute inset-y-0 left-0 w-48 md:w-[400px] bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/70 to-transparent z-40 pointer-events-none"></div>
+    <div class="reviews-mask absolute inset-y-0 right-0 w-48 md:w-[400px] bg-gradient-to-l from-surface-container-lowest via-surface-container-lowest/70 to-transparent z-40 pointer-events-none"></div>
 
     <div class="flex flex-col gap-8">
       {%- for i in (1..5) -%}
-        <div class="swiper reviews-swiper-{{ i }} marquee-mode">
+        <div class="swiper reviews-swiper-{{ i }} marquee-mode !overflow-visible">
           <div class="swiper-wrapper">
-            {%- for j in (1..8) -%}
+            {%- comment -%} Multiplying slides and using all blocks for every row to ensure they all run {%- endcomment -%}
+            {%- for j in (1..10) -%}
               {%- for block in section.blocks -%}
-                {%- assign row_index = forloop.index | modulo: 5 | plus: 1 -%}
-                {%- if row_index == i -%}
-                  <div class="swiper-slide !w-auto" {{ block.shopify_attributes }}>
-                    <div class="px-10 py-4 bg-white/5 backdrop-blur-[10px] border border-white/10 rounded-full whitespace-nowrap text-on-surface/90 font-body text-sm md:text-base hover:border-[#ff0095]/40 hover:bg-white/10 transition-all pointer-events-none select-none shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
-                      {{ block.settings.review_text }}
-                    </div>
+                <div class="swiper-slide !w-auto" {{ block.shopify_attributes }}>
+                  <div class="px-10 py-4 bg-white/5 backdrop-blur-[10px] border border-white/10 rounded-full whitespace-nowrap text-on-surface/90 font-body text-sm md:text-base hover:border-[#ff0095]/40 hover:bg-white/10 transition-all pointer-events-none select-none shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+                    {{ block.settings.review_text }}
                   </div>
-                {%- endif -%}
+                </div>
               {%- endfor -%}
             {%- endfor -%}
           </div>
@@ -55,6 +53,11 @@
 <style>
   .marquee-mode .swiper-wrapper {
     transition-timing-function: linear !important;
+  }
+  /* Force masking overlays to be on top */
+  .reviews-mask {
+    pointer-events: none;
+    z-index: 40 !important;
   }
 </style>
 
@@ -70,10 +73,14 @@
 
     swiperConfigs.forEach((config, index) => {
       const selector = `.reviews-swiper-${index + 1}`;
-      if (document.querySelector(selector)) {
+      const element = document.querySelector(selector);
+      if (element) {
+        // Destroy existing instance if any
+        if (element.swiper) element.swiper.destroy();
+        
         new Swiper(selector, {
           slidesPerView: 'auto',
-          spaceBetween: 32,
+          spaceBetween: 40,
           loop: true,
           speed: config.speed,
           autoplay: {
@@ -93,9 +100,7 @@
 
   document.addEventListener('DOMContentLoaded', initReviewsSwiper);
   document.addEventListener('shopify:section:load', function(event) {
-    if (event.detail.sectionId === '{{ section.id }}') {
-      initReviewsSwiper();
-    }
+    initReviewsSwiper();
   });
 </script>
 
