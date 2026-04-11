@@ -754,6 +754,15 @@
               "name": "t:sections.main-product-tabs.blocks.group_accordion.name",
               "settings": {},
               "blocks": {
+                "accordion_description_KRjWUC": {
+                  "type": "_accordion_description",
+                  "name": "t:sections.main-product-tabs.blocks.accordion_description.name",
+                  "settings": {
+                    "open": false,
+                    "title": "Description"
+                  },
+                  "blocks": {}
+                },
                 "accordion_add_bW7QiK": {
                   "type": "_accordion_add",
                   "name": "t:sections.main-product-tabs.blocks.accordion_add.name",
@@ -765,6 +774,7 @@
                 }
               },
               "block_order": [
+                "accordion_description_KRjWUC",
                 "accordion_add_bW7QiK"
               ]
             },
