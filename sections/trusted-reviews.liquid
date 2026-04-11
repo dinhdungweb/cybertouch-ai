@@ -28,22 +28,27 @@
     <div class="reviews-fade-right"></div>
 
     <div class="flex flex-col" style="gap: 20px;">
-      {%- for i in (1..5) -%}
-        <div class="marquee-row marquee-row-{{ i }} {% if i == 2 or i == 4 %}marquee-reverse{% endif %}">
+      {%- for i in (0..4) -%}
+        <div class="marquee-row marquee-row-{{ i | plus: 1 }} {% if i == 1 or i == 3 %}marquee-reverse{% endif %}">
           <div class="marquee-content">
-            {%- for block in section.blocks -%}
-              <span class="review-pill" {{ block.shopify_attributes }}>{{ block.settings.review_text }}</span>
-            {%- endfor -%}
-            {%- for block in section.blocks -%}
-              <span class="review-pill">{{ block.settings.review_text }}</span>
+            {%- comment -%} Rows with unique content: only show blocks assigned to this row index {%- endcomment -%}
+            {%- for j in (1..15) -%}
+              {%- for block in section.blocks -%}
+                {%- assign row_mod = forloop.index0 | modulo: 5 -%}
+                {%- if row_mod == i -%}
+                  <span class="review-pill" {{ block.shopify_attributes }}>{{ block.settings.review_text }}</span>
+                {%- endif -%}
+              {%- endfor -%}
             {%- endfor -%}
           </div>
           <div class="marquee-content" aria-hidden="true">
-            {%- for block in section.blocks -%}
-              <span class="review-pill">{{ block.settings.review_text }}</span>
-            {%- endfor -%}
-            {%- for block in section.blocks -%}
-              <span class="review-pill">{{ block.settings.review_text }}</span>
+            {%- for j in (1..15) -%}
+              {%- for block in section.blocks -%}
+                {%- assign row_mod = forloop.index0 | modulo: 5 -%}
+                {%- if row_mod == i -%}
+                  <span class="review-pill">{{ block.settings.review_text }}</span>
+                {%- endif -%}
+              {%- endfor -%}
             {%- endfor -%}
           </div>
         </div>
