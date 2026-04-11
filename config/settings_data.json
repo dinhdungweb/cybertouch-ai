@@ -661,8 +661,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "button.hdt-card-product__btn-quick-view.hdt-pr_btn.ai-sticky-product-bar__button {background: #9835f2; display: inline-flex; padding: 10px 15px; gap: 6px;}",
-      "span.hdt-menu-link-text.hdt-block {text-transform: uppercase; font-weight: bold;}"
+      "button.hdt-card-product__btn-quick-view.hdt-pr_btn.ai-sticky-product-bar__button {background: #9835f2; display: inline-flex; padding: 10px 15px; gap: 6px;}"
     ]
   }
 }
