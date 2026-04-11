@@ -3,7 +3,7 @@
     <h2 class="font-headline text-4xl font-bold uppercase tracking-[0.2em] text-center mb-4">
       {{ section.settings.heading }}
     </h2>
-    <div class="text-on-surface-variant text-center font-body max-w-2xl mx-auto uppercase text-xs tracking-widest">
+    <div class="text-on-surface-variant text-center font-body max-w-2xl mx-auto uppercase text-sm tracking-widest">
       {{ section.settings.subheading }}
     </div>
   </div>
@@ -21,19 +21,19 @@
                   <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtt664ql0Laww7dnj7TudfwdvlaOEA2O4XgRnjj_TL7Rju0N04omUutwodgsGspQ517YEi-6Ed8mVNah2ikFXxzggJetQBjcCfU6EzCHYuN_OlgurphEemm8PDPe76Zyvvyb_zuktWO25JNQw_CSBfHJ6wHsZXpXsVrQ79e8YHmQycnjZdlSLpK2D8eyevutsjolGIN_EmcCpYhxmGecywmOy14V0UXs1ce02dpD7dM0AEFBhAIf00J9WXBmL2GtbyJE5FarUb0Cvd" alt="Profile Image" width="600" height="600">
                 {%- endif -%}
               </div>
-              <h4 class="font-headline text-lg font-bold uppercase tracking-widest mb-2 {% if block.settings.is_featured %}text-primary{% endif %}">
+              <h4 class="font-headline text-2xl font-bold uppercase tracking-widest mb-2 {% if block.settings.is_featured %}text-primary{% endif %}">
                 {{ block.settings.title }}
               </h4>
-              <p class="text-xs text-on-surface-variant mb-6 uppercase tracking-wider">
+              <p class="text-sm text-on-surface-variant mb-6 uppercase tracking-wider">
                 Focus: {{ block.settings.focus }}
               </p>
               
               {%- if block.settings.is_featured -%}
-                <button class="w-full py-3 kinetic-gradient text-black text-xs font-headline uppercase tracking-widest">
+                <button class="w-full py-4 kinetic-gradient text-black text-sm font-headline uppercase tracking-widest">
                   {{ block.settings.button_text }}
                 </button>
               {%- else -%}
-                <button class="w-full py-3 border border-secondary/20 text-xs font-headline uppercase tracking-widest group-hover:bg-secondary group-hover:text-black transition-all">
+                <button class="w-full py-4 border border-secondary/20 text-sm font-headline uppercase tracking-widest group-hover:bg-secondary group-hover:text-black transition-all">
                   {{ block.settings.button_text }}
                 </button>
               {%- endif -%}
