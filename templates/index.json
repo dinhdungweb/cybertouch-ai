@@ -536,6 +536,36 @@
         "heading": "you are picky?",
         "subheading": "No problem, we got all style lovers for you"
       }
+    },
+    "performance_motion_pipD3c": {
+      "type": "performance-motion",
+      "blocks": {
+        "stat_WHw9V3": {
+          "type": "stat",
+          "settings": {
+            "label": "motion patterns",
+            "value": "Lick, Suck, Squeeze",
+            "style": "secondary"
+          }
+        },
+        "stat_yaWQx6": {
+          "type": "stat",
+          "settings": {
+            "label": "Rhythm",
+            "value": "Multiple Realistic Frequencies",
+            "style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "stat_WHw9V3",
+        "stat_yaWQx6"
+      ],
+      "name": "Performance Motion",
+      "settings": {
+        "heading": "Beyond <br>Traditional <br><span class=\"text-secondary\">Motion</span>",
+        "description": "<p>Our proprietary dual-motor propulsion system creates speical motion patterns that standard motors cannot replicate.</p>"
+      }
     }
   },
   "order": [
@@ -544,6 +574,7 @@
     "hero_cyber_9ywVWi",
     "experience_impact_DqM9Yj",
     "ai_experience_CJANX3",
-    "lover_profiles_BQp43N"
+    "lover_profiles_BQp43N",
+    "performance_motion_pipD3c"
   ]
 }
