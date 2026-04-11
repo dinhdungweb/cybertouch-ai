@@ -632,7 +632,7 @@
           "type": "safety_item",
           "settings": {
             "icon": "inventory_2",
-            "title": "body temperature",
+            "title": "body temp",
             "description": "One-click heating"
           }
         },
