@@ -1,7 +1,13 @@
-<section class="relative py-32 bg-surface-container-lowest border-t border-outline-variant/10 overflow-hidden">
+<section class="relative py-32 bg-surface-container-lowest border-outline-variant/10 overflow-hidden">
   {%- if section.settings.background_image != blank -%}
     <div class="absolute inset-0 z-0">
-      <img class="w-full h-full object-cover" src="{{ section.settings.background_image | image_url: width: 2000 }}" alt="{{ section.settings.background_image.alt | escape }}" width="{{ section.settings.background_image.width }}" height="{{ section.settings.background_image.height }}">
+      <img
+        class="w-full h-full object-cover"
+        src="{{ section.settings.background_image | image_url: width: 2000 }}"
+        alt="{{ section.settings.background_image.alt | escape }}"
+        width="{{ section.settings.background_image.width }}"
+        height="{{ section.settings.background_image.height }}"
+      >
       <div class="absolute inset-0 bg-black/{{ section.settings.overlay_opacity }}"></div>
     </div>
   {%- endif -%}
