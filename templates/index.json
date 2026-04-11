@@ -485,7 +485,7 @@
           "settings": {
             "title": "Ethereal",
             "focus": "Flow & Sensation",
-            "button_text": "",
+            "button_text": "Initialize",
             "is_featured": false
           }
         },
@@ -513,7 +513,7 @@
             "title": "Vanguard",
             "focus": "Intensity & Power",
             "button_text": "Selected",
-            "is_featured": true
+            "is_featured": false
           }
         },
         "profile_aNtDka": {
