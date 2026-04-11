@@ -483,7 +483,6 @@
         "profile_FKMz7w": {
           "type": "profile",
           "settings": {
-            "image": "shopify://shop_images/Luna.jpg",
             "title": "Luna",
             "focus": "Your lovely assistant",
             "button_text": "Initialize",
@@ -493,7 +492,6 @@
         "profile_iP7W3U": {
           "type": "profile",
           "settings": {
-            "image": "shopify://shop_images/Chloe.jpg",
             "title": "Ethereal",
             "focus": "Flow & Sensation",
             "button_text": "Initialize",
@@ -747,7 +745,7 @@
       "name": "Trusted Reviews",
       "settings": {
         "main_title": "Trusted",
-        "heading_pre": "Trusted by over",
+        "heading_pre": "by over",
         "highlight_text": "10,000+",
         "heading_post": "customers worldwide"
       }
