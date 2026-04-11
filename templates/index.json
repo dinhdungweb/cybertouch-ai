@@ -434,7 +434,9 @@
       "settings": {
         "sub_caption": "want something new?",
         "heading_highlight": "Tired of seraching videos<div>all night?</div>",
-        "main_heading": "Looking for something more immersive and personal?"
+        "main_heading": "Looking for something more immersive and personal?",
+        "background_image": "shopify://shop_images/PObackground.png",
+        "overlay_opacity": 60
       }
     },
     "ai_experience_CJANX3": {
