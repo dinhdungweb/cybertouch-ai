@@ -1,0 +1,131 @@
+<section class="py-32 bg-surface-container-low overflow-hidden">
+  <div class="container mx-auto px-8 mb-16">
+    <h2 class="font-headline text-4xl font-bold uppercase tracking-[0.2em] text-center mb-4">
+      {{ section.settings.heading }}
+    </h2>
+    <div class="text-on-surface-variant text-center font-body max-w-2xl mx-auto uppercase text-xs tracking-widest">
+      {{ section.settings.subheading }}
+    </div>
+  </div>
+  
+  <div class="flex gap-6 overflow-x-auto px-8 pb-12 no-scrollbar snap-x">
+    {%- for block in section.blocks -%}
+      <div class="min-w-[300px] bg-surface-container p-8 border {% if block.settings.is_featured %}border-primary/40{% else %}border-outline-variant/30{% endif %} group hover:border-primary/50 transition-all snap-center relative" {{ block.shopify_attributes }}>
+        <div class="w-full aspect-square mb-8 relative overflow-hidden bg-surface-container-highest">
+          {%- if block.settings.image != blank -%}
+            <img class="w-full h-full object-cover {% unless block.settings.is_featured %}grayscale group-hover:grayscale-0{% else %}group-hover:scale-110{% endunless %} transition-all" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.image.alt | escape }}">
+          {%- else -%}
+            <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtt664ql0Laww7dnj7TudfwdvlaOEA2O4XgRnjj_TL7Rju0N04omUutwodgsGspQ517YEi-6Ed8mVNah2ikFXxzggJetQBjcCfU6EzCHYuN_OlgurphEemm8PDPe76Zyvvyb_zuktWO25JNQw_CSBfHJ6wHsZXpXsVrQ79e8YHmQycnjZdlSLpK2D8eyevutsjolGIN_EmcCpYhxmGecywmOy14V0UXs1ce02dpD7dM0AEFBhAIf00J9WXBmL2GtbyJE5FarUb0Cvd" alt="Profile Image">
+          {%- endif -%}
+        </div>
+        <h4 class="font-headline text-lg font-bold uppercase tracking-widest mb-2 {% if block.settings.is_featured %}text-primary{% endif %}">
+          {{ block.settings.title }}
+        </h4>
+        <p class="text-xs text-on-surface-variant mb-6 uppercase tracking-wider">
+          Focus: {{ block.settings.focus }}
+        </p>
+        
+        {%- if block.settings.is_featured -%}
+          <button class="w-full py-3 kinetic-gradient text-black text-xs font-headline uppercase tracking-widest">
+            {{ block.settings.button_text }}
+          </button>
+        {%- else -%}
+          <button class="w-full py-3 border border-secondary/20 text-xs font-headline uppercase tracking-widest group-hover:bg-secondary group-hover:text-black transition-all">
+            {{ block.settings.button_text }}
+          </button>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Lover Profiles",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "you are picky?"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "No problem, we got all style lovers for you"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "profile",
+      "name": "Profile",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Profile Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Name",
+          "default": "Ethereal"
+        },
+        {
+          "type": "text",
+          "id": "focus",
+          "label": "Focus Area",
+          "default": "Flow & Sensation"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Initialize"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_featured",
+          "label": "Is Featured",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lover Profiles",
+      "blocks": [
+        {
+          "type": "profile",
+          "settings": {
+            "title": "Ethereal",
+            "focus": "Flow & Sensation",
+            "button_text": "Initialize",
+            "is_featured": false
+          }
+        },
+        {
+          "type": "profile",
+          "settings": {
+            "title": "Vanguard",
+            "focus": "Intensity & Power",
+            "button_text": "Selected",
+            "is_featured": true
+          }
+        },
+        {
+          "type": "profile",
+          "settings": {
+            "title": "Architect",
+            "focus": "Rhythm & Precision",
+            "button_text": "Initialize",
+            "is_featured": false
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

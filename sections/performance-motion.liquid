@@ -1,0 +1,108 @@
+<section class="py-32 bg-surface-container-lowest">
+  <div class="container mx-auto px-8">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-1">
+        <h2 class="font-headline text-4xl md:text-5xl font-bold uppercase tracking-tighter leading-none mb-8">
+          {{ section.settings.heading }}
+        </h2>
+        <div class="text-on-surface-variant mb-12">
+          {{ section.settings.description }}
+        </div>
+        <div class="space-y-4">
+          {%- for block in section.blocks -%}
+            <div class="p-4 border-l-2 {% if block.settings.style == 'secondary' %}border-secondary bg-secondary/5{% else %}border-primary bg-primary/5{% endif %}" {{ block.shopify_attributes }}>
+              <span class="font-headline font-bold text-xs tracking-widest uppercase">{{ block.settings.label }}</span>
+              <div class="text-xl font-headline text-white mt-1">{{ block.settings.value }}</div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="lg:col-span-2 relative">
+        <div class="absolute inset-0 bg-secondary/10 blur-[100px] rounded-full"></div>
+        {%- if section.settings.image != blank -%}
+          <img class="relative z-10 w-full border border-outline-variant/30" src="{{ section.settings.image | image_url: width: 1200 }}" alt="{{ section.settings.image.alt | escape }}">
+        {%- else -%}
+          <img class="relative z-10 w-full border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTs4K0JyQT0Kh8aLBlAsVxBAe4vOA2B8aFZcP_AfnVDVk9-sAeCznMp0dd-QqcLVx-etk2Ch5ls3OGAUQBC9pFTRsWAWJpL_hfjUjAH4S54T9wCMMIyFBKbv_B-YT24vvaJybksxaNrqljoL_u2JSKiP5OdS3VzK4QWQGs7gT5X7mcC3YHw-njsq--9D8avGfv4hRnlXgEeGGWhUMANAdOVhI6SAcWFCcAjG7rWXeo-olLJkK4lito51sv0oFmoDUFdm-pjZIPbznP" alt="Technical Diagram">
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Performance Motion",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Beyond <br>Traditional <br><span class=\"text-secondary\">Motion</span>"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Our proprietary dual-motor propulsion system creates speical motion patterns that standard motors cannot replicate.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Tech Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Motion Tag",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "motion patterns"
+        },
+        {
+          "type": "text",
+          "id": "value",
+          "label": "Value",
+          "default": "Lick, Suck, Squeeze"
+        },
+        {
+          "type": "select",
+          "id": "style",
+          "label": "Style",
+          "options": [
+            { "value": "primary", "label": "Primary (Purple)" },
+            { "value": "secondary", "label": "Secondary (Cyan)" }
+          ],
+          "default": "secondary"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Performance Motion",
+      "blocks": [
+        {
+          "type": "stat",
+          "settings": {
+            "label": "motion patterns",
+            "value": "Lick, Suck, Squeeze",
+            "style": "secondary"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "label": "Rhythm",
+            "value": "Multiple Realistic Frequencies",
+            "style": "primary"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

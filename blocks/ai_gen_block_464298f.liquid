@@ -1,0 +1,539 @@
+{% doc %}
+  @prompt
+    Popup xác minh độ tuổi, Chuyển sang sử dụng tiếng anh, và có thể thêm logo web, logo cho nằm giữa, áp dụng tất cả các trang
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-age-verify-overlay-{{ ai_gen_id }} {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, {{ block.settings.overlay_opacity }});
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .ai-age-verify-overlay-{{ ai_gen_id }}.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ai-age-verify-popup-{{ ai_gen_id }} {
+    background-color: {{ block.settings.popup_bg_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    padding: {{ block.settings.popup_padding }}px;
+    max-width: {{ block.settings.popup_width }}px;
+    width: 90%;
+    text-align: center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .ai-age-verify-overlay-{{ ai_gen_id }}.active .ai-age-verify-popup-{{ ai_gen_id }} {
+    transform: scale(1);
+  }
+
+  .ai-age-verify-logo-{{ ai_gen_id }} {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ai-age-verify-logo-{{ ai_gen_id }} img {
+    max-width: {{ block.settings.logo_width }}px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .ai-age-verify-heading-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.heading_size }}px;
+    margin: 0 0 15px;
+    font-weight: 600;
+  }
+
+  .ai-age-verify-message-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    margin: 0 0 30px;
+    line-height: 1.6;
+  }
+
+  .ai-age-verify-buttons-{{ ai_gen_id }} {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .ai-age-verify-btn-{{ ai_gen_id }} {
+    padding: 15px 40px;
+    border: none;
+    border-radius: {{ block.settings.button_radius }}px;
+    font-size: {{ block.settings.button_text_size }}px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    min-width: 140px;
+  }
+
+  .ai-age-verify-btn-yes-{{ ai_gen_id }} {
+    background-color: {{ block.settings.yes_button_color }};
+    color: {{ block.settings.yes_button_text_color }};
+  }
+
+  .ai-age-verify-btn-yes-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.yes_button_hover_color }};
+    transform: translateY(-2px);
+  }
+
+  .ai-age-verify-btn-no-{{ ai_gen_id }} {
+    background-color: {{ block.settings.no_button_color }};
+    color: {{ block.settings.no_button_text_color }};
+  }
+
+  .ai-age-verify-btn-no-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.no_button_hover_color }};
+    transform: translateY(-2px);
+  }
+
+  .ai-age-verify-footer-{{ ai_gen_id }} {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid {{ block.settings.divider_color }};
+  }
+
+  .ai-age-verify-footer-text-{{ ai_gen_id }} {
+    color: {{ block.settings.footer_text_color }};
+    font-size: {{ block.settings.footer_text_size }}px;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-age-verify-popup-{{ ai_gen_id }} {
+      padding: {{ block.settings.popup_padding | times: 0.7 }}px;
+    }
+
+    .ai-age-verify-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.8 }}px;
+    }
+
+    .ai-age-verify-buttons-{{ ai_gen_id }} {
+      flex-direction: column;
+    }
+
+    .ai-age-verify-btn-{{ ai_gen_id }} {
+      width: 100%;
+    }
+  }
+{% endstyle %}
+
+<age-verification-{{ ai_gen_id }}
+  class="ai-age-verify-overlay-{{ ai_gen_id }}"
+  data-cookie-days="{{ block.settings.cookie_days }}"
+  data-redirect-url="{{ block.settings.redirect_url }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-age-verify-popup-{{ ai_gen_id }}">
+    {% if block.settings.logo != blank %}
+      <div class="ai-age-verify-logo-{{ ai_gen_id }}">
+        <img
+          src="{{ block.settings.logo | image_url: width: 400 }}"
+          alt="{{ shop.name }}"
+          loading="eager"
+          width="{{ block.settings.logo_width }}"
+          height="auto"
+        >
+      </div>
+    {% endif %}
+
+    <h2 class="ai-age-verify-heading-{{ ai_gen_id }}">
+      {{ block.settings.heading }}
+    </h2>
+
+    <div class="ai-age-verify-message-{{ ai_gen_id }}">
+      {{ block.settings.message }}
+    </div>
+
+    <div class="ai-age-verify-buttons-{{ ai_gen_id }}">
+      <button
+        class="ai-age-verify-btn-{{ ai_gen_id }} ai-age-verify-btn-yes-{{ ai_gen_id }}"
+        data-action="yes"
+      >
+        {{ block.settings.yes_button_text }}
+      </button>
+      <button
+        class="ai-age-verify-btn-{{ ai_gen_id }} ai-age-verify-btn-no-{{ ai_gen_id }}"
+        data-action="no"
+      >
+        {{ block.settings.no_button_text }}
+      </button>
+    </div>
+
+    {% if block.settings.show_footer %}
+      <div class="ai-age-verify-footer-{{ ai_gen_id }}">
+        <p class="ai-age-verify-footer-text-{{ ai_gen_id }}">
+          {{ block.settings.footer_text }}
+        </p>
+      </div>
+    {% endif %}
+  </div>
+</age-verification-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AgeVerification{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.cookieName = 'age_verified_{{ ai_gen_id }}';
+        this.cookieDays = parseInt(this.dataset.cookieDays) || 30;
+        this.redirectUrl = this.dataset.redirectUrl || 'https://www.google.com';
+      }
+
+      connectedCallback() {
+        if (!this.isVerified()) {
+          this.show();
+          this.setupEventListeners();
+        }
+      }
+
+      setupEventListeners() {
+        const yesButton = this.querySelector('[data-action="yes"]');
+        const noButton = this.querySelector('[data-action="no"]');
+
+        if (yesButton) {
+          yesButton.addEventListener('click', () => this.handleYes());
+        }
+
+        if (noButton) {
+          noButton.addEventListener('click', () => this.handleNo());
+        }
+      }
+
+      handleYes() {
+        this.setCookie(this.cookieName, 'true', this.cookieDays);
+        this.hide();
+      }
+
+      handleNo() {
+        if (this.redirectUrl) {
+          window.location.href = this.redirectUrl;
+        } else {
+          this.hide();
+        }
+      }
+
+      show() {
+        setTimeout(() => {
+          this.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }, 100);
+      }
+
+      hide() {
+        this.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      isVerified() {
+        return this.getCookie(this.cookieName) === 'true';
+      }
+
+      setCookie(name, value, days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        const expires = 'expires=' + date.toUTCString();
+        document.cookie = name + '=' + value + ';' + expires + ';path=/';
+      }
+
+      getCookie(name) {
+        const nameEQ = name + '=';
+        const ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+      }
+    }
+
+    customElements.define('age-verification-{{ ai_gen_id }}', AgeVerification{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Age verification",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "label": "Logo width",
+      "min": 50,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "default": 150
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Age verification"
+    },
+    {
+      "type": "richtext",
+      "id": "message",
+      "label": "Message",
+      "default": "<p>Are you 18 years old or older to access this website?</p>"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "yes_button_text",
+      "label": "Yes button text",
+      "default": "Yes, I'm old enough"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "no_button_text",
+      "label": "No button text",
+      "default": "No, I'm not old enough"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_footer",
+      "label": "Show footer",
+      "default": true
+    },
+    {
+      "type": "richtext",
+      "id": "footer_text",
+      "label": "Footer text",
+      "default": "<p>By entering this website, you confirm that you are of legal age.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Settings"
+    },
+    {
+      "type": "range",
+      "id": "cookie_days",
+      "label": "Cookie expiration days",
+      "min": 1,
+      "max": 90,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "url",
+      "id": "redirect_url",
+      "label": "Redirect URL when No is selected"
+    },
+    {
+      "type": "header",
+      "content": "Popup style"
+    },
+    {
+      "type": "range",
+      "id": "popup_width",
+      "label": "Popup width",
+      "min": 300,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "popup_padding",
+      "label": "Popup padding",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Popup border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "color",
+      "id": "popup_bg_color",
+      "label": "Popup background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.8
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "footer_text_size",
+      "label": "Footer text size",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "color",
+      "id": "footer_text_color",
+      "label": "Footer text color",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Divider color",
+      "default": "#eeeeee"
+    },
+    {
+      "type": "header",
+      "content": "Yes button"
+    },
+    {
+      "type": "color",
+      "id": "yes_button_color",
+      "label": "Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "yes_button_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "yes_button_hover_color",
+      "label": "Hover background color",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "No button"
+    },
+    {
+      "type": "color",
+      "id": "no_button_color",
+      "label": "Background color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "no_button_text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "no_button_hover_color",
+      "label": "Hover background color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "header",
+      "content": "Buttons"
+    },
+    {
+      "type": "range",
+      "id": "button_radius",
+      "label": "Button border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "button_text_size",
+      "label": "Button text size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Age verification"
+    }
+  ]
+}
+{% endschema %}

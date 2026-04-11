@@ -1,0 +1,116 @@
+<section class="py-32 bg-surface">
+  <div class="container mx-auto px-8">
+    <div class="grid md:grid-cols-2 gap-20 items-center">
+      <div class="relative group">
+        <div class="absolute -inset-4 border border-secondary/20 transition-all duration-700 group-hover:border-secondary/40"></div>
+        <div class="hud-corner corner-tl"></div>
+        <div class="hud-corner corner-br"></div>
+        <div class="bg-surface-container p-12 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-full h-[1px] bg-secondary/30 -translate-x-full animate-[scan_4s_linear_infinite]"></div>
+          {%- if section.settings.feature_image != blank -%}
+            <img class="w-full opacity-80 mix-blend-screen" src="{{ section.settings.feature_image | image_url: width: 1000 }}" alt="{{ section.settings.feature_image.alt | escape }}">
+          {%- else -%}
+            <img class="w-full opacity-80 mix-blend-screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd5ToJZdzoYkmYmV9UctDYMsiLTuI2iNrvYNojP_F4lEG1qW_yGH_MyWMNyMhSeXtGYwSfM_ywlUXVP1Wqf-_lLNYO13jiy6twPW4LwyQXHaiR0Y9xsZGsdBpJcrALj7HXt68dVxMIt_YzVGVnq60nCGK5D5ia3_5uyyKWRZAGeUPwspS8KvStLfSU_982L2DUNXbOLbi_QiXWJyJbUv6NoL_z8dr7ofYpI2wfdlEOWEF1DH6h-Y8caFtwppd08QxxDjXAaQS1ua62" alt="AI Experience">
+          {%- endif -%}
+        </div>
+      </div>
+      <div>
+        <h2 class="font-headline text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-8 leading-none">
+          {{ section.settings.heading }}
+        </h2>
+        <div class="space-y-12">
+          {%- for block in section.blocks -%}
+            <div class="flex gap-6" {{ block.shopify_attributes }}>
+              {%- if block.settings.icon != blank -%}
+                <span class="material-symbols-outlined text-primary text-4xl">{{ block.settings.icon }}</span>
+              {%- endif -%}
+              <div>
+                <h3 class="font-headline text-xl font-bold uppercase mb-2 tracking-wider">{{ block.settings.title }}</h3>
+                <div class="text-on-surface-variant">
+                  {{ block.settings.description }}
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "AI Experience",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Feel Your AI <br><span class=\"text-secondary\">Lover</span>"
+    },
+    {
+      "type": "image_picker",
+      "id": "feature_image",
+      "label": "Feature Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Material Icon Name",
+          "default": "keyboard_voice"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Voice Interaction"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Real-time voice communication processing makes it feel like you're talking to a real person.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "AI Experience",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "keyboard_voice",
+            "title": "Voice Interaction",
+            "description": "<p>Real-time voice communication processing makes it feel like you're talking to a real person.</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "psychology",
+            "title": "Video Interaction",
+            "description": "<p>The lover on the screen will perform various actions in response to your commands.</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "dynamic_form",
+            "title": "Tangible Interaction",
+            "description": "<p>Our device will recognize all your interactions and eventually become your sense of touch.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

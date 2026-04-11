@@ -1,0 +1,45 @@
+<section class="py-32 bg-surface-container-lowest border-t border-outline-variant/10">
+  <div class="container mx-auto px-8 text-center max-w-4xl">
+    <div class="font-headline text-secondary text-sm tracking-[0.3em] uppercase mb-12">
+      {{ section.settings.sub_caption }}
+    </div>
+    <h2 class="font-headline text-3xl md:text-5xl font-light uppercase tracking-wide leading-tight mb-8">
+      {{ section.settings.heading_highlight }}
+    </h2>
+    <div class="w-24 h-[1px] kinetic-gradient mx-auto mb-12"></div>
+    <h2 class="font-headline text-3xl md:text-5xl font-bold uppercase tracking-tight text-glow-primary">
+      {{ section.settings.main_heading }}
+    </h2>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Cyber Problem",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sub_caption",
+      "label": "Sub Caption",
+      "default": "want something new?"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading_highlight",
+      "label": "Heading Highlight",
+      "default": "Tired of seraching videos<div>all night?</div>"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "Looking for something more immersive and personal?"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cyber Problem"
+    }
+  ]
+}
+{% endschema %}

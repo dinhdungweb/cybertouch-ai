@@ -1,0 +1,650 @@
+{% doc %}
+  @prompt
+    iOS App Guide:
+    
+    Step 1: Install the TestFlight app
+    
+    Go to the App Store and search "TestFlight".
+    
+    Download and install the TestFlight app.
+    
+    Step 2: Sacn QR Code and Accept the invitation
+    
+    Scan QR code and Enter your email, then you will received the invitation. Click the link you received.
+    
+    Tap the "View in TestFlight" button. This will open the TestFlight app on your device.
+    
+    Tap "Accept" on the invitation screen.
+    
+    Step 3: Install the beta app
+    
+    After accepting, you will be taken to the beta app's page within TestFlight.
+    
+    Tap the "Install"/”Update” button to download and install the newest version of the app.
+    
+     
+    
+    Android App Guide:
+    
+    Step 1: System Setting
+    
+    Enable "install from unknown sources" in your Android's security settings.
+    
+     
+    
+    Step 2: Go to App Download page
+    
+    Scan the QR code and click the link to enter our Android Download Page. Click “Download” the APK file.
+    
+     
+    
+    Step 3: Install the beta app
+    
+    Once the download is complete, find the file by:
+    
+    Tapping the download notification that appears.
+    
+    Opening your browser's Downloads list (e.g., in Chrome, tap the three-dot menu).
+    
+    Tap the downloaded APK file. Install it.
+    
+    Tap Install and follow any on-screen instructions to finish. 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-app-guide-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding }}px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-app-guide-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-app-guide-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ai-app-guide-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 16px;
+    font-weight: 600;
+  }
+
+  .ai-app-guide-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.text_color }};
+    line-height: 1.6;
+  }
+
+  .ai-app-guide-tabs-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .ai-app-guide-tab-{{ ai_gen_id }} {
+    padding: 12px 32px;
+    background-color: {{ block.settings.tab_bg_color }};
+    color: {{ block.settings.tab_text_color }};
+    border: 2px solid {{ block.settings.tab_border_color }};
+    border-radius: {{ block.settings.tab_radius }}px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .ai-app-guide-tab-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.tab_hover_bg }};
+    border-color: {{ block.settings.tab_hover_border }};
+  }
+
+  .ai-app-guide-tab-{{ ai_gen_id }}.active {
+    background-color: {{ block.settings.tab_active_bg }};
+    color: {{ block.settings.tab_active_text }};
+    border-color: {{ block.settings.tab_active_border }};
+  }
+
+  .ai-app-guide-content-{{ ai_gen_id }} {
+    display: none;
+  }
+
+  .ai-app-guide-content-{{ ai_gen_id }}.active {
+    display: block;
+  }
+
+  .ai-app-guide-step-{{ ai_gen_id }} {
+    background-color: {{ block.settings.step_bg_color }};
+    border-radius: {{ block.settings.step_radius }}px;
+    padding: 30px;
+    margin-bottom: 24px;
+    border-left: 4px solid {{ block.settings.accent_color }};
+  }
+
+  .ai-app-guide-step-header-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .ai-app-guide-step-number-{{ ai_gen_id }} {
+    width: 40px;
+    height: 40px;
+    background-color: {{ block.settings.accent_color }};
+    color: {{ block.settings.step_number_color }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .ai-app-guide-step-title-{{ ai_gen_id }} {
+    font-size: 20px;
+    color: {{ block.settings.step_title_color }};
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .ai-app-guide-step-content-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: 15px;
+    line-height: 1.7;
+    margin-left: 56px;
+  }
+
+  .ai-app-guide-step-content-{{ ai_gen_id }} p {
+    margin: 0 0 12px;
+  }
+
+  .ai-app-guide-step-content-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-app-guide-note-{{ ai_gen_id }} {
+    background-color: {{ block.settings.note_bg_color }};
+    border-left: 4px solid {{ block.settings.note_border_color }};
+    padding: 16px 20px;
+    margin-top: 16px;
+    border-radius: 4px;
+  }
+
+  .ai-app-guide-note-{{ ai_gen_id }} p {
+    margin: 0;
+    color: {{ block.settings.text_color }};
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-app-guide-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding | times: 0.6 }}px 16px;
+    }
+
+    .ai-app-guide-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.7 }}px;
+    }
+
+    .ai-app-guide-description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.description_size | times: 0.9 }}px;
+    }
+
+    .ai-app-guide-tab-{{ ai_gen_id }} {
+      padding: 10px 24px;
+      font-size: 14px;
+    }
+
+    .ai-app-guide-step-{{ ai_gen_id }} {
+      padding: 20px;
+    }
+
+    .ai-app-guide-step-content-{{ ai_gen_id }} {
+      margin-left: 0;
+      margin-top: 12px;
+    }
+
+    .ai-app-guide-step-header-{{ ai_gen_id }} {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+{% endstyle %}
+
+<app-guide-{{ ai_gen_id }} class="ai-app-guide-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-app-guide-container-{{ ai_gen_id }}">
+    {% if block.settings.title != blank %}
+      <div class="ai-app-guide-header-{{ ai_gen_id }}">
+        <h2 class="ai-app-guide-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+        {% if block.settings.description != blank %}
+          <div class="ai-app-guide-description-{{ ai_gen_id }}">{{ block.settings.description }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-app-guide-tabs-{{ ai_gen_id }}">
+      <button class="ai-app-guide-tab-{{ ai_gen_id }} active" data-tab="ios">
+        {{ block.settings.ios_tab_label }}
+      </button>
+      <button class="ai-app-guide-tab-{{ ai_gen_id }}" data-tab="android">
+        {{ block.settings.android_tab_label }}
+      </button>
+    </div>
+
+    <div class="ai-app-guide-content-{{ ai_gen_id }} active" data-content="ios">
+      <div class="ai-app-guide-step-{{ ai_gen_id }}">
+        <div class="ai-app-guide-step-header-{{ ai_gen_id }}">
+          <div class="ai-app-guide-step-number-{{ ai_gen_id }}">1</div>
+          <h3 class="ai-app-guide-step-title-{{ ai_gen_id }}">{{ block.settings.ios_step1_title }}</h3>
+        </div>
+        <div class="ai-app-guide-step-content-{{ ai_gen_id }}">
+          {{ block.settings.ios_step1_content }}
+        </div>
+      </div>
+
+      <div class="ai-app-guide-step-{{ ai_gen_id }}">
+        <div class="ai-app-guide-step-header-{{ ai_gen_id }}">
+          <div class="ai-app-guide-step-number-{{ ai_gen_id }}">2</div>
+          <h3 class="ai-app-guide-step-title-{{ ai_gen_id }}">{{ block.settings.ios_step2_title }}</h3>
+        </div>
+        <div class="ai-app-guide-step-content-{{ ai_gen_id }}">
+          {{ block.settings.ios_step2_content }}
+        </div>
+      </div>
+
+      <div class="ai-app-guide-step-{{ ai_gen_id }}">
+        <div class="ai-app-guide-step-header-{{ ai_gen_id }}">
+          <div class="ai-app-guide-step-number-{{ ai_gen_id }}">3</div>
+          <h3 class="ai-app-guide-step-title-{{ ai_gen_id }}">{{ block.settings.ios_step3_title }}</h3>
+        </div>
+        <div class="ai-app-guide-step-content-{{ ai_gen_id }}">
+          {{ block.settings.ios_step3_content }}
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-app-guide-content-{{ ai_gen_id }}" data-content="android">
+      <div class="ai-app-guide-step-{{ ai_gen_id }}">
+        <div class="ai-app-guide-step-header-{{ ai_gen_id }}">
+          <div class="ai-app-guide-step-number-{{ ai_gen_id }}">1</div>
+          <h3 class="ai-app-guide-step-title-{{ ai_gen_id }}">{{ block.settings.android_step1_title }}</h3>
+        </div>
+        <div class="ai-app-guide-step-content-{{ ai_gen_id }}">
+          {{ block.settings.android_step1_content }}
+        </div>
+      </div>
+
+      <div class="ai-app-guide-step-{{ ai_gen_id }}">
+        <div class="ai-app-guide-step-header-{{ ai_gen_id }}">
+          <div class="ai-app-guide-step-number-{{ ai_gen_id }}">2</div>
+          <h3 class="ai-app-guide-step-title-{{ ai_gen_id }}">{{ block.settings.android_step2_title }}</h3>
+        </div>
+        <div class="ai-app-guide-step-content-{{ ai_gen_id }}">
+          {{ block.settings.android_step2_content }}
+        </div>
+      </div>
+
+      <div class="ai-app-guide-step-{{ ai_gen_id }}">
+        <div class="ai-app-guide-step-header-{{ ai_gen_id }}">
+          <div class="ai-app-guide-step-number-{{ ai_gen_id }}">3</div>
+          <h3 class="ai-app-guide-step-title-{{ ai_gen_id }}">{{ block.settings.android_step3_title }}</h3>
+        </div>
+        <div class="ai-app-guide-step-content-{{ ai_gen_id }}">
+          {{ block.settings.android_step3_content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</app-guide-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AppGuide{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.tabs = this.querySelectorAll('.ai-app-guide-tab-{{ ai_gen_id }}');
+        this.contents = this.querySelectorAll('.ai-app-guide-content-{{ ai_gen_id }}');
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.tabs.forEach((tab) => {
+          tab.addEventListener('click', () => {
+            const targetTab = tab.getAttribute('data-tab');
+            
+            this.tabs.forEach((t) => t.classList.remove('active'));
+            this.contents.forEach((c) => c.classList.remove('active'));
+            
+            tab.classList.add('active');
+            
+            const targetContent = this.querySelector(`[data-content="${targetTab}"]`);
+            if (targetContent) {
+              targetContent.classList.add('active');
+            }
+          });
+        });
+      }
+    }
+
+    customElements.define('app-guide-{{ ai_gen_id }}', AppGuide{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "App installation guide",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "<p>Download Our App</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Follow the steps below to install our app on your device</p>"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1200,
+      "step": 50,
+      "unit": "px",
+      "label": "Maximum width",
+      "default": 900
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Tab labels"
+    },
+    {
+      "type": "text",
+      "id": "ios_tab_label",
+      "label": "iOS tab label",
+      "default": "iOS App"
+    },
+    {
+      "type": "text",
+      "id": "android_tab_label",
+      "label": "Android tab label",
+      "default": "Android App"
+    },
+    {
+      "type": "header",
+      "content": "iOS guide"
+    },
+    {
+      "type": "text",
+      "id": "ios_step1_title",
+      "label": "Step 1 title",
+      "default": "Install the TestFlight app"
+    },
+    {
+      "type": "richtext",
+      "id": "ios_step1_content",
+      "label": "Step 1 content",
+      "default": "<p>Go to the App Store and search \"TestFlight\".</p><p>Download and install the TestFlight app.</p>"
+    },
+    {
+      "type": "text",
+      "id": "ios_step2_title",
+      "label": "Step 2 title",
+      "default": "Scan QR Code and Accept the invitation"
+    },
+    {
+      "type": "richtext",
+      "id": "ios_step2_content",
+      "label": "Step 2 content",
+      "default": "<p>Scan QR code and Enter your email, then you will received the invitation. Click the link you received.</p><p>Tap the \"View in TestFlight\" button. This will open the TestFlight app on your device.</p><p>Tap \"Accept\" on the invitation screen.</p>"
+    },
+    {
+      "type": "text",
+      "id": "ios_step3_title",
+      "label": "Step 3 title",
+      "default": "Install the beta app"
+    },
+    {
+      "type": "richtext",
+      "id": "ios_step3_content",
+      "label": "Step 3 content",
+      "default": "<p>After accepting, you will be taken to the beta app's page within TestFlight.</p><p>Tap the \"Install\"/\"Update\" button to download and install the newest version of the app.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Android guide"
+    },
+    {
+      "type": "text",
+      "id": "android_step1_title",
+      "label": "Step 1 title",
+      "default": "System Setting"
+    },
+    {
+      "type": "richtext",
+      "id": "android_step1_content",
+      "label": "Step 1 content",
+      "default": "<p>Enable \"install from unknown sources\" in your Android's security settings.</p>"
+    },
+    {
+      "type": "text",
+      "id": "android_step2_title",
+      "label": "Step 2 title",
+      "default": "Go to App Download page"
+    },
+    {
+      "type": "richtext",
+      "id": "android_step2_content",
+      "label": "Step 2 content",
+      "default": "<p>Scan the QR code and click the link to enter our Android Download Page. Click \"Download\" the APK file.</p>"
+    },
+    {
+      "type": "text",
+      "id": "android_step3_title",
+      "label": "Step 3 title",
+      "default": "Install the beta app"
+    },
+    {
+      "type": "richtext",
+      "id": "android_step3_content",
+      "label": "Step 3 content",
+      "default": "<p>Once the download is complete, find the file by:</p><p>Tapping the download notification that appears.</p><p>Opening your browser's Downloads list (e.g., in Chrome, tap the three-dot menu).</p><p>Tap the downloaded APK file. Install it.</p><p>Tap Install and follow any on-screen instructions to finish.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#414558"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent",
+      "default": "#9835f2"
+    },
+    {
+      "type": "color",
+      "id": "step_bg_color",
+      "label": "Step background",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "step_title_color",
+      "label": "Step title",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "step_number_color",
+      "label": "Step number",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Tab style"
+    },
+    {
+      "type": "color",
+      "id": "tab_bg_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "tab_text_color",
+      "label": "Text",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "tab_border_color",
+      "label": "Border",
+      "default": "#ebebeb"
+    },
+    {
+      "type": "color",
+      "id": "tab_hover_bg",
+      "label": "Hover background",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "tab_hover_border",
+      "label": "Hover border",
+      "default": "#9835f2"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_bg",
+      "label": "Active background",
+      "default": "#9835f2"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_text",
+      "label": "Active text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_border",
+      "label": "Active border",
+      "default": "#9835f2"
+    },
+    {
+      "type": "header",
+      "content": "Note style"
+    },
+    {
+      "type": "color",
+      "id": "note_bg_color",
+      "label": "Background",
+      "default": "#fff9e6"
+    },
+    {
+      "type": "color",
+      "id": "note_border_color",
+      "label": "Border",
+      "default": "#ffc107"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Border radius"
+    },
+    {
+      "type": "range",
+      "id": "tab_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Tab radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "step_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Step radius",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "App installation guide"
+    }
+  ]
+}
+{% endschema %}

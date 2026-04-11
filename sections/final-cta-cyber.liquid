@@ -1,0 +1,72 @@
+<section class="py-48 bg-surface-container-lowest relative overflow-hidden">
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/10 blur-[150px] rounded-full"></div>
+  <div class="container mx-auto px-8 text-center relative z-10">
+    {%- if section.settings.product_image != blank -%}
+      <img class="w-full max-w-sm mx-auto mb-16 drop-shadow-[0_0_80px_rgba(0,238,252,0.3)]" src="{{ section.settings.product_image | image_url: width: 800 }}" alt="{{ section.settings.product_image.alt | escape }}">
+    {%- else -%}
+      <img class="w-full max-w-sm mx-auto mb-16 drop-shadow-[0_0_80px_rgba(0,238,252,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABqcUfT53DF0peVovJRgnepte9zirCGUVqrUioXCGH-B7YQoOtQ-eOeZkGQMuE2txgU5O5lBUn9soFEWAoOs-q9m3ipOz5-uOYz8u1VeGMKVHfdsWBfNlPZIj3kZ5O6nuSLd7krzBse_w2PRJ12jXZywVLgP_JzgoFHugY8qStuo47J2aM8-jkzOFWGdJkcEsCp_TtyVQpw0svg7sMtEyoeoRU8zpM0RoSNrpHfhDmbyBbjfHB79Py6KHtoVOQHuxqSAKxUxJDwGTZ" alt="Product Final CTA">
+    {%- endif -%}
+    
+    <h2 class="font-headline text-4xl md:text-7xl font-bold uppercase tracking-tighter mb-4 leading-none">
+      {{ section.settings.heading }}
+    </h2>
+    <p class="font-body text-xl text-on-surface-variant mb-12 uppercase tracking-widest">
+      {{ section.settings.subheading }}
+    </p>
+    
+    <a href="{{ section.settings.button_link }}" class="inline-block text-center kinetic-gradient text-black px-16 py-6 font-headline font-bold text-xl uppercase tracking-[0.2em] hover:shadow-[0_0_50px_rgba(224,141,255,0.5)] transition-all">
+      {{ section.settings.button_text }}
+    </a>
+    
+    <div class="mt-8 text-xs text-on-surface-variant uppercase tracking-widest font-headline">
+      {{ section.settings.footer_text }}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Final CTA Cyber",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product Image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<div>Cyber-M1</div>Upgrade Your Experience"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Where AI technology meets private sensation"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Promotional Price — $99"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "footer_text",
+      "label": "Footer Text",
+      "default": "Available for shipping within the United States and Canada"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Final CTA Cyber"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,89 @@
+<section class="py-32 bg-surface-container-high">
+  <div class="container mx-auto px-8">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-1">
+      {%- for block in section.blocks -%}
+        <div class="bg-surface-container p-12 border border-outline-variant/10 text-center hover:bg-surface-container-highest transition-colors" {{ block.shopify_attributes }}>
+          <span class="material-symbols-outlined text-secondary text-5xl mb-6">{{ block.settings.icon }}</span>
+          <h4 class="font-headline font-bold uppercase tracking-widest mb-4">
+            {{ block.settings.title }}
+          </h4>
+          <p class="text-xs text-on-surface-variant uppercase tracking-tighter">
+            {{ block.settings.description }}
+          </p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Trust & Safety",
+  "blocks": [
+    {
+      "type": "safety_item",
+      "name": "Safety Item",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Material Icon ID",
+          "default": "verified_user"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Body-Safe"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description",
+          "default": "Medical Grade Silicone"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trust & Safety",
+      "blocks": [
+        {
+          "type": "safety_item",
+          "settings": {
+            "icon": "verified_user",
+            "title": "Body-Safe",
+            "description": "Medical Grade Silicone"
+          }
+        },
+        {
+          "type": "safety_item",
+          "settings": {
+            "icon": "clean_hands",
+            "title": "Easy Clean",
+            "description": "Removable for Cleaning"
+          }
+        },
+        {
+          "type": "safety_item",
+          "settings": {
+            "icon": "inventory_2",
+            "title": "body temperature",
+            "description": "One-click heating"
+          }
+        },
+        {
+          "type": "safety_item",
+          "settings": {
+            "icon": "encrypted",
+            "title": "Secure",
+            "description": "Encrypted Account Content"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

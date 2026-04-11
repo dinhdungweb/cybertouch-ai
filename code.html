@@ -1,0 +1,354 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>NEURAL_01 | Engineered for Intelligent Pleasure</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#2c2c2c",
+                        "tertiary-fixed": "#ff8eac",
+                        "on-primary-fixed": "#000000",
+                        "surface-variant": "#262626",
+                        "error-dim": "#d73357",
+                        "tertiary-container": "#fc0078",
+                        "on-surface": "#ffffff",
+                        "surface-container-low": "#131313",
+                        "inverse-surface": "#f9f9f9",
+                        "tertiary-fixed-dim": "#ff769e",
+                        "on-tertiary-fixed": "#380015",
+                        "on-secondary": "#005359",
+                        "surface-container-highest": "#262626",
+                        "secondary": "#00eefc",
+                        "secondary-dim": "#00deec",
+                        "error-container": "#a70138",
+                        "secondary-fixed": "#00eefc",
+                        "on-tertiary-container": "#000000",
+                        "surface-container-lowest": "#000000",
+                        "tertiary-dim": "#e4006c",
+                        "surface-container-high": "#1f1f1f",
+                        "surface-tint": "#e08dff",
+                        "primary-fixed-dim": "#d160ff",
+                        "surface-container": "#191919",
+                        "background": "#0e0e0e",
+                        "on-secondary-fixed": "#003f43",
+                        "on-secondary-container": "#e3fdff",
+                        "outline": "#757575",
+                        "secondary-container": "#006970",
+                        "on-tertiary-fixed-variant": "#760035",
+                        "on-secondary-fixed-variant": "#005e64",
+                        "on-error-container": "#ffb2b9",
+                        "surface-dim": "#0e0e0e",
+                        "outline-variant": "#484848",
+                        "primary-fixed": "#d978ff",
+                        "surface": "#0e0e0e",
+                        "on-tertiary": "#47001d",
+                        "on-primary-container": "#3d0055",
+                        "tertiary": "#ff6b98",
+                        "on-primary": "#4f006c",
+                        "error": "#ff6e84",
+                        "secondary-fixed-dim": "#00deec",
+                        "primary-dim": "#bc00fb",
+                        "on-surface-variant": "#ababab",
+                        "on-error": "#490013",
+                        "inverse-primary": "#9a00cf",
+                        "inverse-on-surface": "#555555",
+                        "primary": "#e08dff",
+                        "on-background": "#ffffff",
+                        "primary-container": "#d978ff",
+                        "on-primary-fixed-variant": "#4c0068"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Manrope"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { background-color: #0e0e0e; color: #ffffff; font-family: 'Manrope', sans-serif; overflow-x: hidden; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .hud-corner { position: absolute; width: 15px; height: 15px; border-color: #00eefc; border-width: 1px; }
+        .corner-tl { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+        .corner-br { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+        .kinetic-gradient { background: linear-gradient(135deg, #e08dff 0%, #00eefc 100%); }
+        .text-glow-primary { text-shadow: 0 0 15px rgba(224,141,255,0.4); }
+        .text-glow-secondary { text-shadow: 0 0 15px rgba(0,238,252,0.4); }
+        .glass-hud { background: rgba(25, 25, 25, 0.6); backdrop-filter: blur(20px); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body>
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full border-b border-[#00eefc]/10 bg-[#0e0e0e]/80 backdrop-blur-xl flex justify-between items-center w-full px-8 py-4 z-[100] shadow-[0_0_15px_rgba(224,141,255,0.1)]">
+<div class="text-xl font-bold tracking-tighter text-[#e08dff] font-headline" style="">Cyber Touch AI</div>
+<div class="hidden md:flex gap-10 font-['Space_Grotesk'] uppercase tracking-[0.15em] text-sm">
+<a class="text-[#00eefc] border-b border-[#00eefc] pb-1 hover:text-[#e08dff] transition-all duration-300" href="#" style="">Cyber M1</a>
+<a class="text-white/60 hover:text-[#e08dff] transition-all duration-300" href="#" style="">cyber Gear</a>
+<a class="text-white/60 hover:text-[#e08dff] transition-all duration-300" href="#" style="">CTAI Lover APP</a>
+<a class="text-white/60 hover:text-[#e08dff] transition-all duration-300" href="#" style="">Store</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-secondary cursor-pointer" style="">search</span>
+<button class="bg-[#e08dff] text-on-primary-fixed px-6 py-2 font-headline font-bold text-xs tracking-widest uppercase hover:shadow-[0_0_20px_rgba(224,141,255,0.4)] transition-all" style="">PURCHASE</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-surface-container-lowest">
+<!-- Background Light Effects -->
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/10 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/10 blur-[120px] rounded-full"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1">
+<h1 class="font-headline text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none mb-6" style="">Cyber-M1<div class="" style="">Feel Your AI Lover<br><span class="text-transparent bg-clip-text kinetic-gradient" style="">fantasies Pleasure</span></div></h1>
+<p class="text-on-surface-variant text-xl mb-10 max-w-lg font-body" style="">
+                    First AI-powered experience becomes touchable.</p><div class="" style="">Now, You can see, say, hear and feel.<br></div><p class="" style=""></p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="kinetic-gradient text-on-primary-fixed px-10 py-5 font-headline font-bold uppercase tracking-widest hover:shadow-[0_0_30px_rgba(0,238,252,0.3)] transition-all" style="">Shop Now</button>
+<button class="border border-secondary/30 text-secondary px-10 py-5 font-headline font-bold uppercase tracking-widest hover:bg-secondary/5 transition-all" style="">Discover More</button>
+</div>
+</div>
+<div class="order-1 md:order-2 relative flex justify-center items-center">
+<div class="absolute inset-0 bg-primary/5 blur-3xl animate-pulse"></div>
+<img class="w-full max-w-md drop-shadow-[0_0_50px_rgba(224,141,255,0.2)]" data-alt="Futuristic sleek male wellness device NEURAL_01 floating in a dark studio with neon blue and purple light streaks and subtle particle effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUYTT5A7wF-F6h4fd145AlwA29Pgsd6xJ0IL9FuhScTblraiSSD5yD6rJa9CNB0ZvY31zHYEdMULajDray0aGJyS3k4nraciWU08Z9qqgaaRaNA9cYgI_oeyI-oZIKYv0IkY2hyAzGMjrJwSmudwg3Zsr8QRhzkYpFf5Lx6kQLjGQrh_mcWL7OGGDDtUPKNVSVz3tfR6y-52AF8ttUauXOhnCR9O0RKio-wu4oUcaLS3bN3DU1gHmfGm3sF2dZOxW449wWOCpPnoC-" style="">
+<!-- Floating HUD Data Elements -->
+<div class="absolute -top-10 right-0 glass-hud border border-outline-variant p-4 text-[10px] font-headline tracking-widest uppercase">
+<div class="text-secondary mb-1" style="">SYNC_STATUS: ACTIVE</div>
+<div class="text-primary" style="">NEURAL_LOAD: 84%</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="py-32 bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="container mx-auto px-8 text-center max-w-4xl">
+<div class="font-headline text-secondary text-sm tracking-[0.3em] uppercase mb-12" style="">want something new?</div>
+<h2 class="font-headline text-3xl md:text-5xl font-light uppercase tracking-wide leading-tight mb-8" style="">
+                Tired of seraching videos<div>all night?
+            </div></h2>
+<div class="w-24 h-[1px] kinetic-gradient mx-auto mb-12"></div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold uppercase tracking-tight text-glow-primary" style="">
+                Looking for something more immersive and personal?
+            </h2>
+</div>
+</section>
+<!-- AI Experience Section -->
+<section class="py-32 bg-surface">
+<div class="container mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-20 items-center">
+<div class="relative group">
+<div class="absolute -inset-4 border border-secondary/20 transition-all duration-700 group-hover:border-secondary/40"></div>
+<div class="hud-corner corner-tl"></div>
+<div class="hud-corner corner-br"></div>
+<div class="bg-surface-container p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-full h-[1px] bg-secondary/30 -translate-x-full animate-[scan_4s_linear_infinite]"></div>
+<img class="w-full opacity-80 mix-blend-screen" data-alt="Holographic user interface showing neural mapping data and AI processing waves in bright cyan and magenta tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd5ToJZdzoYkmYmV9UctDYMsiLTuI2iNrvYNojP_F4lEG1qW_yGH_MyWMNyMhSeXtGYwSfM_ywlUXVP1Wqf-_lLNYO13jiy6twPW4LwyQXHaiR0Y9xsZGsdBpJcrALj7HXt68dVxMIt_YzVGVnq60nCGK5D5ia3_5uyyKWRZAGeUPwspS8KvStLfSU_982L2DUNXbOLbi_QiXWJyJbUv6NoL_z8dr7ofYpI2wfdlEOWEF1DH6h-Y8caFtwppd08QxxDjXAaQS1ua62" style="">
+</div>
+</div>
+<div>
+<h2 class="font-headline text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-8 leading-none" style="">
+                        Feel Your AI <br><span class="text-secondary" style="">Lover</span></h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-4xl" style="">keyboard_voice</span>
+<div>
+<h3 class="font-headline text-xl font-bold uppercase mb-2 tracking-wider" style="">Voice Interaction</h3>
+<p class="text-on-surface-variant" style="">Real-time voice communication processing makes it feel like you're talking to a real person.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-4xl" style="">psychology</span>
+<div>
+<h3 class="font-headline text-xl font-bold uppercase mb-2 tracking-wider" style=""><h3 class="font-headline text-xl font-bold uppercase mb-2 tracking-wider cursor-text" spellcheck="false" data-stitch-added-classes="cursor-text" style="--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; outline: none !important;"><h3 class="font-headline text-xl font-bold uppercase mb-2 tracking-wider cursor-text" spellcheck="false" data-stitch-added-classes="cursor-text" style="--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; outline: none !important;">Video Interaction</h3></h3></h3>
+<p class="text-on-surface-variant" style="">The lover on the screen will perform various actions in response to your commands.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-4xl" style="">dynamic_form</span>
+<div>
+<h3 class="font-headline text-xl font-bold uppercase mb-2 tracking-wider" style="">Tangible Interaction</h3>
+<p class="text-on-surface-variant" style="">Our device will recognize all your interactions and eventually become your sense of touch.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Customization Section -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="container mx-auto px-8 mb-16">
+<h2 class="font-headline text-4xl font-bold uppercase tracking-[0.2em] text-center mb-4" style="">you are picky?</h2>
+<p class="text-on-surface-variant text-center font-body max-w-2xl mx-auto uppercase text-xs tracking-widest" style="">No problem, we got all style lovers for you</p>
+</div>
+<div class="flex gap-6 overflow-x-auto px-8 pb-12 no-scrollbar snap-x">
+<!-- Profile Card 1 -->
+<div class="min-w-[300px] bg-surface-container p-8 border border-outline-variant/30 group hover:border-primary/50 transition-all snap-center relative">
+<div class="w-full aspect-square mb-8 relative overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Abstract digital avatar representing a minimalist calm personality with soft blue flowing light structures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtt664ql0Laww7dnj7TudfwdvlaOEA2O4XgRnjj_TL7Rju0N04omUutwodgsGspQ517YEi-6Ed8mVNah2ikFXxzggJetQBjcCfU6EzCHYuN_OlgurphEemm8PDPe76Zyvvyb_zuktWO25JNQw_CSBfHJ6wHsZXpXsVrQ79e8YHmQycnjZdlSLpK2D8eyevutsjolGIN_EmcCpYhxmGecywmOy14V0UXs1ce02dpD7dM0AEFBhAIf00J9WXBmL2GtbyJE5FarUb0Cvd" style="">
+</div>
+<h4 class="font-headline text-lg font-bold uppercase tracking-widest mb-2" style="">Ethereal</h4>
+<p class="text-xs text-on-surface-variant mb-6 uppercase tracking-wider" style="">Focus: Flow &amp; Sensation</p>
+<button class="w-full py-3 border border-secondary/20 text-xs font-headline uppercase tracking-widest group-hover:bg-secondary group-hover:text-black transition-all" style="">Initialize</button>
+</div>
+<!-- Profile Card 2 -->
+<div class="min-w-[300px] bg-surface-container p-8 border border-primary/40 group hover:border-primary transition-all snap-center relative">
+<div class="w-full aspect-square mb-8 relative overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-all" data-alt="Abstract digital avatar representing an aggressive intense personality with sharp red and purple geometric light patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYQzxK4vBOS1V2IrsLHJ_OtCSu6assjHpdqoZ5ZTH2WK85-WJnUzsd_FuaihAHHsNfK-1YSBHHZbBLyAUB8Ksnu00HvR2IHk_UztEeb2QZZTshGloh08CjsAjOE20QMM0b-eVMFgFwVJY_sBd3LOmy1xfvv6gJx-kIgOjSKs-_3lhvHl8xVpMNWUSr-jI4N00NFwYOWT2pSCfRpxNUOG121b8fR4QJVdTvf4i5p8AoREAA4Iy2CZS1PUtYt9WxgKIS6uNo0HwxuURl" style="">
+</div>
+<h4 class="font-headline text-lg font-bold uppercase tracking-widest mb-2 text-primary" style="">Vanguard</h4>
+<p class="text-xs text-on-surface-variant mb-6 uppercase tracking-wider" style="">Focus: Intensity &amp; Power</p>
+<button class="w-full py-3 kinetic-gradient text-black text-xs font-headline uppercase tracking-widest" style="">Selected</button>
+</div>
+<!-- Profile Card 3 -->
+<div class="min-w-[300px] bg-surface-container p-8 border border-outline-variant/30 group hover:border-primary/50 transition-all snap-center relative">
+<div class="w-full aspect-square mb-8 relative overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Abstract digital avatar representing a complex analytical personality with intricate golden circuit light patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAExZ_OjuFbPfpH2kv92hBzrRNX0NIcqRTlC4bSL-Ai2t0TDfizM5VMH56kQwplQ4dqHAoVM5GajTSeFFpeuKkWEg6hGcNQ8UCndZBw93ujSFaWt81kc6RCPkq0jItahITBjoeTGLCUDetl9XgS2aWVhS-uVwdsth7jrE-5dp-caEjjmornTKy70IqJ0HSI09rPoQEuE94e6_GN1bHNh11U-eosWFmLtoJeEkn52PRY-Rypw6fvqhvGzNxhW-Ygh_89SIf1Rk5o__AZ" style="">
+</div>
+<h4 class="font-headline text-lg font-bold uppercase tracking-widest mb-2" style="">Architect</h4>
+<p class="text-xs text-on-surface-variant mb-6 uppercase tracking-wider" style="">Focus: Rhythm &amp; Precision</p>
+<button class="w-full py-3 border border-secondary/20 text-xs font-headline uppercase tracking-widest group-hover:bg-secondary group-hover:text-black transition-all" style="">Initialize</button>
+</div>
+</div>
+</section>
+<!-- Performance Section -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="container mx-auto px-8">
+<div class="grid lg:grid-cols-3 gap-8">
+<div class="lg:col-span-1">
+<h2 class="font-headline text-4xl md:text-5xl font-bold uppercase tracking-tighter leading-none mb-8" style="">
+                        Beyond <br>Traditional <br><span class="text-secondary" style="">Motion</span></h2>
+<p class="text-on-surface-variant mb-12" style="">Our proprietary dual-motor propulsion system creates speical motion patterns that standard motors cannot replicate.</p>
+<div class="space-y-4">
+<div class="p-4 border-l-2 border-secondary bg-secondary/5">
+<span class="font-headline font-bold text-xs tracking-widest uppercase" style="">motion patterns</span>
+<div class="text-xl font-headline text-white mt-1" style="">Lick, Suck, Squeeze</div>
+</div>
+<div class="p-4 border-l-2 border-primary bg-primary/5">
+<span class="font-headline font-bold text-xs tracking-widest uppercase" style="">Rhythm</span>
+<div class="text-xl font-headline text-white mt-1" style="">Multiple Realistic Frequencies</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2 relative">
+<div class="absolute inset-0 bg-secondary/10 blur-[100px] rounded-full"></div>
+<img class="relative z-10 w-full border border-outline-variant/30" data-alt="Technical cross-section diagram of an advanced device showing dual motor mechanics and electronic internal circuitry with glowing energy lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTs4K0JyQT0Kh8aLBlAsVxBAe4vOA2B8aFZcP_AfnVDVk9-sAeCznMp0dd-QqcLVx-etk2Ch5ls3OGAUQBC9pFTRsWAWJpL_hfjUjAH4S54T9wCMMIyFBKbv_B-YT24vvaJybksxaNrqljoL_u2JSKiP5OdS3VzK4QWQGs7gT5X7mcC3YHw-njsq--9D8avGfv4hRnlXgEeGGWhUMANAdOVhI6SAcWFCcAjG7rWXeo-olLJkK4lito51sv0oFmoDUFdm-pjZIPbznP" style="">
+</div>
+</div>
+</div>
+</section>
+<!-- Training Section -->
+<section class="py-32 bg-surface relative">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-3xl"></div>
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2 order-2 md:order-1">
+<div class="font-headline text-secondary text-sm tracking-[0.3em] uppercase mb-4" style="">Firmware Update 4.0</div>
+<h2 class="font-headline text-4xl md:text-6xl font-bold uppercase tracking-tight mb-8" style="">Smarter Performance <br>With Lover AI</h2>
+<p class="text-lg text-on-surface-variant mb-10 leading-relaxed" style="">
+                        More than just a AI device—She is your dream lover. She remembers every conversation, every preference, and understands you better with each passing moment.
+                    </p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<div class="text-4xl font-headline font-bold text-secondary mb-2" style="">100%</div>
+<div class="text-xs uppercase tracking-widest text-on-surface-variant" style="">Memory stay</div>
+</div>
+<div>
+<div class="text-4xl font-headline font-bold text-primary mb-2" style="">1.5 s</div>
+<div class="text-xs uppercase tracking-widest text-on-surface-variant" style="">Response Latency</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 order-1 md:order-2 bg-surface-container-highest p-12 border border-outline-variant/20 relative">
+<div class="hud-corner corner-tl"></div>
+<div class="hud-corner corner-br"></div>
+<img class="w-full" data-alt="Data visualization screen showing growth charts and endurance metrics in a futuristic HUD style with blue and purple data points" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdrXBIF8_Yfon7wzDDbij2bwNK6IEq5wZw67iX-AY0bZChh2FTQm_oLibuT8E0hjNS8uZ1rbRW9fJDKFL-2Q23OI4fEcCCIs8qN7aMjeiIzFOSpHiYkNspvfpif-ohS6Pf7GvcYUvAi7BIGiJeKvNiSTOCYcMLQLgyzp4nTeaJ9hXLoam6hQIOtsyLvkmYpGyHKq1s6bwyDl5zVLQSLuc3qcp1ux8b7hMfoqCWleH5OAY015-CCG1SykBsLR_riHDxSBFEOQu0Fekx" style="">
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="relative py-48 bg-surface-container-lowest overflow-hidden">
+<div class="absolute inset-0 opacity-40">
+<img class="w-full h-full object-cover" data-alt="High-tech cinematic illustration of a male torso silhouette with glowing neon energy waves concentrated in the pelvic region, representing neural immersion and targeted sensory pleasure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSlfvcGAdCPSCJJwxDZad5N4Iy-_7Q-oX-y-i9G-pQbNxnn1L7ebSL0rN2QTHnz1HS_f8nQPwXJJHYh2odXCIy8VXvnmNFg4OnbMZkqA54e2SBQ0EWowS240RA_MKL9wIuwlAXE4mainoW9yzkxJXDnVohoqZEJUn6R_GJ6NpWtd5ZWVYEizXHelZCRgs0ImcPeepV3Z1PdcLJTE0aRLCo6iP869ZsEvdbh5WCmZ0glpQi8u0M6AwaH9IKKtckZ9baQu0fAZ8PWE3G" style="">
+</div>
+<div class="container mx-auto px-8 relative z-10 text-center">
+<h2 class="font-headline text-5xl md:text-8xl font-bold uppercase tracking-tighter mb-8 text-glow-secondary" style="">Boost Your&nbsp;<div class="" style="">rigidity &amp; endurance</div></h2>
+<p class="max-w-xl mx-auto text-on-surface font-body text-lg mb-12" style="">Unique Suction Motor design helps strengthen your pelvic floor muscles with every use.&nbsp;</p><div class="" style=""><br></div><p class="" style=""></p>
+<div class="flex justify-center gap-1">
+<div class="w-2 h-2 kinetic-gradient"></div>
+<div class="w-2 h-2 kinetic-gradient"></div>
+<div class="w-2 h-2 kinetic-gradient"></div>
+</div>
+</div>
+</section>
+<!-- Trust & Safety Section -->
+<section class="py-32 bg-surface-container-high">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-1">
+<div class="bg-surface-container p-12 border border-outline-variant/10 text-center hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6" style="">verified_user</span>
+<h4 class="font-headline font-bold uppercase tracking-widest mb-4" style="">Body-Safe</h4>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter" style="">Medical&nbsp; Grade&nbsp; Silicone</p>
+</div>
+<div class="bg-surface-container p-12 border border-outline-variant/10 text-center hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6" style="">clean_hands</span>
+<h4 class="font-headline font-bold uppercase tracking-widest mb-4" style="">Easy Clean</h4>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter" style="">Removable&nbsp; for&nbsp; Cleaning</p>
+</div>
+<div class="bg-surface-container p-12 border border-outline-variant/10 text-center hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6" style="">inventory_2</span>
+<h4 class="font-headline font-bold uppercase tracking-widest mb-4" style="">body temperature</h4>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter" style="">One-click&nbsp; heating</p>
+</div>
+<div class="bg-surface-container p-12 border border-outline-variant/10 text-center hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6" style="">encrypted</span>
+<h4 class="font-headline font-bold uppercase tracking-widest mb-4" style="">Secure</h4>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter" style="">Encrypted&nbsp; Account&nbsp; Content</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-48 bg-surface-container-lowest relative overflow-hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/10 blur-[150px] rounded-full"></div>
+<div class="container mx-auto px-8 text-center relative z-10">
+<img class="w-full max-w-sm mx-auto mb-16 drop-shadow-[0_0_80px_rgba(0,238,252,0.3)]" data-alt="Product hero shot of NEURAL_01 from a dramatic low angle with blue bottom lighting and soft top highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABqcUfT53DF0peVovJRgnepte9zirCGUVqrUioXCGH-B7YQoOtQ-eOeZkGQMuE2txgU5O5lBUn9soFEWAoOs-q9m3ipOz5-uOYz8u1VeGMKVHfdsWBfNlPZIj3kZ5O6nuSLd7krzBse_w2PRJ12jXZywVLgP_JzgoFHugY8qStuo47J2aM8-jkzOFWGdJkcEsCp_TtyVQpw0svg7sMtEyoeoRU8zpM0RoSNrpHfhDmbyBbjfHB79Py6KHtoVOQHuxqSAKxUxJDwGTZ" style="">
+<h2 class="font-headline text-4xl md:text-7xl font-bold uppercase tracking-tighter mb-4 leading-none" style=""><div>Cyber-M1</div>Upgrade Your Experience</h2>
+<p class="font-body text-xl text-on-surface-variant mb-12 uppercase tracking-widest" style="">Where AI technology meets private sensation</p>
+<button class="kinetic-gradient text-black px-16 py-6 font-headline font-bold text-xl uppercase tracking-[0.2em] hover:shadow-[0_0_50px_rgba(224,141,255,0.5)] transition-all" style="">Promotional Price — $99</button>
+<div class="mt-8 text-xs text-on-surface-variant uppercase tracking-widest font-headline" style="">Available for shipping within the United States and Canada</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#000000] w-full border-t border-[#191919] mt-24">
+<div class="max-w-7xl mx-auto px-12 py-20 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-lg font-black text-[#bc00fb] font-headline" style="">NEURAL_WELLNESS</div>
+<div class="flex flex-wrap justify-center gap-12">
+<a class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-white/30 hover:text-white transition-colors duration-200" href="#" style="">Privacy.sh</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-white/30 hover:text-white transition-colors duration-200" href="#" style="">Terms.txt</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-white/30 hover:text-white transition-colors duration-200" href="#" style="">API_Docs</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-white/30 hover:text-white transition-colors duration-200" href="#" style="">Support</a>
+</div>
+<div class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-white/30" style="">
+                © 2024 KINETIC HUD SYSTEMS. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

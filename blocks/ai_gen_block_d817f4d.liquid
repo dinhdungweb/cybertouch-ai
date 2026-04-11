@@ -1,0 +1,848 @@
+
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-app-download-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding_mobile }}px 20px;
+    background-color: {{ block.settings.background_color }};
+    color: {{ block.settings.text_color }};
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-app-download-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding }}px 40px;
+    }
+  }
+
+  .ai-app-download-container-{{ ai_gen_id }} {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .ai-app-download-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .ai-app-download-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size_mobile }}px;
+    font-weight: 600;
+    margin: 0 0 16px;
+    color: {{ block.settings.title_color }};
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-app-download-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size }}px;
+    }
+  }
+
+  .ai-app-download-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0 0 24px;
+    font-weight: 500;
+  }
+
+  .ai-app-download-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    line-height: 1.6;
+    color: {{ block.settings.text_color }};
+    margin: 0 auto 40px;
+    max-width: 900px;
+  }
+
+  .ai-app-download-hero-section-{{ ai_gen_id }} {
+    margin-bottom: 60px;
+  }
+
+  .ai-app-download-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    max-width: {{ block.settings.image_max_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-app-download-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-app-download-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: {{ block.settings.placeholder_bg }};
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-app-download-image-placeholder-{{ ai_gen_id }} svg {
+    width: 50%;
+    height: 50%;
+    opacity: 0.3;
+  }
+
+  .ai-app-download-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-app-download-features-section-{{ ai_gen_id }} {
+    margin-bottom: 60px;
+  }
+
+  .ai-app-download-features-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-app-download-features-{{ ai_gen_id }} {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+  }
+
+  .ai-app-download-feature-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.feature_title_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 32px;
+    text-align: center;
+  }
+
+  .ai-app-download-feature-item-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background-color: {{ block.settings.feature_bg_color }};
+    border-radius: 12px;
+    border: 1px solid {{ block.settings.feature_border_color }};
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ai-app-download-feature-item-{{ ai_gen_id }}:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-app-download-feature-icon-{{ ai_gen_id }} {
+    width: 40px;
+    height: 40px;
+    color: {{ block.settings.accent_color }};
+    margin-bottom: 8px;
+  }
+
+  .ai-app-download-feature-name-{{ ai_gen_id }} {
+    font-size: 18px;
+    font-weight: 600;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 8px;
+  }
+
+  .ai-app-download-feature-desc-{{ ai_gen_id }} {
+    font-size: 14px;
+    line-height: 1.6;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+  }
+
+  .ai-app-download-qr-section-{{ ai_gen_id }} {
+    background-color: {{ block.settings.qr_bg_color }};
+    padding: 50px 32px;
+    border-radius: {{ block.settings.qr_border_radius }}px;
+    border: 1px solid {{ block.settings.qr_border_color }};
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-app-download-qr-section-{{ ai_gen_id }} {
+      padding: 60px 50px;
+    }
+  }
+
+  .ai-app-download-qr-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.qr_title_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 40px;
+    text-align: center;
+  }
+
+  .ai-app-download-qr-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-app-download-qr-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+  }
+
+  .ai-app-download-qr-item-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 28px;
+    background-color: {{ block.settings.qr_item_bg }};
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ai-app-download-qr-item-{{ ai_gen_id }}:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  .ai-app-download-qr-platform-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: {{ block.settings.title_color }};
+  }
+
+  .ai-app-download-qr-platform-icon-{{ ai_gen_id }} {
+    width: 32px;
+    height: 32px;
+  }
+
+  .ai-app-download-qr-code-{{ ai_gen_id }} {
+    width: {{ block.settings.qr_size }}px;
+    height: {{ block.settings.qr_size }}px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-app-download-qr-code-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .ai-app-download-qr-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+
+  .ai-app-download-qr-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-app-download-qr-instruction-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: {{ block.settings.text_color }};
+    text-align: center;
+    opacity: 0.8;
+  }
+
+  .ai-app-download-store-buttons-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-app-download-store-buttons-{{ ai_gen_id }} {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  .ai-app-download-store-button-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 32px;
+    background-color: {{ block.settings.button_bg_color }};
+    color: {{ block.settings.button_text_color }};
+    border: 2px solid {{ block.settings.button_border_color }};
+    border-radius: {{ block.settings.button_border_radius }}px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    min-width: 180px;
+  }
+
+  .ai-app-download-store-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_bg }};
+    color: {{ block.settings.button_hover_text }};
+    border-color: {{ block.settings.button_hover_bg }};
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-app-download-store-icon-{{ ai_gen_id }} {
+    width: 26px;
+    height: 26px;
+  }
+{% endstyle %}
+
+<div class="ai-app-download-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-app-download-container-{{ ai_gen_id }}">
+    <div class="ai-app-download-header-{{ ai_gen_id }}">
+      {%- if block.settings.title != blank -%}
+        <h2 class="ai-app-download-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+      {%- endif -%}
+      
+      {%- if block.settings.subtitle != blank -%}
+        <div class="ai-app-download-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</div>
+      {%- endif -%}
+      
+      {%- if block.settings.description != blank -%}
+        <div class="ai-app-download-description-{{ ai_gen_id }}">{{ block.settings.description }}</div>
+      {%- endif -%}
+    </div>
+
+    <div class="ai-app-download-hero-section-{{ ai_gen_id }}">
+      <div class="ai-app-download-image-wrapper-{{ ai_gen_id }}">
+        {%- if block.settings.concept_image != blank -%}
+          <img
+            src="{{ block.settings.concept_image | image_url: width: 1600 }}"
+            alt="{{ block.settings.concept_image.alt | escape }}"
+            class="ai-app-download-image-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.concept_image.width }}"
+            height="{{ block.settings.concept_image.height }}"
+          >
+        {%- else -%}
+          <div class="ai-app-download-image-placeholder-{{ ai_gen_id }}">
+            {{ 'hero-apparel-1' | placeholder_svg_tag }}
+            <div class="ai-app-download-empty-state-{{ ai_gen_id }}">
+              Add concept image
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- if block.settings.show_features -%}
+      <div class="ai-app-download-features-section-{{ ai_gen_id }}">
+        <h3 class="ai-app-download-feature-title-{{ ai_gen_id }}">{{ block.settings.features_title }}</h3>
+        
+        <div class="ai-app-download-features-{{ ai_gen_id }}">
+          {%- if block.settings.feature_1_title != blank -%}
+            <div class="ai-app-download-feature-item-{{ ai_gen_id }}">
+              <svg class="ai-app-download-feature-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="22"></line>
+              </svg>
+              <div class="ai-app-download-feature-name-{{ ai_gen_id }}">{{ block.settings.feature_1_title }}</div>
+              <div class="ai-app-download-feature-desc-{{ ai_gen_id }}">{{ block.settings.feature_1_description }}</div>
+            </div>
+          {%- endif -%}
+
+          {%- if block.settings.feature_2_title != blank -%}
+            <div class="ai-app-download-feature-item-{{ ai_gen_id }}">
+              <svg class="ai-app-download-feature-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+              <div class="ai-app-download-feature-name-{{ ai_gen_id }}">{{ block.settings.feature_2_title }}</div>
+              <div class="ai-app-download-feature-desc-{{ ai_gen_id }}">{{ block.settings.feature_2_description }}</div>
+            </div>
+          {%- endif -%}
+
+          {%- if block.settings.feature_3_title != blank -%}
+            <div class="ai-app-download-feature-item-{{ ai_gen_id }}">
+              <svg class="ai-app-download-feature-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <div class="ai-app-download-feature-name-{{ ai_gen_id }}">{{ block.settings.feature_3_title }}</div>
+              <div class="ai-app-download-feature-desc-{{ ai_gen_id }}">{{ block.settings.feature_3_description }}</div>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    <div class="ai-app-download-qr-section-{{ ai_gen_id }}">
+      <h3 class="ai-app-download-qr-title-{{ ai_gen_id }}">{{ block.settings.qr_section_title }}</h3>
+      
+      <div class="ai-app-download-qr-grid-{{ ai_gen_id }}">
+        <div class="ai-app-download-qr-item-{{ ai_gen_id }}">
+          <div class="ai-app-download-qr-platform-{{ ai_gen_id }}">
+            <svg class="ai-app-download-qr-platform-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            iOS
+          </div>
+          <div class="ai-app-download-qr-code-{{ ai_gen_id }}">
+            {%- if block.settings.ios_qr_code != blank -%}
+              <img src="{{ block.settings.ios_qr_code | image_url: width: 500 }}" alt="iOS QR Code" loading="lazy">
+            {%- else -%}
+              <div class="ai-app-download-qr-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {%- endif -%}
+          </div>
+          <div class="ai-app-download-qr-instruction-{{ ai_gen_id }}">{{ block.settings.qr_instruction }}</div>
+        </div>
+
+        <div class="ai-app-download-qr-item-{{ ai_gen_id }}">
+          <div class="ai-app-download-qr-platform-{{ ai_gen_id }}">
+            <svg class="ai-app-download-qr-platform-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.635z"/>
+            </svg>
+            Android
+          </div>
+          <div class="ai-app-download-qr-code-{{ ai_gen_id }}">
+            {%- if block.settings.android_qr_code != blank -%}
+              <img src="{{ block.settings.android_qr_code | image_url: width: 500 }}" alt="Android QR Code" loading="lazy">
+            {%- else -%}
+              <div class="ai-app-download-qr-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {%- endif -%}
+          </div>
+          <div class="ai-app-download-qr-instruction-{{ ai_gen_id }}">{{ block.settings.qr_instruction }}</div>
+        </div>
+      </div>
+
+      {%- if block.settings.show_store_buttons -%}
+        <div class="ai-app-download-store-buttons-{{ ai_gen_id }}">
+          {%- if block.settings.ios_store_link != blank -%}
+            <a href="{{ block.settings.ios_store_link }}" class="ai-app-download-store-button-{{ ai_gen_id }}" target="_blank" rel="noopener">
+              <svg class="ai-app-download-store-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+              </svg>
+              App Store
+            </a>
+          {%- endif -%}
+          
+          {%- if block.settings.android_store_link != blank -%}
+            <a href="{{ block.settings.android_store_link }}" class="ai-app-download-store-button-{{ ai_gen_id }}" target="_blank" rel="noopener">
+              <svg class="ai-app-download-store-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.635z"/>
+              </svg>
+              Google Play
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "App download page",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "Cyber Touch AI Lover"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 24,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "min": 20,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size mobile",
+      "default": 32
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Your Intimate Companion in the Digital Age"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "min": 14,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Subtitle size",
+      "default": 20
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Cyber Touch AI Lover is a groundbreaking mobile app that transforms virtual companionship into a deeply immersive, multi-sensory experience. Designed for those seeking emotional connection, playful interaction, or sensual exploration, the app seamlessly links with our proprietary AI Lover toy—a sleek, responsive device engineered for personalized physical feedback."
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Concept image"
+    },
+    {
+      "type": "image_picker",
+      "id": "concept_image",
+      "label": "Concept image"
+    },
+    {
+      "type": "range",
+      "id": "image_max_width",
+      "min": 400,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "Image max width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Key features"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_features",
+      "label": "Show features",
+      "default": true
+    },
+    {
+      "type": "inline_richtext",
+      "id": "features_title",
+      "label": "Features title",
+      "default": "Key Features"
+    },
+    {
+      "type": "range",
+      "id": "feature_title_size",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Features title size",
+      "default": 28
+    },
+    {
+      "type": "text",
+      "id": "feature_1_title",
+      "label": "Feature 1 title",
+      "default": "Voice-Activated Chat with AI Personality"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_1_description",
+      "label": "Feature 1 description",
+      "default": "Engage in natural, flowing voice conversations with your AI lover, powered by advanced natural language processing. Choose from customizable personas and watch as the AI adapts to your mood."
+    },
+    {
+      "type": "text",
+      "id": "feature_2_title",
+      "label": "Feature 2 title",
+      "default": "Synchronized Physical Reactions"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_2_description",
+      "label": "Feature 2 description",
+      "default": "Pair the app with the AI Lover toy via Bluetooth. As your AI companion speaks or reacts, the toy delivers subtle, intuitive vibrations, pulses, or gentle caresses tailored to the conversation's tone."
+    },
+    {
+      "type": "text",
+      "id": "feature_3_title",
+      "label": "Feature 3 title",
+      "default": "Personalization and Privacy First"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_3_description",
+      "label": "Feature 3 description",
+      "default": "Train your AI with voice samples, shared stories, or fantasy scenarios to evolve its responses. All data stays encrypted and secure, ensuring your intimate moments remain private."
+    },
+    {
+      "type": "header",
+      "content": "QR codes"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "qr_section_title",
+      "label": "QR section title",
+      "default": "Download the App"
+    },
+    {
+      "type": "range",
+      "id": "qr_title_size",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "QR title size",
+      "default": 28
+    },
+    {
+      "type": "image_picker",
+      "id": "ios_qr_code",
+      "label": "iOS QR code"
+    },
+    {
+      "type": "image_picker",
+      "id": "android_qr_code",
+      "label": "Android QR code"
+    },
+    {
+      "type": "range",
+      "id": "qr_size",
+      "min": 150,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "QR code size",
+      "default": 200
+    },
+    {
+      "type": "inline_richtext",
+      "id": "qr_instruction",
+      "label": "QR instruction",
+      "default": "Scan to download"
+    },
+    {
+      "type": "header",
+      "content": "Store links"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_store_buttons",
+      "label": "Show store buttons",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "ios_store_link",
+      "label": "iOS App Store link"
+    },
+    {
+      "type": "url",
+      "id": "android_store_link",
+      "label": "Google Play Store link"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Titles",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent",
+      "default": "#9835f2"
+    },
+    {
+      "type": "color",
+      "id": "feature_bg_color",
+      "label": "Feature background",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "color",
+      "id": "feature_border_color",
+      "label": "Feature border",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "qr_bg_color",
+      "label": "QR section background",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "color",
+      "id": "qr_item_bg",
+      "label": "QR item background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "qr_border_color",
+      "label": "QR section border",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "placeholder_bg",
+      "label": "Placeholder background",
+      "default": "#f0f0f0"
+    },
+    {
+      "type": "header",
+      "content": "Button style"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Border",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg",
+      "label": "Hover background",
+      "default": "#9835f2"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text",
+      "label": "Hover text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "qr_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "QR section border radius",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 20,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_mobile",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Section padding mobile",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "App download page"
+    }
+  ]
+}
+{% endschema %}
