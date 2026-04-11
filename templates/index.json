@@ -810,6 +810,17 @@
         "padding_bottom": 52,
         "padding_rate": 75
       }
+    },
+    "final_cta_cyber_qpNxCN": {
+      "type": "final-cta-cyber",
+      "name": "Final CTA Cyber",
+      "settings": {
+        "heading": "<div>Cyber-M1</div>Upgrade Your Experience",
+        "subheading": "Where AI technology meets private sensation",
+        "button_text": "Promotional Price — $99",
+        "button_link": "",
+        "footer_text": "Available for shipping within the United States and Canada"
+      }
     }
   },
   "order": [
@@ -823,6 +834,7 @@
     "training_stats_bhXVHW",
     "experience_impact_DqM9Yj",
     "trust_safety_MgjGKx",
+    "final_cta_cyber_qpNxCN",
     "featured_product_3z9xYm"
   ]
 }
