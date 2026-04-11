@@ -749,6 +749,25 @@
               },
               "blocks": {}
             },
+            "group_accordion_Gfdcq7": {
+              "type": "_group_accordion",
+              "name": "t:sections.main-product-tabs.blocks.group_accordion.name",
+              "settings": {},
+              "blocks": {
+                "accordion_add_bW7QiK": {
+                  "type": "_accordion_add",
+                  "name": "t:sections.main-product-tabs.blocks.accordion_add.name",
+                  "settings": {
+                    "open": false,
+                    "title": "Additional information"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "accordion_add_bW7QiK"
+              ]
+            },
             "product_back_instock_LCE6GJ": {
               "type": "_product_back_instock",
               "settings": {
@@ -788,6 +807,7 @@
             "product_variant_picker_38CYRz",
             "quantity_selector_bxE9gA",
             "product_buy_button_Pgyajq",
+            "group_accordion_Gfdcq7",
             "product_back_instock_LCE6GJ",
             "delivery_return_hQQktT",
             "product_trust_badge_JbCikt"
@@ -907,7 +927,7 @@
       "settings": {
         "main_title": "Trusted",
         "heading_pre": "Trusted by over",
-        "highlight_text": "10.000+",
+        "highlight_text": "10,000+",
         "heading_post": "customers worldwide"
       }
     }
