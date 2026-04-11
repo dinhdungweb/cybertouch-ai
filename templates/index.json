@@ -485,7 +485,7 @@
           "settings": {
             "title": "Ethereal",
             "focus": "Flow & Sensation",
-            "button_text": "Initialize",
+            "button_text": "",
             "is_featured": false
           }
         },
