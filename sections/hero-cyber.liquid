@@ -5,7 +5,7 @@
     <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/10 blur-[120px] rounded-full"></div>
   </div>
 
-  <div class="container mx-auto px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+  <div class="container mx-auto px-8 max-w-[1440px] relative z-10 grid md:grid-cols-2 gap-12 items-center">
     <div class="order-2 md:order-1">
       <h1 class="font-headline text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none mb-6">
         {{ section.settings.heading }}
@@ -30,10 +30,17 @@
 
     <div class="order-1 md:order-2 relative flex justify-center items-center">
       <div class="absolute inset-0 bg-primary/5 blur-3xl animate-pulse"></div>
-      {%- if section.settings.image != blank -%}
-        <img class="w-full max-w-md drop-shadow-[0_0_50px_rgba(224,141,255,0.2)]" src="{{ section.settings.image | image_url: width: 800 }}" alt="{{ section.settings.image.alt | escape }}" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}">
+      
+      {%- if section.settings.media_type == 'video' and section.settings.video != blank -%}
+        <div class="w-full max-w-md drop-shadow-[0_0_50px_rgba(224,141,255,0.2)]">
+          {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'w-full h-auto' }}
+        </div>
       {%- else -%}
-        <img class="w-full max-w-md drop-shadow-[0_0_50px_rgba(224,141,255,0.2)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUYTT5A7wF-F6h4fd145AlwA29Pgsd6xJ0IL9FuhScTblraiSSD5yD6rJa9CNB0ZvY31zHYEdMULajDray0aGJyS3k4nraciWU08Z9qqgaaRaNA9cYgI_oeyI-oZIKYv0IkY2hyAzGMjrJwSmudwg3Zsr8QRhzkYpFf5Lx6kQLjGQrh_mcWL7OGGDDtUPKNVSVz3tfR6y-52AF8ttUauXOhnCR9O0RKio-wu4oUcaLS3bN3DU1gHmfGm3sF2dZOxW449wWOCpPnoC-" alt="Hero Image" width="800" height="1200">
+        {%- if section.settings.image != blank -%}
+          <img class="w-full max-w-md drop-shadow-[0_0_50px_rgba(224,141,255,0.2)]" src="{{ section.settings.image | image_url: width: 800 }}" alt="{{ section.settings.image.alt | escape }}" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}">
+        {%- else -%}
+          <img class="w-full max-w-md drop-shadow-[0_0_50px_rgba(224,141,255,0.2)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUYTT5A7wF-F6h4fd145AlwA29Pgsd6xJ0IL9FuhScTblraiSSD5yD6rJa9CNB0ZvY31zHYEdMULajDray0aGJyS3k4nraciWU08Z9qqgaaRaNA9cYgI_oeyI-oZIKYv0IkY2hyAzGMjrJwSmudwg3Zsr8QRhzkYpFf5Lx6kQLjGQrh_mcWL7OGGDDtUPKNVSVz3tfR6y-52AF8ttUauXOhnCR9O0RKio-wu4oUcaLS3bN3DU1gHmfGm3sF2dZOxW449wWOCpPnoC-" alt="Hero Image" width="800" height="1200">
+        {%- endif -%}
       {%- endif -%}
 
       <!-- Floating HUD Data Elements -->
@@ -62,9 +69,24 @@
       "default": "<p>First AI-powered experience becomes touchable. Now, You can see, say, hear and feel.</p>"
     },
     {
+      "type": "select",
+      "id": "media_type",
+      "label": "Media Type",
+      "options": [
+        { "value": "image", "label": "Image" },
+        { "value": "video", "label": "Video" }
+      ],
+      "default": "image"
+    },
+    {
       "type": "image_picker",
       "id": "image",
       "label": "Hero Image"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Hero Video"
     },
     {
       "type": "text",
