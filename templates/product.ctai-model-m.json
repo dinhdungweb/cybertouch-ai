@@ -533,8 +533,19 @@
         "profile_drz3gV": {
           "type": "profile",
           "settings": {
-            "title": "Architect",
-            "focus": "Rhythm & Precision",
+            "image": "shopify://shop_images/morecomingsoon.png",
+            "title": "More Coming",
+            "focus": "More lover will be added every month",
+            "button_text": "Initialize",
+            "is_featured": false
+          }
+        },
+        "profile_WTGYtP": {
+          "type": "profile",
+          "disabled": true,
+          "settings": {
+            "title": "Ethereal",
+            "focus": "Flow & Sensation",
             "button_text": "Initialize",
             "is_featured": false
           }
@@ -546,7 +557,8 @@
         "profile_LXywih",
         "profile_XHV36Y",
         "profile_aNtDka",
-        "profile_drz3gV"
+        "profile_drz3gV",
+        "profile_WTGYtP"
       ],
       "name": "Lover Profiles",
       "settings": {
