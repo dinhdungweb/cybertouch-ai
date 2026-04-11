@@ -483,8 +483,9 @@
         "profile_FKMz7w": {
           "type": "profile",
           "settings": {
+            "image": "shopify://shop_images/Luna.jpg",
             "title": "Luna",
-            "focus": "Your lovely assistant",
+            "focus": "Want a office romance?",
             "button_text": "Initialize",
             "is_featured": false
           }
