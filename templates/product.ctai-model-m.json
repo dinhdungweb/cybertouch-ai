@@ -493,8 +493,9 @@
         "profile_iP7W3U": {
           "type": "profile",
           "settings": {
-            "title": "Ethereal",
-            "focus": "Flow & Sensation",
+            "image": "shopify://shop_images/Amy.jpg",
+            "title": "Amy",
+            "focus": "Her wild side is waiting for you to explore",
             "button_text": "Initialize",
             "is_featured": false
           }
