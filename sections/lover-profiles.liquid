@@ -13,9 +13,9 @@
       <div class="min-w-[300px] bg-surface-container p-8 border {% if block.settings.is_featured %}border-primary/40{% else %}border-outline-variant/30{% endif %} group hover:border-primary/50 transition-all snap-center relative" {{ block.shopify_attributes }}>
         <div class="w-full aspect-square mb-8 relative overflow-hidden bg-surface-container-highest">
           {%- if block.settings.image != blank -%}
-            <img class="w-full h-full object-cover {% unless block.settings.is_featured %}grayscale group-hover:grayscale-0{% else %}group-hover:scale-110{% endunless %} transition-all" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.image.alt | escape }}">
+            <img class="w-full h-full object-cover {% unless block.settings.is_featured %}grayscale group-hover:grayscale-0{% else %}group-hover:scale-110{% endunless %} transition-all" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.image.alt | escape }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}">
           {%- else -%}
-            <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtt664ql0Laww7dnj7TudfwdvlaOEA2O4XgRnjj_TL7Rju0N04omUutwodgsGspQ517YEi-6Ed8mVNah2ikFXxzggJetQBjcCfU6EzCHYuN_OlgurphEemm8PDPe76Zyvvyb_zuktWO25JNQw_CSBfHJ6wHsZXpXsVrQ79e8YHmQycnjZdlSLpK2D8eyevutsjolGIN_EmcCpYhxmGecywmOy14V0UXs1ce02dpD7dM0AEFBhAIf00J9WXBmL2GtbyJE5FarUb0Cvd" alt="Profile Image">
+            <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtt664ql0Laww7dnj7TudfwdvlaOEA2O4XgRnjj_TL7Rju0N04omUutwodgsGspQ517YEi-6Ed8mVNah2ikFXxzggJetQBjcCfU6EzCHYuN_OlgurphEemm8PDPe76Zyvvyb_zuktWO25JNQw_CSBfHJ6wHsZXpXsVrQ79e8YHmQycnjZdlSLpK2D8eyevutsjolGIN_EmcCpYhxmGecywmOy14V0UXs1ce02dpD7dM0AEFBhAIf00J9WXBmL2GtbyJE5FarUb0Cvd" alt="Profile Image" width="600" height="600">
           {%- endif -%}
         </div>
         <h4 class="font-headline text-lg font-bold uppercase tracking-widest mb-2 {% if block.settings.is_featured %}text-primary{% endif %}">

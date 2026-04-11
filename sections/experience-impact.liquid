@@ -1,9 +1,9 @@
 <section class="relative py-48 bg-surface-container-lowest overflow-hidden">
   <div class="absolute inset-0 opacity-40">
     {%- if section.settings.bg_image != blank -%}
-      <img class="w-full h-full object-cover" src="{{ section.settings.bg_image | image_url: width: 2000 }}" alt="{{ section.settings.bg_image.alt | escape }}">
+      <img class="w-full h-full object-cover" src="{{ section.settings.bg_image | image_url: width: 2000 }}" alt="{{ section.settings.bg_image.alt | escape }}" width="{{ section.settings.bg_image.width }}" height="{{ section.settings.bg_image.height }}">
     {%- else -%}
-      <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSlfvcGAdCPSCJJwxDZad5N4Iy-_7Q-oX-y-i9G-pQbNxnn1L7ebSL0rN2QTHnz1HS_f8nQPwXJJHYh2odXCIy8VXvnmNFg4OnbMZkqA54e2SBQ0EWowS240RA_MKL9wIuwlAXE4mainoW9yzkxJXDnVohoqZEJUn6R_GJ6NpWtd5ZWVYEizXHelZCRgs0ImcPeepV3Z1PdcLJTE0aRLCo6iP869ZsEvdbh5WCmZ0glpQi8u0M6AwaH9IKKtckZ9baQu0fAZ8PWE3G" alt="Experience Background">
+      <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSlfvcGAdCPSCJJwxDZad5N4Iy-_7Q-oX-y-i9G-pQbNxnn1L7ebSL0rN2QTHnz1HS_f8nQPwXJJHYh2odXCIy8VXvnmNFg4OnbMZkqA54e2SBQ0EWowS240RA_MKL9wIuwlAXE4mainoW9yzkxJXDnVohoqZEJUn6R_GJ0NpWtd5ZWVYEizXHelZCRgs0ImcPeepV3Z1PdcLJTE0aRLCo6iP869ZsEvdbh5WCmZ0glpQi8u0M6AwaH9IKKtckZ9baQu0fAZ8PWE3G" alt="Experience Background" width="2000" height="1200">
     {%- endif -%}
   </div>
   <div class="container mx-auto px-8 relative z-10 text-center">

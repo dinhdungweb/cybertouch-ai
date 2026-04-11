@@ -8,9 +8,9 @@
         <div class="bg-surface-container p-12 relative overflow-hidden">
           <div class="absolute top-0 right-0 w-full h-[1px] bg-secondary/30 -translate-x-full animate-[scan_4s_linear_infinite]"></div>
           {%- if section.settings.feature_image != blank -%}
-            <img class="w-full opacity-80 mix-blend-screen" src="{{ section.settings.feature_image | image_url: width: 1000 }}" alt="{{ section.settings.feature_image.alt | escape }}">
+            <img class="w-full opacity-80 mix-blend-screen" src="{{ section.settings.feature_image | image_url: width: 1000 }}" alt="{{ section.settings.feature_image.alt | escape }}" width="{{ section.settings.feature_image.width }}" height="{{ section.settings.feature_image.height }}">
           {%- else -%}
-            <img class="w-full opacity-80 mix-blend-screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd5ToJZdzoYkmYmV9UctDYMsiLTuI2iNrvYNojP_F4lEG1qW_yGH_MyWMNyMhSeXtGYwSfM_ywlUXVP1Wqf-_lLNYO13jiy6twPW4LwyQXHaiR0Y9xsZGsdBpJcrALj7HXt68dVxMIt_YzVGVnq60nCGK5D5ia3_5uyyKWRZAGeUPwspS8KvStLfSU_982L2DUNXbOLbi_QiXWJyJbUv6NoL_z8dr7ofYpI2wfdlEOWEF1DH6h-Y8caFtwppd08QxxDjXAaQS1ua62" alt="AI Experience">
+            <img class="w-full opacity-80 mix-blend-screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd5ToJZdzoYkmYmV9UctDYMsiLTuI2iNrvYNojP_F4lEG1qW_yGH_MyWMNyMhSeXtGYwSfM_ywlUXVP1Wqf-_lLNYO13jiy6twPW4LwyQXHaiR0Y9xsZGsdBpJcrALj7HXt68dVxMIt_YzVGVnq60nCGK5D5ia3_5uyyKWRZAGeUPwspS8KvStLfSU_982L2DUNXbOLbi_QiXWJyJbUv6NoL_z8dr7ofYpI2wfdlEOWEF1DH6h-Y8caFtwppd08QxxDjXAaQS1ua62" alt="AI Experience" width="1000" height="800">
           {%- endif -%}
         </div>
       </div>

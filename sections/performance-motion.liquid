@@ -20,9 +20,9 @@
       <div class="lg:col-span-2 relative">
         <div class="absolute inset-0 bg-secondary/10 blur-[100px] rounded-full"></div>
         {%- if section.settings.image != blank -%}
-          <img class="relative z-10 w-full border border-outline-variant/30" src="{{ section.settings.image | image_url: width: 1200 }}" alt="{{ section.settings.image.alt | escape }}">
+          <img class="relative z-10 w-full border border-outline-variant/30" src="{{ section.settings.image | image_url: width: 1200 }}" alt="{{ section.settings.image.alt | escape }}" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}">
         {%- else -%}
-          <img class="relative z-10 w-full border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTs4K0JyQT0Kh8aLBlAsVxBAe4vOA2B8aFZcP_AfnVDVk9-sAeCznMp0dd-QqcLVx-etk2Ch5ls3OGAUQBC9pFTRsWAWJpL_hfjUjAH4S54T9wCMMIyFBKbv_B-YT24vvaJybksxaNrqljoL_u2JSKiP5OdS3VzK4QWQGs7gT5X7mcC3YHw-njsq--9D8avGfv4hRnlXgEeGGWhUMANAdOVhI6SAcWFCcAjG7rWXeo-olLJkK4lito51sv0oFmoDUFdm-pjZIPbznP" alt="Technical Diagram">
+          <img class="relative z-10 w-full border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTs4K0JyQT0Kh8aLBlAsVxBAe4vOA2B8aFZcP_AfnVDVk9-sAeCznMp0dd-QqcLVx-etk2Ch5ls3OGAUQBC9pFTRsWAWJpL_hfjUjAH4S54T9wCMMIyFBKbv_B-YT24vvaJybksxaNrqljoL_u2JSKiP5OdS3VzK4QWQGs7gT5X7mcC3YHw-njsq--9D8avGfv4hRnlXgEeGGWhUMANAdOVhI6SAcWFCcAjG7rWXeo-olLJkK4lito51sv0oFmoDUFdm-pjZIPbznP" alt="Technical Diagram" width="1200" height="800">
         {%- endif -%}
       </div>
     </div>
