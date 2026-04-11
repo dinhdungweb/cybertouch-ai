@@ -702,6 +702,12 @@
             "review_text": "I am extremely impressed with both this company and its products."
           }
         },
+        "review_BKUH7z": {
+          "type": "review",
+          "settings": {
+            "review_text": "virtual world has never been so real"
+          }
+        },
         "review_dYfKwT": {
           "type": "review",
           "settings": {
@@ -759,6 +765,7 @@
       },
       "block_order": [
         "review_VrPcMW",
+        "review_BKUH7z",
         "review_dYfKwT",
         "review_bEaa7T",
         "review_6FYTe7",
