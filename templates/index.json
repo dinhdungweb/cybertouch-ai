@@ -487,6 +487,17 @@
       ],
       "name": "Aether Trust Pillars",
       "settings": {}
+    },
+    "aether_product_intro_RxkgdP": {
+      "type": "aether-product-intro",
+      "name": "Aether Product Intro",
+      "settings": {
+        "label": "The Cyber AI system",
+        "heading": "A breakthrough in <span class=\"text-primary-fixed\">human-AI connection</span>.",
+        "content": "<p>Designed to intuitively mirror your desires. CTAI is the world’s first bio-responsive device dedicated to sensory elevation.</p>",
+        "button_text": "View Product",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -494,6 +505,7 @@
     "slideshow_FntkPm",
     "aether_hero_t6UrUy",
     "aether_philosophy_gtpd3x",
-    "aether_trust_pillars_axJEdN"
+    "aether_trust_pillars_axJEdN",
+    "aether_product_intro_RxkgdP"
   ]
 }
