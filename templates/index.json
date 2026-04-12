@@ -842,7 +842,7 @@
               "name": "t:sections.main-product-tabs.blocks.group_accordion.name",
               "settings": {},
               "blocks": {
-                "accordion_description_KRjWUC": {
+                "accordion_description_8rHTR9": {
                   "type": "_accordion_description",
                   "name": "t:sections.main-product-tabs.blocks.accordion_description.name",
                   "settings": {
@@ -851,7 +851,7 @@
                   },
                   "blocks": {}
                 },
-                "accordion_add_bW7QiK": {
+                "accordion_add_piczeN": {
                   "type": "_accordion_add",
                   "name": "t:sections.main-product-tabs.blocks.accordion_add.name",
                   "settings": {
@@ -862,8 +862,8 @@
                 }
               },
               "block_order": [
-                "accordion_description_KRjWUC",
-                "accordion_add_bW7QiK"
+                "accordion_description_8rHTR9",
+                "accordion_add_piczeN"
               ]
             },
             "product_back_instock_LCE6GJ": {
@@ -889,7 +889,7 @@
               "settings": {
                 "show_icon": true,
                 "mess": "Guaranteed Safe Checkout",
-                "source": "1",
+                "source": "2",
                 "wimg": 350,
                 "svg": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
                 "height": 30
