@@ -423,7 +423,7 @@
         "subheading": "Built For Immersive",
         "label_bottom": "See, Say, Hear, and Feel",
         "button_text": "Explore Cyber-M1",
-        "button_link": "",
+        "button_link": "shopify://products/cyber-touch-ai-lover-m1",
         "status_text": "System Status: Optimal",
         "padding_top": 36,
         "padding_bottom": 36
@@ -496,7 +496,7 @@
         "heading": "A breakthrough in <span class=\"text-primary-fixed\">human-AI connection</span>.",
         "content": "<p>Designed to intuitively mirror your desires. CTAI is the world’s first bio-responsive device dedicated to sensory elevation.</p>",
         "button_text": "View Product",
-        "button_link": ""
+        "button_link": "shopify://products/cyber-touch-ai-lover-m1"
       }
     },
     "aether_innovation_qwgfCC": {
@@ -576,6 +576,15 @@
         "quote": "They are not just built a toy, a device; they've built a new connection between the AI and human. This experience is stunning.",
         "author": "John007 // CTAI EARLY ADOPTER"
       }
+    },
+    "aether_final_cta_KqGGgR": {
+      "type": "aether-final-cta",
+      "name": "Aether Final CTA",
+      "settings": {
+        "heading": "YOUR LOVER is <br><span class=\"text-secondary\">ready for you</span>.",
+        "button_text": "Discover the Product",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -587,6 +596,7 @@
     "aether_product_intro_RxkgdP",
     "aether_innovation_qwgfCC",
     "aether_storytelling_qjEPRq",
-    "aether_testimonial_qhKHxL"
+    "aether_testimonial_qhKHxL",
+    "aether_final_cta_KqGGgR"
   ]
 }
