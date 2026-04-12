@@ -1,0 +1,48 @@
+<section class="relative py-40 overflow-hidden bg-surface-container-lowest">
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px]"></div>
+  <div class="relative z-10 text-center max-w-3xl mx-auto px-10">
+    <h2 class="font-headline text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-12">
+      {{ section.settings.heading }}
+    </h2>
+    <div class="flex flex-col md:flex-row justify-center gap-6">
+      {%- if section.settings.button_text != blank -%}
+        <a
+          href="{{ section.settings.button_link }}"
+          class="kinetic-gradient px-12 py-5 font-headline font-bold uppercase tracking-widest text-on-primary-fixed"
+        >
+          {{- section.settings.button_text -}}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Aether Final CTA",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "YOUR LOVER is <br/><span class=\"text-secondary\">ready for you</span>."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Discover the Product"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Aether Final CTA"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,106 @@
+<section class="py-20">
+  <div class="grid md:grid-cols-2 gap-4">
+    {%- for block in section.blocks -%}
+      <div class="relative group overflow-hidden h-[600px]" {{ block.shopify_attributes }}>
+        {%- if block.settings.image != blank -%}
+          <img
+            class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000"
+            src="{{ block.settings.image | image_url: width: 1400 }}"
+            alt="{{ block.settings.image.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.image.width }}"
+            height="{{ block.settings.image.height }}"
+          >
+        {%- else -%}
+          <img
+            class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000"
+            src="{{ block.settings.placeholder_url }}"
+            alt="Story Image"
+            width="800"
+            height="600"
+          >
+        {%- endif -%}
+        <div class="absolute inset-0 bg-{{ block.settings.overlay_color }}/10 mix-blend-overlay"></div>
+        <div class="absolute bottom-10 left-10 max-w-sm">
+          <h4 class="font-headline text-2xl uppercase mb-4">
+            {{ block.settings.title }}
+          </h4>
+          <div class="font-body text-sm font-light text-white/80">
+            {{ block.settings.text }}
+          </div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Aether Storytelling",
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "type": "story",
+      "name": "Story Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "placeholder_url",
+          "label": "Placeholder Remote URL",
+          "info": "Used if no image is uploaded"
+        },
+        {
+          "type": "select",
+          "id": "overlay_color",
+          "label": "Overlay Tint",
+          "options": [
+            { "value": "primary", "label": "Primary (Purple)" },
+            { "value": "secondary", "label": "Secondary (Cyan)" }
+          ],
+          "default": "primary"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Pure Immersion"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Lose yourself in the rhythm of video, sound and touch. No distractions, only the present moment."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Aether Storytelling",
+      "blocks": [
+        {
+          "type": "story",
+          "settings": {
+            "title": "Pure Immersion",
+            "overlay_color": "primary",
+            "placeholder_url": "https://lh3.googleusercontent.com/aida/ADBb0uihcczdf9C1b1WYhr6VOkXTKhZP5dwQiY__e0a2OvUFpE9HiHGLMLcy7DLVPF_tY2DsbKSeDTSZxQZYERbyM3qb8rn-gqgtXdFybJRjadBd-4f82uy4imNmDGu6zKyR9Dpws93_GuTZyCsdiHbAneTD13YbYyD9X6BxOHqKQtlTan6SnI0DTX-yunMykyQDvDTJhNySC1BGtmovpZa2Nu6ej2O3FFLXRZ3LoUB6OB5tkNS7M3L-1GoV3STaf4c_44ergZuHv3IKXlU"
+          }
+        },
+        {
+          "type": "story",
+          "settings": {
+            "title": "Unbound Potential",
+            "overlay_color": "secondary",
+            "placeholder_url": "https://lh3.googleusercontent.com/aida/ADBb0ujNEg9Rk1xp6-2PnxPRlsSw1TiPigcsBAV0VfrAiq2Cj8zOriIqsut98Brg4I7Xt7o_BpQxOwygNzw5rCx4WAAH-dF12u6bpyNsvhyobFO3Iilx5TRwb8T6x1JaWSyFctNuBKJtH145La66hfnHblztjDYRjHSQcN8LJ2m4soWWi4VkHpfrMG3ZVSttuol879_5uqbPA87rksltVrRE1PZ_oXWaspAF8SbDwfTr2FQ816JK9ox4RnRXejNvpGMbRSYb0dcubP6KJDQ"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

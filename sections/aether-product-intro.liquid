@@ -1,0 +1,91 @@
+<section class="relative min-h-[819px] flex items-center overflow-hidden bg-black">
+  <div class="absolute right-0 w-1/2 h-full hidden lg:block">
+    {%- if section.settings.image != blank -%}
+      <img
+        class="w-full h-full object-cover opacity-70"
+        src="{{ section.settings.image | image_url: width: 1400 }}"
+        alt="{{ section.settings.image.alt | escape }}"
+        loading="lazy"
+        width="{{ section.settings.image.width }}"
+        height="{{ section.settings.image.height }}"
+      >
+    {%- else -%}
+      <img
+        class="w-full h-full object-cover opacity-70"
+        src="https://lh3.googleusercontent.com/aida/ADBb0ui-4E_TFjwMl_6iulFHpCHF43T6HUmbCafNMevPdDMZO8d-AHioZbRQnHl2dkIU-6AexwTyMd8l5RoJ-0JpiHZDaRDKTZ5sWI2aWnV3fE1estDdBiSDnJjhSyZcrjgh5NEVZfDi_Ph8YIPM_iL8qzrmp1zzu1VWYeOzuFzIPsJup4frYAP9TgH0HyinH42jKQqQmoJSEPT2kECWmrOJcoxUIAK9_wGvzX3s5dDjVj1NuvrlOs5EGkUsHC2aJqGeO6LErk9Cv-Vj_2s"
+        alt="Product Detail"
+        width="1200"
+        height="1200"
+      >
+    {%- endif -%}
+    <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-10 w-full relative z-10">
+    <div class="max-w-xl">
+      <div class="font-label text-secondary text-xs tracking-[0.4em] uppercase mb-6">
+        {{- section.settings.label -}}
+      </div>
+      <h2 class="font-headline text-5xl md:text-7xl font-bold uppercase mb-8 leading-none">
+        {{ section.settings.heading }}
+      </h2>
+      <div class="font-body text-on-surface-variant text-xl mb-12 font-light leading-relaxed">
+        {{ section.settings.content }}
+      </div>
+      {%- if section.settings.button_text != blank -%}
+        <a
+          href="{{ section.settings.button_link }}"
+          class="inline-block bg-transparent border border-secondary text-secondary px-10 py-4 font-headline uppercase tracking-widest hover:bg-secondary/10 transition-all"
+        >
+          {{- section.settings.button_text -}}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Aether Product Intro",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Product Detail Image"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label",
+      "default": "The Cyber AI system"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "A breakthrough in <span class=\"text-primary-fixed\">human-AI connection</span>."
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Designed to intuitively mirror your desires. CTAI is the world’s first bio-responsive device dedicated to sensory elevation.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "View Product"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Aether Product Intro"
+    }
+  ]
+}
+{% endschema %}

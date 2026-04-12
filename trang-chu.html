@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AETHER AI | Redefining Sensation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#1f1f1f",
+                    "primary": "#e08dff",
+                    "on-primary-fixed": "#000000",
+                    "secondary-container": "#006970",
+                    "on-tertiary-fixed": "#380015",
+                    "surface-container": "#191919",
+                    "outline": "#757575",
+                    "surface-container-highest": "#262626",
+                    "tertiary": "#ff6b98",
+                    "surface-bright": "#2c2c2c",
+                    "on-tertiary": "#47001d",
+                    "primary-dim": "#bc00fb",
+                    "secondary": "#00eefc",
+                    "primary-fixed-dim": "#d160ff",
+                    "on-error-container": "#ffb2b9",
+                    "on-surface": "#ffffff",
+                    "on-background": "#ffffff",
+                    "outline-variant": "#484848",
+                    "on-primary-container": "#3d0055",
+                    "inverse-primary": "#9a00cf",
+                    "primary-container": "#d978ff",
+                    "on-secondary-container": "#e3fdff",
+                    "on-primary": "#4f006c",
+                    "secondary-fixed-dim": "#00deec",
+                    "secondary-dim": "#00deec",
+                    "error-dim": "#d73357",
+                    "surface-container-low": "#131313",
+                    "surface-dim": "#0e0e0e",
+                    "on-secondary": "#005359",
+                    "tertiary-container": "#fc0078",
+                    "on-tertiary-fixed-variant": "#760035",
+                    "error-container": "#a70138",
+                    "inverse-on-surface": "#555555",
+                    "primary-fixed": "#d978ff",
+                    "error": "#ff6e84",
+                    "on-primary-fixed-variant": "#4c0068",
+                    "surface-tint": "#e08dff",
+                    "surface-container-lowest": "#000000",
+                    "surface": "#0e0e0e",
+                    "tertiary-dim": "#e4006c",
+                    "inverse-surface": "#f9f9f9",
+                    "surface-variant": "#262626",
+                    "background": "#0e0e0e",
+                    "on-error": "#490013",
+                    "on-surface-variant": "#ababab",
+                    "tertiary-fixed-dim": "#ff769e",
+                    "secondary-fixed": "#00eefc",
+                    "on-tertiary-container": "#000000",
+                    "on-secondary-fixed": "#003f43",
+                    "tertiary-fixed": "#ff8eac",
+                    "on-secondary-fixed-variant": "#005e64"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #e08dff 0%, #00eefc 100%);
+        }
+        .glass-hud {
+            background: rgba(25, 25, 25, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .light-streak {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #00eefc, transparent);
+            opacity: 0.3;
+        }
+        .corner-bracket-tl {
+            border-top: 1px solid #00eefc;
+            border-left: 1px solid #00eefc;
+        }
+        .corner-bracket-br {
+            border-bottom: 1px solid #00eefc;
+            border-right: 1px solid #00eefc;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest">
+<!-- TopNavBar Shared Component -->
+<nav class="fixed top-0 w-full z-50 bg-[#0e0e0e]/80 backdrop-blur-xl border-b border-[#00eefc]/10 shadow-[0_0_20px_rgba(224,141,255,0.05)] transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center px-10 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-white font-headline" style="">AETHER AI</div>
+<div class="hidden md:flex gap-12">
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] text-sm transition-all duration-300 ease-in-out text-white/60 hover:text-white" href="#" style="">Philosophy</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] text-sm transition-all duration-300 ease-in-out text-white/60 hover:text-white" href="#" style="">Technology</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] text-sm transition-all duration-300 ease-in-out text-white/60 hover:text-white" href="#" style="">Experience</a>
+</div>
+<button class="font-['Space_Grotesk'] uppercase tracking-[0.15em] text-sm bg-transparent border border-[#e08dff]/30 text-[#e08dff] px-6 py-2 hover:bg-[#e08dff]/10 hover:shadow-[0_0_15px_#e08dff] transition-all duration-300" style="">
+                Connect Neural
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60 mix-blend-screen" data-alt="High-end futuristic device with glowing blue and purple light in a smoky, atmospheric environment" src="https://lh3.googleusercontent.com/aida/ADBb0uh63OzqVsAB6PCHY_f1ctObzqILmUsQ0DneCezrrqvqX8mGLA_uxHhntvm10pbs8qutW9oDnZ2BhLyeBMbUkdBGfRDI6NVpVzmsLak3UY_Vh-C-2R7y4QS-uG_kmPo-4mdA9_MxqG_lRzWnmlFi6Zu3fIloBCJzcI9uOOUoWGVhXlBbVrfi5EcoyRvAY1mNWvJl6TB8DOiVid5sn7YvQcHscaOMJGEICsTt03LD_uR7tHxjg8JIA40ewx2Iwoy_34T29YbVS5TutzM" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-80"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-5xl">
+<div class="inline-block mb-4">
+<span class="font-headline text-secondary tracking-[0.3em] uppercase text-xs" style="">Touch the future</span>
+<div class="light-streak mt-2 w-full"></div>
+</div>
+<h1 class="font-headline text-5xl md:text-8xl font-bold uppercase tracking-tight mb-6 leading-none" style="">
+                Where technology <br/><span class="text-primary italic" style="">meets sensation</span>
+</h1>
+<p class="font-body text-on-surface-variant text-lg md:text-2xl font-light mb-2 max-w-2xl mx-auto" style="">
+                Built For Immersive</p>
+<p class="font-label text-secondary-dim tracking-[0.2em] uppercase text-sm mb-12" style="">
+                See, Say, Hear, and Feel
+            </p>
+<button class="kinetic-gradient px-12 py-5 font-headline font-bold uppercase tracking-widest text-on-primary-fixed hover:shadow-[0_0_40px_rgba(224,141,255,0.4)] transition-all" style="">
+                Explore Cyber-M1</button>
+</div>
+<!-- HUD Decorative Elements -->
+<div class="absolute bottom-10 left-10 hidden md:block">
+<div class="text-[10px] font-label text-secondary/40 tracking-widest uppercase mb-2" style="">System Status: Optimal</div>
+<div class="flex gap-1 h-8 items-end">
+<div class="w-1 bg-secondary/20 h-4"></div>
+<div class="w-1 bg-secondary/40 h-6"></div>
+<div class="w-1 bg-secondary h-8"></div>
+<div class="w-1 bg-secondary/60 h-5"></div>
+</div>
+</div>
+</section>
+<!-- Philosophy -->
+<section class="py-32 px-10 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 border-l border-t border-primary/20"></div>
+<img class="w-full aspect-square object-cover grayscale opacity-40 hover:grayscale-0 transition-all duration-1000" data-alt="Futuristic humanoid entity of light and a human woman in a deep atmospheric connection, representing neural harmony" src="https://lh3.googleusercontent.com/aida/ADBb0ui8G8E-MdUBryjgV-5zXkHpkkisk0AhXQ6rM1UZbmFS85SSyxyW8LgygWemPxYRkkC4nfby5koZvWxNdWTB6T2uXFqJNOsYgSgUd0R49j0bVM2uDcy-ebKClTRanaIJRv-mEfkuzNffi0Aim0PC7MX1gphQToEoCg4h89NJVJAjhP2Qfs9GhcDcNVA61Zo2zOD-8ByL-qjpOnMPSfemvYRpPQOSQABssEL9EtWdBks31h9hqXOj3J_MK0QxNRJm18_Yn_qS9rVV4fc" style=""/>
+<div class="absolute bottom-4 right-4 bg-surface-container p-6 glass-hud">
+<div class="font-headline text-primary text-4xl font-light" style="">0ur</div>
+<div class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant" style="">mission</div>
+</div>
+</div>
+<div>
+<h2 class="font-headline text-4xl md:text-6xl uppercase tracking-tighter mb-8 leading-tight" style="">We bring <span class="text-secondary" style="">AI</span> TO life.</h2>
+<div class="space-y-6 font-body text-on-surface-variant text-lg font-light leading-relaxed">
+<p class="" style="">Headquartered in California, USA, near Silicon Valley, Cyber Touch AI leverages cutting-edge AI technology to push the boundaries of virtual reality, break down the barriers between dimensions, and integrate AI into the real world. </p>
+<p class="" style="">The Cyber-M1, developed through our advanced production supply chain, allows users to experience the charm of an AI Lover in real life at the lowest cost.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Pillars -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-px bg-outline-variant/20">
+<div class="bg-surface-container p-12 hover:bg-surface-container-highest transition-all group">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 group-hover:scale-110 transition-transform" data-icon="shield_lock" style="">shield_lock</span>
+<h3 class="font-headline text-lg uppercase tracking-wider mb-4" style="">Privacy-First Design</h3>
+<p class="font-body text-sm text-on-surface-variant font-light" style="">Advanced encryption technology ensures your most intimate moments stay yours.</p>
+</div>
+<div class="bg-surface-container p-12 hover:bg-surface-container-highest transition-all group">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 group-hover:scale-110 transition-transform" data-icon="diamond" style="">diamond</span>
+<h3 class="font-headline text-lg uppercase tracking-wider mb-4" style="">Premium Materials</h3>
+<p class="font-body text-sm text-on-surface-variant font-light" style="">Medical-grade biosynthetics designed for comfort and longevity.</p>
+</div>
+<div class="bg-surface-container p-12 hover:bg-surface-container-highest transition-all group">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-6 group-hover:scale-110 transition-transform" data-icon="visibility_off" style="">visibility_off</span>
+<h3 class="font-headline text-lg uppercase tracking-wider mb-4" style="">Discreet Experience</h3>
+<p class="font-body text-sm text-on-surface-variant font-light" style="">Everything you imagine can become what you see.</p>
+</div>
+<div class="bg-surface-container p-12 hover:bg-surface-container-highest transition-all group">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 group-hover:scale-110 transition-transform" data-icon="neurology" style="">neurology</span>
+<h3 class="font-headline text-lg uppercase tracking-wider mb-4" style="">Advanced AI Technology</h3>
+<p class="font-body text-sm text-on-surface-variant font-light" style="">Your AI lover can continuously learn and adapt to you, remembering every detail about you.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Soft Intro -->
+<section class="relative min-h-[819px] flex items-center overflow-hidden bg-black">
+<div class="absolute right-0 w-1/2 h-full hidden lg:block">
+<img class="w-full h-full object-cover opacity-70" data-alt="Sleek chrome-finished device detail with subtle purple glowing accents and dramatic shadow lighting against a dark background" src="https://lh3.googleusercontent.com/aida/ADBb0ui-4E_TFjwMl_6iulFHpCHF43T6HUmbCafNMevPdDMZO8d-AHioZbRQnHl2dkIU-6AexwTyMd8l5RoJ-0JpiHZDaRDKTZ5sWI2aWnV3fE1estDdBiSDnJjhSyZcrjgh5NEVZfDi_Ph8YIPM_iL8qzrmp1zzu1VWYeOzuFzIPsJup4frYAP9TgH0HyinH42jKQqQmoJSEPT2kECWmrOJcoxUIAK9_wGvzX3s5dDjVj1NuvrlOs5EGkUsHC2aJqGeO6LErk9Cv-Vj_2s" style=""/>
+<div class="absolute inset-0 bg-gradient-to-r from-black to-transparent"></div>
+</div>
+<div class="max-w-7xl mx-auto px-10 w-full relative z-10">
+<div class="max-w-xl">
+<div class="font-label text-secondary text-xs tracking-[0.4em] uppercase mb-6" style="">The Cyber AI system</div>
+<h2 class="font-headline text-5xl md:text-7xl font-bold uppercase mb-8 leading-none" style="">A breakthrough in <span class="text-primary-fixed" style="">human-AI connection</span>.</h2>
+<p class="font-body text-on-surface-variant text-xl mb-12 font-light leading-relaxed" style="">
+                    Designed to intuitively mirror your desires. CTAI is the world’s first bio-responsive device dedicated to sensory elevation.
+                </p>
+<button class="bg-transparent border border-secondary text-secondary px-10 py-4 font-headline uppercase tracking-widest hover:bg-secondary/10 transition-all" style="">
+                    View Product
+                </button>
+</div>
+</div>
+</section>
+<!-- Core Tech Bento -->
+<section class="py-32 px-10">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline text-3xl uppercase tracking-widest" style="">Innovation Highlights</h2>
+<div class="w-24 h-0.5 bg-primary mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- AI Responsiveness -->
+<div class="bg-surface-container p-8 relative overflow-hidden group">
+<div class="corner-bracket-tl absolute top-4 left-4 w-4 h-4"></div>
+<div class="font-headline text-4xl mb-24 opacity-10 group-hover:opacity-100 transition-opacity" style="">01</div>
+<h3 class="font-headline text-2xl uppercase mb-4" style="">AI Responsiveness</h3>
+<p class="font-body text-on-surface-variant text-sm font-light mb-6" style="">Real-time responsiveness from AI and devices. Your thoughts instantly transform into what you see, hear, and feel.</p>
+<div class="h-12 flex items-center gap-1">
+<div class="flex-1 bg-secondary/10 h-1 rounded-full overflow-hidden">
+<div class="w-3/4 h-full bg-secondary"></div>
+</div>
+<span class="text-[10px] font-label text-secondary" style="">ACTIVE</span>
+</div>
+</div>
+<!-- Multi-Sensory Interaction -->
+<div class="bg-surface-container p-8 relative overflow-hidden group">
+<div class="font-headline text-4xl mb-24 opacity-10 group-hover:opacity-100 transition-opacity" style="">02</div>
+<h3 class="font-headline text-2xl uppercase mb-4" style="">Multi-Sensory</h3>
+<p class="font-body text-on-surface-variant text-sm font-light mb-6" style="">Integrating haptics, acoustics, and thermal modulations for total immersion.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary/40" data-icon="waves" style="">waves</span>
+<span class="material-symbols-outlined text-primary" data-icon="thermostat" style="">thermostat</span>
+<span class="material-symbols-outlined text-primary/40" data-icon="volume_up" style="">volume_up</span>
+</div>
+</div>
+<!-- Adaptive Experience -->
+<div class="bg-surface-container p-8 relative overflow-hidden group">
+<div class="corner-bracket-br absolute bottom-4 right-4 w-4 h-4"></div>
+<div class="font-headline text-4xl mb-24 opacity-10 group-hover:opacity-100 transition-opacity" style="">03</div>
+<h3 class="font-headline text-2xl uppercase mb-4" style="">Adaptive Flow</h3>
+<p class="font-body text-on-surface-variant text-sm font-light mb-6" style="">Learns your preferences over time, tailoring every pulse to your personal baseline.</p>
+<div class="flex flex-col gap-2">
+<div class="h-0.5 bg-white/5 w-full"></div>
+<div class="h-0.5 bg-white/10 w-full"></div>
+<div class="h-0.5 bg-secondary/60 w-3/4"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lifestyle / Storytelling -->
+<section class="py-20">
+<div class="grid md:grid-cols-2 gap-4">
+<div class="relative group overflow-hidden h-[600px]">
+<img class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000" data-alt="Man wearing high-tech headphones in a dark room with vibrant purple and blue neural energy wisps surrounding him, representing deep immersion" src="https://lh3.googleusercontent.com/aida/ADBb0uihcczdf9C1b1WYhr6VOkXTKhZP5dwQiY__e0a2OvUFpE9HiHGLMLcy7DLVPF_tY2DsbKSeDTSZxQZYERbyM3qb8rn-gqgtXdFybJRjadBd-4f82uy4imNmDGu6zKyR9Dpws93_GuTZyCsdiHbAneTD13YbYyD9X6BxOHqKQtlTan6SnI0DTX-yunMykyQDvDTJhNySC1BGtmovpZa2Nu6ej2O3FFLXRZ3LoUB6OB5tkNS7M3L-1GoV3STaf4c_44ergZuHv3IKXlU" style=""/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+<div class="absolute bottom-10 left-10 max-w-sm">
+<h4 class="font-headline text-2xl uppercase mb-4" style="">Pure Immersion</h4>
+<p class="font-body text-sm font-light text-white/80" style="">Lose yourself in the rhythm of video, sound and touch. No distractions, only the present moment.</p>
+</div>
+</div>
+<div class="relative group overflow-hidden h-[600px]">
+<img class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000" data-alt="A lone figure standing before a vast, glowing cosmic nebula with swirling pink, orange, and blue celestial energy, representing the infinite expanse of the human-AI connection." src="https://lh3.googleusercontent.com/aida/ADBb0ujNEg9Rk1xp6-2PnxPRlsSw1TiPigcsBAV0VfrAiq2Cj8zOriIqsut98Brg4I7Xt7o_BpQxOwygNzw5rCx4WAAH-dF12u6bpyNsvhyobFO3Iilx5TRwb8T6x1JaWSyFctNuBKJtH145La66hfnHblztjDYRjHSQcN8LJ2m4soWWi4VkHpfrMG3ZVSttuol879_5uqbPA87rksltVrRE1PZ_oXWaspAF8SbDwfTr2FQ816JK9ox4RnRXejNvpGMbRSYb0dcubP6KJDQ" style=""/>
+<div class="absolute inset-0 bg-secondary/10 mix-blend-overlay"></div>
+<div class="absolute bottom-10 left-10 max-w-sm">
+<h4 class="font-headline text-2xl uppercase mb-4" style="">Unbound Potential</h4>
+<p class="font-body text-sm font-light text-white/80" style="">Explore new dimensions of feeling with hardware that evolves with your curiosity.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof -->
+<section class="py-32 bg-black">
+<div class="max-w-4xl mx-auto px-10 text-center">
+<span class="material-symbols-outlined text-secondary mb-8 text-5xl" data-icon="auto_awesome" style="">auto_awesome</span>
+<div class="space-y-20">
+<blockquote class="font-headline text-2xl md:text-4xl italic font-light leading-snug" style="">
+                    "They are not just built a toy, a device; they've built a new connection between the AI and human. This experience is stunning."
+                </blockquote>
+<div class="flex justify-center items-center gap-6">
+<div class="w-12 h-px bg-outline-variant"></div>
+<cite class="font-label uppercase tracking-widest text-xs not-italic text-on-surface-variant">John007 // CTAI EARLY ADOPTER</cite>
+<div class="w-12 h-px bg-outline-variant"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="relative py-40 overflow-hidden bg-surface-container-lowest">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px]"></div>
+<div class="relative z-10 text-center max-w-3xl mx-auto px-10">
+<h2 class="font-headline text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-12" style="">YOUR LOVER is <br/><span class="text-secondary" style="">ready for you</span>.</h2>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="kinetic-gradient px-12 py-5 font-headline font-bold uppercase tracking-widest text-on-primary-fixed" style="">
+                    Discover the Product
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer Shared Component -->
+<footer class="w-full py-12 border-t border-[#191919] bg-[#000000]">
+<div class="flex flex-col md:flex-row justify-between items-center px-10 gap-6 max-w-[1920px] mx-auto">
+<div class="text-lg font-black text-[#e08dff] font-headline" style="">AETHER AI</div>
+<div class="flex gap-8">
+<a class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-white/30 hover:text-[#e08dff] transition-colors" href="#" style="">Privacy Protocol</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-white/30 hover:text-[#e08dff] transition-colors" href="#" style="">Terms of Synthesis</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-white/30 hover:text-[#e08dff] transition-colors" href="#" style="">Global Node Map</a>
+</div>
+<div class="font-['Space_Grotesk'] text-[10px] tracking-widest uppercase text-[#00eefc]" style="">
+                © 2024 AETHER AI. NEURAL HARMONY SECURED.
+            </div>
+</div>
+</footer>
+</body></html>

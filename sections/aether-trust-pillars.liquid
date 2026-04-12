@@ -1,0 +1,108 @@
+<section class="py-24 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto px-10">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-px bg-outline-variant/20">
+      {%- for block in section.blocks -%}
+        <div class="bg-surface-container p-12 hover:bg-surface-container-highest transition-all group" {{ block.shopify_attributes }}>
+          {%- if block.settings.icon != blank -%}
+            <span class="material-symbols-outlined text-{{ block.settings.icon_color }} text-4xl mb-6 group-hover:scale-110 transition-transform">
+              {{- block.settings.icon -}}
+            </span>
+          {%- endif -%}
+          <h3 class="font-headline text-lg uppercase tracking-wider mb-4">
+            {{ block.settings.heading }}
+          </h3>
+          <div class="font-body text-sm text-on-surface-variant font-light">
+            {{ block.settings.text }}
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Aether Trust Pillars",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "pillar",
+      "name": "Pillar",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Material Symbol Icon Name",
+          "default": "shield_lock"
+        },
+        {
+          "type": "select",
+          "id": "icon_color",
+          "label": "Icon Color",
+          "options": [
+            { "value": "primary", "label": "Primary (Purple)" },
+            { "value": "secondary", "label": "Secondary (Cyan)" },
+            { "value": "tertiary", "label": "Tertiary (Pink)" }
+          ],
+          "default": "primary"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Privacy-First Design"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Advanced encryption technology ensures your most intimate moments stay yours."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Aether Trust Pillars",
+      "blocks": [
+        {
+          "type": "pillar",
+          "settings": {
+            "icon": "shield_lock",
+            "icon_color": "primary",
+            "heading": "Privacy-First Design",
+            "text": "Advanced encryption technology ensures your most intimate moments stay yours."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "icon": "diamond",
+            "icon_color": "secondary",
+            "heading": "Premium Materials",
+            "text": "Medical-grade biosynthetics designed for comfort and longevity."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "icon": "visibility_off",
+            "icon_color": "tertiary",
+            "heading": "Discreet Experience",
+            "text": "Everything you imagine can become what you see."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "icon": "neurology",
+            "icon_color": "primary",
+            "heading": "Advanced AI Technology",
+            "text": "Your AI lover can continuously learn and adapt to you, remembering every detail about you."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

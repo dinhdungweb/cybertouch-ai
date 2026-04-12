@@ -1,0 +1,83 @@
+<section class="py-32 px-10 bg-surface-container-lowest">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+    <div class="relative">
+      <div class="absolute -top-10 -left-10 w-40 h-40 border-l border-t border-primary/20"></div>
+      {%- if section.settings.image != blank -%}
+        <img
+          class="w-full aspect-square object-cover grayscale opacity-40 hover:grayscale-0 transition-all duration-1000"
+          src="{{ section.settings.image | image_url: width: 1200 }}"
+          alt="{{ section.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ section.settings.image.width }}"
+          height="{{ section.settings.image.height }}"
+        >
+      {%- else -%}
+        <img
+          class="w-full aspect-square object-cover grayscale opacity-40 hover:grayscale-0 transition-all duration-1000"
+          src="https://lh3.googleusercontent.com/aida/ADBb0ui8G8E-MdUBryjgV-5zXkHpkkisk0AhXQ6rM1UZbmFS85SSyxyW8LgygWemPxYRkkC4nfby5koZvWxNdWTB6T2uXFqJNOsYgSgUd0R49j0bVM2uDcy-ebKClTRanaIJRv-mEfkuzNffi0Aim0PC7MX1gphQToEoCg4h89NJVJAjhP2Qfs9GhcDcNVA61Zo2zOD-8ByL-qjpOnMPSfemvYRpPQOSQABssEL9EtWdBks31h9hqXOj3J_MK0QxNRJm18_Yn_qS9rVV4fc"
+          alt="Philosophy Image"
+          width="800"
+          height="800"
+        >
+      {%- endif -%}
+      <div class="absolute bottom-4 right-4 bg-surface-container p-6 glass-hud">
+        <div class="font-headline text-primary text-4xl font-light">
+          {{- section.settings.accent_text -}}
+        </div>
+        <div class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">
+          {{- section.settings.accent_label -}}
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 class="font-headline text-4xl md:text-6xl uppercase tracking-tighter mb-8 leading-tight">
+        {{ section.settings.heading }}
+      </h2>
+      <div class="space-y-6 font-body text-on-surface-variant text-lg font-light leading-relaxed">
+        {{ section.settings.content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Aether Philosophy",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Philosophy Image"
+    },
+    {
+      "type": "text",
+      "id": "accent_text",
+      "label": "Accent Text (Big)",
+      "default": "0ur"
+    },
+    {
+      "type": "text",
+      "id": "accent_label",
+      "label": "Accent Label (Small)",
+      "default": "mission"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "We bring <span class=\"text-secondary\">AI</span> TO life."
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Headquartered in California, USA, near Silicon Valley, Cyber Touch AI leverages cutting-edge AI technology to push the boundaries of virtual reality, break down the barriers between dimensions, and integrate AI into the real world.</p><p>The Cyber-M1, developed through our advanced production supply chain, allows users to experience the charm of an AI Lover in real life at the lowest cost.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Aether Philosophy"
+    }
+  ]
+}
+{% endschema %}
