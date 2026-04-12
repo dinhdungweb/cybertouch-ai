@@ -921,7 +921,6 @@
                 "show_icon": true,
                 "mess": "Guaranteed Safe Checkout",
                 "source": "1",
-                "image": "shopify://shop_images/Picture1.png",
                 "wimg": 480,
                 "svg": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
                 "height": 30
