@@ -539,6 +539,35 @@
       "settings": {
         "heading": "Innovation Highlights"
       }
+    },
+    "aether_storytelling_qjEPRq": {
+      "type": "aether-storytelling",
+      "blocks": {
+        "story_63dhyG": {
+          "type": "story",
+          "settings": {
+            "placeholder_url": "https://lh3.googleusercontent.com/aida/ADBb0uihcczdf9C1b1WYhr6VOkXTKhZP5dwQiY__e0a2OvUFpE9HiHGLMLcy7DLVPF_tY2DsbKSeDTSZxQZYERbyM3qb8rn-gqgtXdFybJRjadBd-4f82uy4imNmDGu6zKyR9Dpws93_GuTZyCsdiHbAneTD13YbYyD9X6BxOHqKQtlTan6SnI0DTX-yunMykyQDvDTJhNySC1BGtmovpZa2Nu6ej2O3FFLXRZ3LoUB6OB5tkNS7M3L-1GoV3STaf4c_44ergZuHv3IKXlU",
+            "overlay_color": "primary",
+            "title": "Pure Immersion",
+            "text": "Lose yourself in the rhythm of video, sound and touch. No distractions, only the present moment."
+          }
+        },
+        "story_n8aVYw": {
+          "type": "story",
+          "settings": {
+            "placeholder_url": "https://lh3.googleusercontent.com/aida/ADBb0ujNEg9Rk1xp6-2PnxPRlsSw1TiPigcsBAV0VfrAiq2Cj8zOriIqsut98Brg4I7Xt7o_BpQxOwygNzw5rCx4WAAH-dF12u6bpyNsvhyobFO3Iilx5TRwb8T6x1JaWSyFctNuBKJtH145La66hfnHblztjDYRjHSQcN8LJ2m4soWWi4VkHpfrMG3ZVSttuol879_5uqbPA87rksltVrRE1PZ_oXWaspAF8SbDwfTr2FQ816JK9ox4RnRXejNvpGMbRSYb0dcubP6KJDQ",
+            "overlay_color": "secondary",
+            "title": "Unbound Potential",
+            "text": "Lose yourself in the rhythm of video, sound and touch. No distractions, only the present moment."
+          }
+        }
+      },
+      "block_order": [
+        "story_63dhyG",
+        "story_n8aVYw"
+      ],
+      "name": "Aether Storytelling",
+      "settings": {}
     }
   },
   "order": [
@@ -548,6 +577,7 @@
     "aether_philosophy_gtpd3x",
     "aether_trust_pillars_axJEdN",
     "aether_product_intro_RxkgdP",
-    "aether_innovation_qwgfCC"
+    "aether_innovation_qwgfCC",
+    "aether_storytelling_qjEPRq"
   ]
 }
