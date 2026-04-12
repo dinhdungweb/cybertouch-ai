@@ -568,6 +568,14 @@
       ],
       "name": "Aether Storytelling",
       "settings": {}
+    },
+    "aether_testimonial_qhKHxL": {
+      "type": "aether-testimonial",
+      "name": "Aether Testimonial",
+      "settings": {
+        "quote": "They are not just built a toy, a device; they've built a new connection between the AI and human. This experience is stunning.",
+        "author": "John007 // CTAI EARLY ADOPTER"
+      }
     }
   },
   "order": [
@@ -578,6 +586,7 @@
     "aether_trust_pillars_axJEdN",
     "aether_product_intro_RxkgdP",
     "aether_innovation_qwgfCC",
-    "aether_storytelling_qjEPRq"
+    "aether_storytelling_qjEPRq",
+    "aether_testimonial_qhKHxL"
   ]
 }
