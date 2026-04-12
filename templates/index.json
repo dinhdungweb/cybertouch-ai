@@ -498,6 +498,47 @@
         "button_text": "View Product",
         "button_link": ""
       }
+    },
+    "aether_innovation_qwgfCC": {
+      "type": "aether-innovation",
+      "blocks": {
+        "response_RTyaRY": {
+          "type": "response",
+          "settings": {
+            "show_top_bracket": true,
+            "show_bottom_bracket": false,
+            "title": "AI Responsiveness",
+            "content": "Real-time responsiveness from AI and devices. Your thoughts instantly transform into what you see, hear, and feel."
+          }
+        },
+        "sensory_rzypJX": {
+          "type": "sensory",
+          "settings": {
+            "show_top_bracket": false,
+            "show_bottom_bracket": false,
+            "title": "Multi-Sensory",
+            "content": "Integrating haptics, acoustics, and thermal modulations for total immersion."
+          }
+        },
+        "adaptive_37QFm6": {
+          "type": "adaptive",
+          "settings": {
+            "show_top_bracket": false,
+            "show_bottom_bracket": true,
+            "title": "Adaptive Flow",
+            "content": "Learns your preferences over time, tailoring every pulse to your personal baseline."
+          }
+        }
+      },
+      "block_order": [
+        "response_RTyaRY",
+        "sensory_rzypJX",
+        "adaptive_37QFm6"
+      ],
+      "name": "Aether Innovation",
+      "settings": {
+        "heading": "Innovation Highlights"
+      }
     }
   },
   "order": [
@@ -506,6 +547,7 @@
     "aether_hero_t6UrUy",
     "aether_philosophy_gtpd3x",
     "aether_trust_pillars_axJEdN",
-    "aether_product_intro_RxkgdP"
+    "aether_product_intro_RxkgdP",
+    "aether_innovation_qwgfCC"
   ]
 }
