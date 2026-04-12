@@ -1,1 +1,135 @@
-{"sections":{"1763821870d3c72ccd":{"type":"_blocks","blocks":{"ai_gen_block_d817f4d_4UUK7W":{"type":"ai_gen_block_d817f4d","settings":{"title":"Cyber Touch AI Lover","title_size":48,"title_size_mobile":32,"subtitle":"Intimate Companion From Your Dream","subtitle_size":20,"description":"Cyber Touch AI Lover is a groundbreaking mobile app that transforms virtual companionship into a deeply immersive, multi-sensory experience.\n \nDesigned for those seeking emotional connection, playful interaction, or sensual exploration, the app seamlessly links with our proprietary AI Lover toy—a sleek, responsive device engineered for personalized physical feedback.","description_size":13,"concept_image":"shopify:\/\/shop_images\/suoxiao19_9_1.png","image_max_width":1200,"image_border_radius":16,"show_features":true,"features_title":"Key Features","feature_title_size":28,"feature_1_title":"Voice-Activated Chat with AI Personality","feature_1_description":"Engage in natural, flowing voice conversations with your AI lover, powered by advanced natural language processing. Choose from customizable personas and watch as the AI adapts to your mood.","feature_2_title":"Synchronized Physical Reactions","feature_2_description":"Pair the app with the AI Lover toy via Bluetooth. As your AI companion speaks or reacts, the toy delivers subtle, intuitive vibrations, pulses, or gentle caresses tailored to the conversation's tone.","feature_3_title":"Personalization and Privacy First","feature_3_description":"Train your AI with voice samples, shared stories, or fantasy scenarios to evolve its responses. All data stays encrypted and secure, ensuring your intimate moments remain private.","qr_section_title":"Download the App","qr_title_size":28,"ios_qr_code":"shopify:\/\/shop_images\/qrtest1.png","android_qr_code":"shopify:\/\/shop_images\/CTAI_AndroidDownload.png","qr_size":200,"qr_instruction":"Scan to download","show_store_buttons":false,"ios_store_link":"shopify:\/\/products\/cyber-lubricant","android_store_link":"shopify:\/\/products\/cyber-touch-ai-lover-m1","background_color":"#000000","text_color":"#f2f2f2","title_color":"#9835f2","subtitle_color":"#ababab","accent_color":"#9835f2","feature_bg_color":"#232323","feature_border_color":"#e0e0e0","qr_bg_color":"#000000","qr_item_bg":"#232323","qr_border_color":"#e0e0e0","placeholder_bg":"#f0f0f0","button_bg_color":"#9835f2","button_text_color":"#ffffff","button_border_color":"#000000","button_hover_bg":"#9835f2","button_hover_text":"#ffffff","button_border_radius":8,"qr_border_radius":20,"section_padding":60,"section_padding_mobile":40},"blocks":{}}},"block_order":["ai_gen_block_d817f4d_4UUK7W"],"settings":{}},"1764863006c00eeb4b":{"type":"_blocks","blocks":{"ai_gen_block_ae16550_tiKfHa":{"type":"ai_gen_block_ae16550","settings":{"title":"<p>Download Our App<\/p>","description":"<p>Follow these simple steps to install our app on your device<\/p>","title_size":36,"description_size":16,"max_width":900,"section_padding":20,"ios_tab_label":"iOS App","android_tab_label":"Android App","tab_border_radius":8,"ios_step1_title":"Install the TestFlight app","ios_step1_description":"<p>Go to the App Store and search \"TestFlight\". Download and install the TestFlight app.<\/p>","ios_step2_title":"Scan QR Code and Accept the invitation","ios_step2_description":"<p>Scan QR code and enter your email, then you will receive the invitation. Click the link you received. Tap the \"View in TestFlight\" button. This will open the TestFlight app on your device. Tap \"Accept\" on the invitation screen.<\/p>","ios_step3_title":"Install the beta app","ios_step3_description":"<p>After accepting, you will be taken to the beta app's page within TestFlight. Tap the \"Install\"\/\"Update\" button to download and install the newest version of the app.<\/p>","android_step1_title":"System Setting","android_step1_description":"<p>Enable \"install from unknown sources\" in your Android's security settings.<\/p>","android_step2_title":"Go to App Download page","android_step2_description":"<p>Scan the QR code and click the link to enter our Android Download Page. Click \"Download\" the APK file.<\/p>","android_step3_title":"Install the beta app","android_step3_description":"<p>Once the download is complete, find the file by tapping the download notification that appears or opening your browser's Downloads list (e.g., in Chrome, tap the three-dot menu). Tap the downloaded APK file. Install it. Tap Install and follow any on-screen instructions to finish.<\/p>","show_qr_code":false,"qr_title":"Scan to download","ios_qr_image":"shopify:\/\/shop_images\/qrtest1.png","android_qr_image":"shopify:\/\/shop_images\/qrtest2_1.png","background_color":"#000000","text_color":"#ffffff","accent_color":"#9835f2","step_bg_color":"#1a1a1a","step_number_text_color":"#ffffff","qr_bg_color":"#1a1a1a","tab_bg_color":"#1a1a1a","tab_text_color":"#ffffff","tab_border_color":"#333333","tab_hover_bg_color":"#2a2a2a","tab_hover_border_color":"#9835f2","tab_active_bg_color":"#9835f2","tab_active_text_color":"#ffffff","tab_active_border_color":"#9835f2","step_border_radius":8},"blocks":{}}},"block_order":["ai_gen_block_ae16550_tiKfHa"],"settings":{}}},"order":["1763821870d3c72ccd","1764863006c00eeb4b"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1763821870d3c72ccd": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_d817f4d_4UUK7W": {
+          "type": "ai_gen_block_d817f4d",
+          "settings": {
+            "title": "Cyber Touch AI Lover",
+            "title_size": 48,
+            "title_size_mobile": 32,
+            "subtitle": "Intimate Companion From Your Dream",
+            "subtitle_size": 20,
+            "description": "Cyber Touch AI Lover is a groundbreaking mobile app that transforms virtual companionship into a deeply immersive, multi-sensory experience.\n \nDesigned for those seeking emotional connection, playful interaction, or sensual exploration, the app seamlessly links with our proprietary AI Lover toy—a sleek, responsive device engineered for personalized physical feedback.",
+            "description_size": 13,
+            "concept_image": "shopify://shop_images/suoxiao19_9_1.png",
+            "image_max_width": 1200,
+            "image_border_radius": 16,
+            "show_features": true,
+            "features_title": "Key Features",
+            "feature_title_size": 28,
+            "feature_1_title": "Voice-Activated Chat with AI Personality",
+            "feature_1_description": "Engage in natural, flowing voice conversations with your AI lover, powered by advanced natural language processing. Choose from customizable personas and watch as the AI adapts to your mood.",
+            "feature_2_title": "Synchronized Physical Reactions",
+            "feature_2_description": "Pair the app with the AI Lover toy via Bluetooth. As your AI companion speaks or reacts, the toy delivers subtle, intuitive vibrations, pulses, or gentle caresses tailored to the conversation's tone.",
+            "feature_3_title": "Personalization and Privacy First",
+            "feature_3_description": "Train your AI with voice samples, shared stories, or fantasy scenarios to evolve its responses. All data stays encrypted and secure, ensuring your intimate moments remain private.",
+            "qr_section_title": "Download the App",
+            "qr_title_size": 28,
+            "ios_qr_code": "shopify://shop_images/qrtest1.png",
+            "android_qr_code": "shopify://shop_images/CTAI_AndroidDownload.png",
+            "qr_size": 200,
+            "qr_instruction": "Scan to download",
+            "show_store_buttons": false,
+            "ios_store_link": "shopify://products/cyber-lubricant",
+            "android_store_link": "shopify://products/cyber-touch-ai-lover-m1",
+            "background_color": "#000000",
+            "text_color": "#f2f2f2",
+            "title_color": "#9835f2",
+            "subtitle_color": "#ababab",
+            "accent_color": "#9835f2",
+            "feature_bg_color": "#232323",
+            "feature_border_color": "#e0e0e0",
+            "qr_bg_color": "#000000",
+            "qr_item_bg": "#232323",
+            "qr_border_color": "#e0e0e0",
+            "placeholder_bg": "#f0f0f0",
+            "button_bg_color": "#9835f2",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_hover_bg": "#9835f2",
+            "button_hover_text": "#ffffff",
+            "button_border_radius": 8,
+            "qr_border_radius": 20,
+            "section_padding": 60,
+            "section_padding_mobile": 40
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_d817f4d_4UUK7W"
+      ],
+      "settings": {}
+    },
+    "1764863006c00eeb4b": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ae16550_tiKfHa": {
+          "type": "ai_gen_block_ae16550",
+          "settings": {
+            "title": "<p>Download Our App</p>",
+            "description": "<p>Follow these simple steps to install our app on your device</p>",
+            "title_size": 36,
+            "description_size": 16,
+            "max_width": 900,
+            "section_padding": 20,
+            "ios_tab_label": "iOS App",
+            "android_tab_label": "Android App",
+            "tab_border_radius": 8,
+            "ios_step1_title": "Scan iOS QR Code and Download",
+            "ios_step1_description": "<p>Scan the iOS QR Code, then click the link on your screen to open your browser. Click Download App.</p>",
+            "ios_step2_title": "System Setting",
+            "ios_step2_description": "<p>Go to iOS Setting, Enter \"General\". Then,find \"VPN & Device Management\". You can find our App listed.</p>",
+            "ios_step3_title": "Install the App",
+            "ios_step3_description": "<p>Click \"CTAI\". Click the “Install” button in the top right corner of the screen. Then you can find CTAI installed in your iphone.</p>",
+            "android_step1_title": "System Setting",
+            "android_step1_description": "<p>Enable \"install from unknown sources\" in your Android's security settings.</p>",
+            "android_step2_title": "Go to App Download page",
+            "android_step2_description": "<p>Scan the QR code and click the link to enter our Android Download Page. Click \"Download\" the APK file.</p>",
+            "android_step3_title": "Install the beta app",
+            "android_step3_description": "<p>Once the download is complete, find the file by tapping the download notification that appears or opening your browser's Downloads list (e.g., in Chrome, tap the three-dot menu). Tap the downloaded APK file. Install it. Tap Install and follow any on-screen instructions to finish.</p>",
+            "show_qr_code": false,
+            "qr_title": "Scan to download",
+            "ios_qr_image": "shopify://shop_images/qrtest1.png",
+            "android_qr_image": "shopify://shop_images/qrtest2_1.png",
+            "background_color": "#000000",
+            "text_color": "#ffffff",
+            "accent_color": "#9835f2",
+            "step_bg_color": "#1a1a1a",
+            "step_number_text_color": "#ffffff",
+            "qr_bg_color": "#1a1a1a",
+            "tab_bg_color": "#1a1a1a",
+            "tab_text_color": "#ffffff",
+            "tab_border_color": "#333333",
+            "tab_hover_bg_color": "#2a2a2a",
+            "tab_hover_border_color": "#9835f2",
+            "tab_active_bg_color": "#9835f2",
+            "tab_active_text_color": "#ffffff",
+            "tab_active_border_color": "#9835f2",
+            "step_border_radius": 8
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ae16550_tiKfHa"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "1763821870d3c72ccd",
+    "1764863006c00eeb4b"
+  ]
+}
