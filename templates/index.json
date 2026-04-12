@@ -438,12 +438,62 @@
         "heading": "We bring <span class=\"text-secondary\">AI</span> TO life.",
         "content": "<p>Headquartered in California, USA, near Silicon Valley, Cyber Touch AI leverages cutting-edge AI technology to push the boundaries of virtual reality, break down the barriers between dimensions, and integrate AI into the real world.</p><p>The Cyber-M1, developed through our advanced production supply chain, allows users to experience the charm of an AI Lover in real life at the lowest cost.</p>"
       }
+    },
+    "aether_trust_pillars_axJEdN": {
+      "type": "aether-trust-pillars",
+      "blocks": {
+        "pillar_w8kLqq": {
+          "type": "pillar",
+          "settings": {
+            "icon": "shield_lock",
+            "icon_color": "primary",
+            "heading": "Privacy-First Design",
+            "text": "Advanced encryption technology ensures your most intimate moments stay yours."
+          }
+        },
+        "pillar_kTQrBr": {
+          "type": "pillar",
+          "settings": {
+            "icon": "diamond",
+            "icon_color": "secondary",
+            "heading": "Premium Materials",
+            "text": "Medical-grade biosynthetics designed for comfort and longevity."
+          }
+        },
+        "pillar_yKcmXm": {
+          "type": "pillar",
+          "settings": {
+            "icon": "visibility_off",
+            "icon_color": "tertiary",
+            "heading": "Discreet Experience",
+            "text": "Everything you imagine can become what you see."
+          }
+        },
+        "pillar_nWbfwP": {
+          "type": "pillar",
+          "settings": {
+            "icon": "neurology",
+            "icon_color": "primary",
+            "heading": "Advanced AI Technology",
+            "text": "Your AI lover can continuously learn and adapt to you, remembering every detail about you."
+          }
+        }
+      },
+      "block_order": [
+        "pillar_w8kLqq",
+        "pillar_kTQrBr",
+        "pillar_yKcmXm",
+        "pillar_nWbfwP"
+      ],
+      "name": "Aether Trust Pillars",
+      "settings": {}
     }
   },
   "order": [
     "slideshow_PDcXkr",
     "slideshow_FntkPm",
     "aether_hero_t6UrUy",
-    "aether_philosophy_gtpd3x"
+    "aether_philosophy_gtpd3x",
+    "aether_trust_pillars_axJEdN"
   ]
 }
