@@ -434,6 +434,7 @@
       "type": "aether-philosophy",
       "name": "Aether Philosophy",
       "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_Apr_11_2026_06_41_08_AM.png",
         "accent_text": "0ur",
         "accent_label": "mission",
         "heading": "We bring <span class=\"text-secondary\">AI</span> TO life.",
