@@ -493,6 +493,7 @@
       "type": "aether-product-intro",
       "name": "Aether Product Intro",
       "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_Apr_11_2026_03_50_17_AM.png",
         "label": "The Cyber AI system",
         "heading": "A breakthrough in <span class=\"text-primary-fixed\">human-AI connection</span>.",
         "content": "<p>Designed to intuitively mirror your desires. CTAI is the world’s first bio-responsive device dedicated to sensory elevation.</p>",
