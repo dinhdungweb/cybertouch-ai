@@ -95,7 +95,7 @@
           "type": "text",
           "name": "Text",
           "settings": {
-            "text": "<p>10250 Constellation Blvd, Los Angeles, CA 90067 USA</p>",
+            "text": "<p>10250 Constellation, Los Angeles, CA 90067 USA</p>",
             "icon_source": "",
             "icon": "car",
             "hidden_br_mobile": false,
