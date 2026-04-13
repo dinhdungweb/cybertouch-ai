@@ -420,7 +420,7 @@
       "settings": {
         "top_label": "Touch the future",
         "heading": "Where technology <br><span class=\"text-primary italic\">meets sensation</span>",
-        "subheading": "Built For Immersive",
+        "subheading": "Built For IMMERSIVE",
         "label_bottom": "See, Say, Hear, and Feel",
         "button_text": "Explore Cyber-M1",
         "button_link": "shopify://products/cyber-touch-ai-lover-m1",
@@ -546,6 +546,7 @@
         "story_63dhyG": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/mainpagestoryP1.png",
             "placeholder_url": "https://lh3.googleusercontent.com/aida/ADBb0uihcczdf9C1b1WYhr6VOkXTKhZP5dwQiY__e0a2OvUFpE9HiHGLMLcy7DLVPF_tY2DsbKSeDTSZxQZYERbyM3qb8rn-gqgtXdFybJRjadBd-4f82uy4imNmDGu6zKyR9Dpws93_GuTZyCsdiHbAneTD13YbYyD9X6BxOHqKQtlTan6SnI0DTX-yunMykyQDvDTJhNySC1BGtmovpZa2Nu6ej2O3FFLXRZ3LoUB6OB5tkNS7M3L-1GoV3STaf4c_44ergZuHv3IKXlU",
             "overlay_color": "primary",
             "title": "Pure Immersion",
@@ -555,6 +556,7 @@
         "story_n8aVYw": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/mainpagestoryP2.png",
             "placeholder_url": "https://lh3.googleusercontent.com/aida/ADBb0ujNEg9Rk1xp6-2PnxPRlsSw1TiPigcsBAV0VfrAiq2Cj8zOriIqsut98Brg4I7Xt7o_BpQxOwygNzw5rCx4WAAH-dF12u6bpyNsvhyobFO3Iilx5TRwb8T6x1JaWSyFctNuBKJtH145La66hfnHblztjDYRjHSQcN8LJ2m4soWWi4VkHpfrMG3ZVSttuol879_5uqbPA87rksltVrRE1PZ_oXWaspAF8SbDwfTr2FQ816JK9ox4RnRXejNvpGMbRSYb0dcubP6KJDQ",
             "overlay_color": "secondary",
             "title": "Unbound Potential",
