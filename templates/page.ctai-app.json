@@ -90,7 +90,7 @@
             "ios_step1_title": "Scan iOS QR Code and Download",
             "ios_step1_description": "<p>Scan the iOS QR Code, then click the link on your screen to open your browser. Click Download App.</p>",
             "ios_step2_title": "System Setting",
-            "ios_step2_description": "<p>Go to iOS Setting, Enter \"General\". Then,find \"VPN & Device Management\". You can find our App listed.</p>",
+            "ios_step2_description": "<p>Go to iOS Setting, Enter \"General\". Then, enter \"VPN & Device Management\". You can find our App listed.</p>",
             "ios_step3_title": "Install the App",
             "ios_step3_description": "<p>Click \"CTAI\". Click the “Install” button in the top right corner of the screen. Then you can find CTAI installed in your iphone.</p>",
             "android_step1_title": "System Setting",
