@@ -418,6 +418,7 @@
       "type": "aether-hero",
       "name": "Aether Hero",
       "settings": {
+        "image": "shopify://shop_images/mainpagePic4M.png",
         "top_label": "Touch the future",
         "heading": "Where technology <br><span class=\"text-primary italic\">meets sensation</span>",
         "subheading": "Built For IMMERSIVE",
