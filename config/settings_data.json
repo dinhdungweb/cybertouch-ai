@@ -300,6 +300,9 @@
       },
       "age-verification": {
         "type": "age-verification",
+        "custom_css": [
+          ".hdt-coppy-right {color: #00eefc!important;}"
+        ],
         "settings": {
           "logo": "shopify://shop_images/cai_Transparent.png",
           "logo_width": 200,
@@ -665,7 +668,7 @@
       ".hdt-menu-link--active {color: #00eefc !important;}",
       ".hdt-site-top_nav .hdt-site-nav_icon a svg {fill: transparent;}",
       "body {background-color: #000;}",
-      ".hdt-coppy-right{color: #00eefc;}"
+      ".hdt-coppy-right {color: #00eefc;}"
     ]
   }
 }
