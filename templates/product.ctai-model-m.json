@@ -416,6 +416,7 @@
     },
     "hero_cyber_9ywVWi": {
       "type": "hero-cyber",
+      "disabled": true,
       "name": "Hero Cyber",
       "settings": {
         "heading": "Cyber-M1<br>Feel Your AI Lover<br><span class=\"text-transparent bg-clip-text kinetic-gradient\">fantasies Pleasure</span>",
@@ -430,6 +431,7 @@
     },
     "cyber_problem_jBh3aj": {
       "type": "cyber-problem",
+      "disabled": true,
       "name": "Cyber Problem",
       "settings": {
         "sub_caption": "want something new?",
@@ -472,6 +474,7 @@
         "feature_AKyR3p",
         "feature_i4PAHa"
       ],
+      "disabled": true,
       "name": "AI Experience",
       "settings": {
         "heading": "Feel Your AI <br><span class=\"text-secondary\">Lover</span>",
@@ -561,6 +564,7 @@
         "profile_drz3gV",
         "profile_WTGYtP"
       ],
+      "disabled": true,
       "name": "Lover Profiles",
       "settings": {
         "heading": "you are picky?",
@@ -621,6 +625,7 @@
         "stat_3tPULb",
         "stat_rACmDp"
       ],
+      "disabled": true,
       "name": "Training Stats",
       "settings": {
         "sub_caption": "Firmware Update 4.0",
@@ -685,6 +690,7 @@
     },
     "final_cta_cyber_qpNxCN": {
       "type": "final-cta-cyber",
+      "disabled": true,
       "name": "Final CTA Cyber",
       "settings": {
         "product_image": "shopify://shop_images/product-image-with-subtle-reflection.png",
@@ -778,6 +784,7 @@
         "review_Mtjh4L",
         "review_bp78ef"
       ],
+      "disabled": true,
       "name": "Trusted Reviews",
       "settings": {
         "main_title": "Trusted",
