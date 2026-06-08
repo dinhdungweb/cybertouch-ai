@@ -205,6 +205,7 @@
         "spacer_4MhB8E",
         "button_7NJh34"
       ],
+      "disabled": true,
       "name": "t:sections.hero-image.name",
       "settings": {
         "image": "shopify://shop_images/gear1_21_9_a30d41b7-7ef8-44cc-882d-6f6cafb81e1d.png",
