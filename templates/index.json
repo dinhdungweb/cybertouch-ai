@@ -432,7 +432,6 @@
     },
     "aether_philosophy_gtpd3x": {
       "type": "aether-philosophy",
-      "disabled": true,
       "name": "Aether Philosophy",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_Apr_11_2026_06_41_08_AM.png",
@@ -488,18 +487,16 @@
         "pillar_yKcmXm",
         "pillar_nWbfwP"
       ],
-      "disabled": true,
       "name": "Aether Trust Pillars",
       "settings": {}
     },
     "aether_product_intro_RxkgdP": {
       "type": "aether-product-intro",
-      "disabled": true,
       "name": "Aether Product Intro",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_Apr_11_2026_03_50_17_AM.png",
         "label": "The Cyber AI system",
-        "heading": "A breakthrough in <span class=\"text-primary-fixed\">human-AI connection</span>.",
+        "heading": "A breakthrough in <span class=\"text-primary-fixed\">human-Tech connection</span>.",
         "content": "<p>Designed to intuitively mirror your desires. CTAI is the world’s first bio-responsive device dedicated to sensory elevation.</p>",
         "button_text": "View Product",
         "button_link": "shopify://products/cyber-touch-ai-lover-m1"
@@ -541,7 +538,6 @@
         "sensory_rzypJX",
         "adaptive_37QFm6"
       ],
-      "disabled": true,
       "name": "Aether Innovation",
       "settings": {
         "heading": "Innovation Highlights"
@@ -575,13 +571,11 @@
         "story_63dhyG",
         "story_n8aVYw"
       ],
-      "disabled": true,
       "name": "Aether Storytelling",
       "settings": {}
     },
     "aether_testimonial_qhKHxL": {
       "type": "aether-testimonial",
-      "disabled": true,
       "name": "Aether Testimonial",
       "settings": {
         "quote": "They are not just built a toy, a device; they've built a new connection between the AI and human. This experience is stunning.",
@@ -590,7 +584,6 @@
     },
     "aether_final_cta_KqGGgR": {
       "type": "aether-final-cta",
-      "disabled": true,
       "name": "Aether Final CTA",
       "settings": {
         "heading": "YOUR LOVER is <br><span class=\"text-secondary\">ready for you</span>.",
