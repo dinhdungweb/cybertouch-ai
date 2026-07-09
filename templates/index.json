@@ -438,7 +438,7 @@
         "accent_text": "0ur",
         "accent_label": "mission",
         "heading": "We bring <span class=\"text-secondary\">Dream</span> TO life.",
-        "content": "<p>Headquartered in California, USA, near Silicon Valley, Cyber Touch AI leverages cutting-edge technology to push the boundaries of virtual reality, break down the barriers between dimensions, and integrate Tech into the real world.</p><p>The Cyber-M1, developed through our advanced production supply chain, allows users to experience the charm of Tech in real life at the lowest cost.</p>"
+        "content": "<p>Headquartered in California, Silicon Valley, USA. Cyber Touch AI leverages cutting-edge technology to push the boundaries of virtual reality, break down the barriers between dimensions, and integrate Tech into the real world.</p><p>The Cyber-M1, developed through our advanced production supply chain, allows users to experience the charm of Tech in real life at the lowest cost.</p>"
       }
     },
     "aether_trust_pillars_axJEdN": {
@@ -497,7 +497,7 @@
         "image": "shopify://shop_images/ChatGPT_Image_Apr_11_2026_03_50_17_AM.png",
         "label": "The Cyber AI system",
         "heading": "A breakthrough in <span class=\"text-primary-fixed\">human-Tech connection</span>.",
-        "content": "<p>Cyber Touch AI is the world’s first bio-responsive device dedicated to sensory elevation.</p>",
+        "content": "<p>Cyber Touch AI Company is the world’s first bio-responsive device dedicated to sensory elevation.</p>",
         "button_text": "View Product",
         "button_link": "shopify://products/cyber-touch-ai-lover-m1"
       }
@@ -510,8 +510,8 @@
           "settings": {
             "show_top_bracket": true,
             "show_bottom_bracket": false,
-            "title": "AI Responsiveness",
-            "content": "Real-time responsiveness from AI and devices. Your thoughts instantly transform into what you see, hear, and feel."
+            "title": "Real Time Responsiveness",
+            "content": "Real-time responsiveness from device. Your thoughts instantly transform into Reaction."
           }
         },
         "sensory_rzypJX": {
@@ -538,6 +538,7 @@
         "sensory_rzypJX",
         "adaptive_37QFm6"
       ],
+      "disabled": true,
       "name": "Aether Innovation",
       "settings": {
         "heading": "Innovation Highlights"
@@ -553,7 +554,7 @@
             "placeholder_url": "https://lh3.googleusercontent.com/aida/ADBb0uihcczdf9C1b1WYhr6VOkXTKhZP5dwQiY__e0a2OvUFpE9HiHGLMLcy7DLVPF_tY2DsbKSeDTSZxQZYERbyM3qb8rn-gqgtXdFybJRjadBd-4f82uy4imNmDGu6zKyR9Dpws93_GuTZyCsdiHbAneTD13YbYyD9X6BxOHqKQtlTan6SnI0DTX-yunMykyQDvDTJhNySC1BGtmovpZa2Nu6ej2O3FFLXRZ3LoUB6OB5tkNS7M3L-1GoV3STaf4c_44ergZuHv3IKXlU",
             "overlay_color": "primary",
             "title": "Pure Immersion",
-            "text": "Lose yourself in the rhythm of video, sound and touch. No distractions, only the present moment."
+            "text": "Lose yourself in the fantastic experience."
           }
         },
         "story_n8aVYw": {
@@ -563,7 +564,7 @@
             "placeholder_url": "https://lh3.googleusercontent.com/aida/ADBb0ujNEg9Rk1xp6-2PnxPRlsSw1TiPigcsBAV0VfrAiq2Cj8zOriIqsut98Brg4I7Xt7o_BpQxOwygNzw5rCx4WAAH-dF12u6bpyNsvhyobFO3Iilx5TRwb8T6x1JaWSyFctNuBKJtH145La66hfnHblztjDYRjHSQcN8LJ2m4soWWi4VkHpfrMG3ZVSttuol879_5uqbPA87rksltVrRE1PZ_oXWaspAF8SbDwfTr2FQ816JK9ox4RnRXejNvpGMbRSYb0dcubP6KJDQ",
             "overlay_color": "secondary",
             "title": "Unbound Potential",
-            "text": "Lose yourself in the rhythm of video, sound and touch. No distractions, only the present moment."
+            "text": "Lose yourself in the fantastic experience."
           }
         }
       },
