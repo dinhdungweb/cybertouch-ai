@@ -418,7 +418,7 @@
       "name": "Hero Cyber",
       "settings": {
         "heading": "Cyber-M1<br>Feel Your Dream<br><span class=\"text-transparent bg-clip-text kinetic-gradient\">fantasies Pleasure</span>",
-        "subheading": "<p>First Tech-powered experience becomes touchable. </p><p>See, say, hear and feel.</p>",
+        "subheading": "<p>Our Tech-powered experience becomes touchable. </p><p>Feel the fantastic experience.</p>",
         "media_type": "video",
         "video": "shopify://files/videos/productHeroV.mp4",
         "button_1_text": "Shop Now",
@@ -622,6 +622,7 @@
         "stat_3tPULb",
         "stat_rACmDp"
       ],
+      "disabled": true,
       "name": "Training Stats",
       "settings": {
         "sub_caption": "Firmware Update 4.0",
@@ -632,6 +633,7 @@
     },
     "experience_impact_DqM9Yj": {
       "type": "experience-impact",
+      "disabled": true,
       "name": "Experience Impact",
       "settings": {
         "bg_image": "shopify://shop_images/unnamed.png",
