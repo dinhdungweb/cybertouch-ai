@@ -634,7 +634,7 @@
       "settings": {
         "bg_image": "shopify://shop_images/unnamed.png",
         "heading": "Boost Your <div>rigidity & endurance</div>",
-        "description": "<p><strong>Strengthen your Pelvic floor muscles.</strong></p><p><strong>Effective in treating Erectile dysfunction and Premature ejaculation</strong></p>"
+        "description": "<p><strong>Strengthen your Pelvic floor muscles.</strong></p><p></p><p>Rebuild your confidence.</p>"
       }
     },
     "trust_safety_MgjGKx": {
@@ -688,7 +688,7 @@
       "settings": {
         "product_image": "shopify://shop_images/product-image-with-subtle-reflection.png",
         "heading": "<div>Cyber-M1</div>Upgrade Your Experience",
-        "subheading": "Where AI technology meets private sensation",
+        "subheading": "Where technology meets private sensation",
         "button_text": "Promotional Price — $119 (14%OFF)",
         "button_link": "#product-scroll",
         "footer_text": "Available for shipping within the United States and Canada"
