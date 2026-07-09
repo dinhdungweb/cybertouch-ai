@@ -450,7 +450,7 @@
             "icon": "shield_lock",
             "icon_color": "primary",
             "heading": "Privacy-First Design",
-            "text": "Advanced encryption technology ensures your most intimate moments stay yours."
+            "text": "Advanced encryption technology ensures your information stay yours."
           }
         },
         "pillar_kTQrBr": {
@@ -467,8 +467,8 @@
           "settings": {
             "icon": "visibility_off",
             "icon_color": "tertiary",
-            "heading": "Discreet Experience",
-            "text": "Everything you imagine can become what you see."
+            "heading": "Training & Experience",
+            "text": "Not only brings you pleasure, but also trains  muscle groups."
           }
         },
         "pillar_nWbfwP": {
@@ -476,8 +476,8 @@
           "settings": {
             "icon": "neurology",
             "icon_color": "primary",
-            "heading": "Advanced AI Technology",
-            "text": "Your AI lover can continuously learn and adapt to you, remembering every detail about you."
+            "heading": "Advanced Technology",
+            "text": "Now you can control the device with your voice."
           }
         }
       },
@@ -497,7 +497,7 @@
         "image": "shopify://shop_images/ChatGPT_Image_Apr_11_2026_03_50_17_AM.png",
         "label": "The Cyber AI system",
         "heading": "A breakthrough in <span class=\"text-primary-fixed\">human-Tech connection</span>.",
-        "content": "<p>Designed to intuitively mirror your desires. CTAI is the world’s first bio-responsive device dedicated to sensory elevation.</p>",
+        "content": "<p>Cyber Touch AI is the world’s first bio-responsive device dedicated to sensory elevation.</p>",
         "button_text": "View Product",
         "button_link": "shopify://products/cyber-touch-ai-lover-m1"
       }
