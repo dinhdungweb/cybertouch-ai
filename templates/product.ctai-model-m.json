@@ -417,8 +417,8 @@
       "type": "hero-cyber",
       "name": "Hero Cyber",
       "settings": {
-        "heading": "Cyber-M1<br>Feel Your Dream<br><span class=\"text-transparent bg-clip-text kinetic-gradient\">fantasies Pleasure</span>",
-        "subheading": "<p>Our Tech-powered experience becomes touchable. </p><p>Feel the fantastic experience.</p>",
+        "heading": "Cyber-M1<br>Bring<br><span class=\"text-transparent bg-clip-text kinetic-gradient\">fantasies Pleasure</span>",
+        "subheading": "<p>Tech-powered Toy brings a new era for you. </p>",
         "media_type": "video",
         "video": "shopify://files/videos/productHeroV.mp4",
         "button_1_text": "Shop Now",
@@ -633,12 +633,11 @@
     },
     "experience_impact_DqM9Yj": {
       "type": "experience-impact",
-      "disabled": true,
       "name": "Experience Impact",
       "settings": {
         "bg_image": "shopify://shop_images/unnamed.png",
         "heading": "Boost Your <div>rigidity & endurance</div>",
-        "description": "<p><strong>Strengthen your Pelvic floor muscles.</strong></p><p></p><p>Rebuild your confidence.</p>"
+        "description": "<p><strong>Strengthen your Pelvic floor muscles.</strong></p><p></p><p><strong>Rebuild your confidence.</strong></p>"
       }
     },
     "trust_safety_MgjGKx": {
