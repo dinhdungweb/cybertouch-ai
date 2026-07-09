@@ -417,8 +417,8 @@
       "type": "hero-cyber",
       "name": "Hero Cyber",
       "settings": {
-        "heading": "Cyber-M1<br>Feel Your AI Lover<br><span class=\"text-transparent bg-clip-text kinetic-gradient\">fantasies Pleasure</span>",
-        "subheading": "<p>First AI-powered experience becomes touchable. </p><p>Now, You can see, say, hear and feel.</p>",
+        "heading": "Cyber-M1<br>Feel Your Dream<br><span class=\"text-transparent bg-clip-text kinetic-gradient\">fantasies Pleasure</span>",
+        "subheading": "<p>First Tech-powered experience becomes touchable. </p><p>See, say, hear and feel.</p>",
         "media_type": "video",
         "video": "shopify://files/videos/productHeroV.mp4",
         "button_1_text": "Shop Now",
@@ -453,8 +453,8 @@
           "type": "feature",
           "settings": {
             "icon": "psychology",
-            "title": "Video Interaction",
-            "description": "<p>The lover on the screen will perform various actions in response to your commands.</p>"
+            "title": "Act Interaction",
+            "description": "<p>The Device will perform various actions in response to your commands.</p>"
           }
         },
         "feature_i4PAHa": {
@@ -473,7 +473,7 @@
       ],
       "name": "AI Experience",
       "settings": {
-        "heading": "Feel Your AI <br><span class=\"text-secondary\">Lover</span>",
+        "heading": "Meet Your <br><span class=\"text-secondary\">Dream</span>",
         "feature_image": "shopify://shop_images/M1VideoZhenDong.gif"
       }
     },
@@ -563,7 +563,7 @@
       "name": "Lover Profiles",
       "settings": {
         "heading": "you are picky?",
-        "subheading": "No problem, we got all style lovers for you"
+        "subheading": "No problem, we got all style experience for you"
       }
     },
     "performance_motion_pipD3c": {
