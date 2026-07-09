@@ -471,6 +471,7 @@
         "feature_AKyR3p",
         "feature_i4PAHa"
       ],
+      "disabled": true,
       "name": "AI Experience",
       "settings": {
         "heading": "Meet Your <br><span class=\"text-secondary\">Dream</span>",
@@ -560,6 +561,7 @@
         "profile_drz3gV",
         "profile_WTGYtP"
       ],
+      "disabled": true,
       "name": "Lover Profiles",
       "settings": {
         "heading": "you are picky?",
@@ -580,8 +582,8 @@
         "stat_yaWQx6": {
           "type": "stat",
           "settings": {
-            "label": "Improving Male Sexual Function",
-            "value": "Effective in treating erectile dysfunction and premature ejaculation",
+            "label": "Improving Male muscle",
+            "value": "Simulate a realistic sensation and work your muscles",
             "style": "primary"
           }
         }
