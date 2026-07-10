@@ -672,7 +672,7 @@
           "settings": {
             "icon": "encrypted",
             "title": "Secure",
-            "description": "Encrypted Account Content"
+            "description": "Encrypted Account Data"
           }
         }
       },
