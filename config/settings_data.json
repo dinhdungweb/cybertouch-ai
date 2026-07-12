@@ -304,7 +304,7 @@
           ".hdt-coppy-right {color: #00eefc !important;}"
         ],
         "settings": {
-          "enable_age_verify": false,
+          "enable_age_verify": true,
           "logo": "shopify://shop_images/cai_Transparent.png",
           "logo_width": 200,
           "heading": "Age verification",
