@@ -14,6 +14,7 @@
       "blocks": {
         "slide_item_G6ftBK": {
           "type": "_slide-item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/3_19_9.png",
             "image_mb": "shopify://shop_images/2_3_bf951c66-52b3-43c6-a024-4750c1254190.png",
@@ -416,6 +417,7 @@
     },
     "aether_hero_t6UrUy": {
       "type": "aether-hero",
+      "disabled": true,
       "name": "Aether Hero",
       "settings": {
         "image": "shopify://shop_images/mainpagePic4M.png",
@@ -494,6 +496,7 @@
     },
     "aether_product_intro_RxkgdP": {
       "type": "aether-product-intro",
+      "disabled": true,
       "name": "Aether Product Intro",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_Apr_11_2026_03_50_17_AM.png",
