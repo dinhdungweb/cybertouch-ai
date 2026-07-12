@@ -471,7 +471,6 @@
         "feature_AKyR3p",
         "feature_i4PAHa"
       ],
-      "disabled": true,
       "name": "AI Experience",
       "settings": {
         "heading": "Meet Your <br><span class=\"text-secondary\">Dream</span>",
@@ -561,7 +560,6 @@
         "profile_drz3gV",
         "profile_WTGYtP"
       ],
-      "disabled": true,
       "name": "Lover Profiles",
       "settings": {
         "heading": "you are picky?",
@@ -622,7 +620,6 @@
         "stat_3tPULb",
         "stat_rACmDp"
       ],
-      "disabled": true,
       "name": "Training Stats",
       "settings": {
         "sub_caption": "Firmware Update 4.0",
