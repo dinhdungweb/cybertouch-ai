@@ -813,6 +813,7 @@
                 "accordion_review_DgwVgK": {
                   "type": "_accordion_review",
                   "name": "t:sections.main-product-tabs.blocks.accordion_review.name",
+                  "disabled": true,
                   "settings": {
                     "open": false,
                     "title": "Review"
