@@ -89,7 +89,7 @@
             "android_tab_label": "Android App",
             "tab_border_radius": 8,
             "ios_step1_title": "Scan iOS QR Code and Download",
-            "ios_step1_description": "<p>Scan the iOS QR Code, then click the link on your screen to open your browser. Click Download App.</p>",
+            "ios_step1_description": "<p>Scan the iOS QR Code, then click the link on your screen to open your browser. Enter Code: cybertouchai</p>",
             "ios_step2_title": "System Setting",
             "ios_step2_description": "<p>Go to iOS Setting, Enter \"General\". Then, enter \"VPN & Device Management\". You can find our App listed.</p>",
             "ios_step3_title": "Install the App",
