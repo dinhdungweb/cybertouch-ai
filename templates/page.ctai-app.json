@@ -91,7 +91,7 @@
             "ios_step1_title": "Scan iOS QR Code and Download",
             "ios_step1_description": "<p>Scan the iOS QR Code with your iphone, then click the link on your screen to open your browser. </p>",
             "ios_step2_title": "Install the App",
-            "ios_step2_description": "<p>After code verify. Click the “Install” button in the top right corner of the screen. Then you can find CTAI installed in your iphone.</p>",
+            "ios_step2_description": "<p>Click the “Install” button. Then you can find CTAI installed in your iphone.</p>",
             "ios_step3_title": "System Trust Setting",
             "ios_step3_description": "<p>Go to iOS Setting, Enter \"General\". Then, enter \"VPN & Device Management\" menu. Trust the enterprise developer. If your App can't open. Please let us know and re-download the App.</p>",
             "android_step1_title": "System Setting",
