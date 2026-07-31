@@ -1,6 +1,329 @@
+{% doc %}
+  @prompt
+    Create a Cyberpunk gradient button block for a Shopify theme page with the following features: customizable button label and link URL, horizontal alignment setting (left, center, right) defaulting to center, gradient and glow effect styling options, button size controls (padding, min width/height), font size and weight options, and a top margin/spacing setting (in pixels) so the user can control the space above the button directly from the Theme Editor.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-cyberpunk-button-container-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    margin-top: {{ block.settings.top_margin }}px;
+  }
+
+  .ai-cyberpunk-button-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    {% if block.settings.alignment == 'left' %}
+      justify-content: flex-start;
+    {% elsif block.settings.alignment == 'center' %}
+      justify-content: center;
+    {% elsif block.settings.alignment == 'right' %}
+      justify-content: flex-end;
+    {% endif %}
+  }
+
+  .ai-cyberpunk-button-{{ ai_gen_id }} {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: {{ block.settings.button_padding }}px;
+    min-width: {{ block.settings.min_width }}px;
+    min-height: {{ block.settings.min_height }}px;
+    font-size: {{ block.settings.font_size }}px;
+    font-weight: {{ block.settings.font_weight }};
+    text-decoration: none;
+    color: {{ block.settings.text_color }};
+    background: {{ block.settings.gradient_start }};
+    background: linear-gradient(
+      135deg,
+      {{ block.settings.gradient_start }} 0%,
+      {{ block.settings.gradient_end }} 100%
+    );
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 {{ block.settings.glow_size }}px {{ block.settings.glow_color }};
+  }
+
+  .ai-cyberpunk-button-{{ ai_gen_id }}::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      {{ block.settings.shine_color }},
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  .ai-cyberpunk-button-{{ ai_gen_id }}:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 {{ block.settings.glow_size | times: 1.5 }}px {{ block.settings.glow_color }},
+                0 0 {{ block.settings.glow_size | times: 2 }}px {{ block.settings.glow_color }};
+  }
+
+  .ai-cyberpunk-button-{{ ai_gen_id }}:hover::before {
+    left: 100%;
+  }
+
+  .ai-cyberpunk-button-text-{{ ai_gen_id }} {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-cyberpunk-button-{{ ai_gen_id }} {
+      font-size: {{ block.settings.font_size | times: 0.9 }}px;
+      padding: {{ block.settings.button_padding | times: 0.8 }}px;
+      min-width: {{ block.settings.min_width | times: 0.8 }}px;
+      min-height: {{ block.settings.min_height | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}
+
+<div
+  class="ai-cyberpunk-button-container-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-cyberpunk-button-wrapper-{{ ai_gen_id }}">
+    {% if block.settings.button_link != blank %}
+      <a
+        href="{{ block.settings.button_link }}"
+        class="ai-cyberpunk-button-{{ ai_gen_id }}"
+      >
+        <span class="ai-cyberpunk-button-text-{{ ai_gen_id }}">
+          {{ block.settings.button_label }}
+        </span>
+      </a>
+    {% else %}
+      <button
+        type="button"
+        class="ai-cyberpunk-button-{{ ai_gen_id }}"
+      >
+        <span class="ai-cyberpunk-button-text-{{ ai_gen_id }}">
+          {{ block.settings.button_label }}
+        </span>
+      </button>
+    {% endif %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Cyberpunk gradient button",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Button content"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "top_margin",
+      "label": "Top margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Button size"
+    },
+    {
+      "type": "range",
+      "id": "button_padding",
+      "label": "Padding",
+      "min": 5,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "min_width",
+      "label": "Minimum width",
+      "min": 100,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "min_height",
+      "label": "Minimum height",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Font size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semibold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "gradient_start",
+      "label": "Gradient start",
+      "default": "#9835f2"
+    },
+    {
+      "type": "color",
+      "id": "gradient_end",
+      "label": "Gradient end",
+      "default": "#bd31fc"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#bd31fc"
+    },
+    {
+      "type": "header",
+      "content": "Glow effect"
+    },
+    {
+      "type": "color",
+      "id": "glow_color",
+      "label": "Glow color",
+      "default": "#9835f2"
+    },
+    {
+      "type": "range",
+      "id": "glow_size",
+      "label": "Glow size",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "shine_color",
+      "label": "Shine color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Border"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Border width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cyberpunk gradient button"
+    }
+  ]
+}
 {% endschema %}
