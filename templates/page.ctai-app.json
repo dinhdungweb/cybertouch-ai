@@ -37,7 +37,7 @@
             "qr_section_title": "Download the App",
             "qr_title_size": 28,
             "ios_qr_code": "shopify://shop_images/iOSAppDownloadPage.png",
-            "android_qr_code": "shopify://shop_images/CTAI_AndroidDownload.png",
+            "android_qr_code": "shopify://shop_images/iOSAppDownloadPage.png",
             "qr_size": 200,
             "qr_instruction": "Scan to download",
             "show_store_buttons": false,
