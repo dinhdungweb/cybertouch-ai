@@ -39,7 +39,7 @@
             "ios_qr_code": "shopify://shop_images/iOSAppDownloadPage.png",
             "android_qr_code": "shopify://shop_images/CTAI_AndroidDownload.png",
             "qr_size": 200,
-            "qr_instruction": "Scan to download",
+            "qr_instruction": "Scan to download https://iosdownload.cybertouch.ai/internal",
             "show_store_buttons": false,
             "ios_store_link": "shopify://products/cyber-lubricant",
             "android_store_link": "shopify://products/cyber-touch-ai-lover-m1",
