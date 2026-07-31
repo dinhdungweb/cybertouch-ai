@@ -601,6 +601,40 @@
     "17855020723a03c765": {
       "type": "_blocks",
       "settings": {}
+    },
+    "1785502851194c9015": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ed8f20d_awNNiW": {
+          "type": "ai_gen_block_ed8f20d",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": "",
+            "alignment": "center",
+            "top_margin": 0,
+            "button_padding": 16,
+            "min_width": 200,
+            "min_height": 50,
+            "font_size": 16,
+            "font_weight": "600",
+            "text_color": "#ffffff",
+            "gradient_start": "#9835f2",
+            "gradient_end": "#bd31fc",
+            "border_color": "#bd31fc",
+            "glow_color": "#9835f2",
+            "glow_size": 20,
+            "shine_color": "#ffffff",
+            "border_width": 2,
+            "border_radius": 8
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ed8f20d_awNNiW"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -615,6 +649,7 @@
     "aether_testimonial_qhKHxL",
     "aether_final_cta_KqGGgR",
     "17855011457a7d91e4",
-    "17855020723a03c765"
+    "17855020723a03c765",
+    "1785502851194c9015"
   ]
 }

@@ -12,9 +12,35 @@
     "1763821870d3c72ccd": {
       "type": "_blocks",
       "blocks": {
+        "ai_gen_block_ed8f20d_CzhaBN": {
+          "type": "ai_gen_block_ed8f20d",
+          "name": "Cyberpunk gradient button",
+          "settings": {
+            "button_label": "Click Here to Download",
+            "button_link": "https://iosdownload.cybertouch.ai/internal",
+            "alignment": "center",
+            "top_margin": 20,
+            "button_padding": 16,
+            "min_width": 200,
+            "min_height": 50,
+            "font_size": 16,
+            "font_weight": "700",
+            "text_color": "#ffffff",
+            "gradient_start": "#00cfff",
+            "gradient_end": "#ff2d9b",
+            "border_color": "#1A1A1A",
+            "glow_color": "#ff2d9b",
+            "glow_size": 16,
+            "shine_color": "#ffffff",
+            "border_width": 0,
+            "border_radius": 22
+          },
+          "blocks": {}
+        },
         "ai_gen_block_291df43_Wxa9UK": {
           "type": "ai_gen_block_291df43",
           "name": "Cyberpunk gradient button",
+          "disabled": true,
           "settings": {
             "button_label": "Click to Download App",
             "button_link": "https://iosdownload.cybertouch.ai/internal",
@@ -39,11 +65,11 @@
             "border_radius": 4,
             "padding_vertical": 16,
             "padding_horizontal": 40,
-            "min_width": 150,
+            "min_width": 120,
             "desktop_min_width": 200,
             "min_height": 50,
             "font_size": 16,
-            "font_weight": 600
+            "font_weight": 800
           },
           "blocks": {}
         },
@@ -103,6 +129,7 @@
         }
       },
       "block_order": [
+        "ai_gen_block_ed8f20d_CzhaBN",
         "ai_gen_block_291df43_Wxa9UK",
         "ai_gen_block_d817f4d_4UUK7W"
       ],
