@@ -599,6 +599,7 @@
       "blocks": {
         "ai_gen_block_291df43_6kNywF": {
           "type": "ai_gen_block_291df43",
+          "disabled": true,
           "settings": {
             "button_label": "Click to Download App",
             "button_link": "https://iosdownload.cybertouch.ai/internal",
