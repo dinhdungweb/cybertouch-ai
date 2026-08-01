@@ -203,7 +203,7 @@
         "ai_gen_block_5bdc582_RdARiC": {
           "type": "ai_gen_block_5bdc582",
           "settings": {
-            "trigger_offset": 300,
+            "trigger_offset": 200,
             "show_image": true,
             "image_size": 60,
             "image_radius": 4,
@@ -213,7 +213,7 @@
             "show_price": true,
             "price_size": 14,
             "show_quantity": true,
-            "hide_qty_mobile": false,
+            "hide_qty_mobile": true,
             "button_text": "Add to cart",
             "sold_out_text": "Sold out",
             "button_size": 14,
