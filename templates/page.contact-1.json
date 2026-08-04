@@ -56,7 +56,7 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading": "<p>Visit Our Store</p>",
+            "heading": "<p>Cyber Touch AI Corp.</p>",
             "hidden_br_mobile": false,
             "hidden_on_mobile": false,
             "line_height": "",
@@ -68,46 +68,6 @@
             "font_size_heading": 24,
             "font_weight_heading": 600,
             "letter_spacing_heading": 0
-          },
-          "blocks": {}
-        },
-        "text_7BqxXn": {
-          "type": "text",
-          "name": "Text",
-          "settings": {
-            "text": "<p><strong>Address</strong></p>",
-            "icon_source": "",
-            "icon": "car",
-            "hidden_br_mobile": false,
-            "hidden_on_mobile": false,
-            "text_size": "base",
-            "font_weight": "",
-            "text_color": "hdt-s-text",
-            "font_size_text_lg": 16,
-            "font_size_text_md": 14,
-            "font_size_text": 14,
-            "font_weight_text": 400,
-            "letter_spacing_text": 0
-          },
-          "blocks": {}
-        },
-        "text_kBkyPt": {
-          "type": "text",
-          "name": "Text",
-          "settings": {
-            "text": "<p>9032 Yermo Way, Westminster, CA, 92683, USA</p>",
-            "icon_source": "",
-            "icon": "car",
-            "hidden_br_mobile": false,
-            "hidden_on_mobile": false,
-            "text_size": "base",
-            "font_weight": "",
-            "text_color": "hdt-text-secondary",
-            "font_size_text_lg": 16,
-            "font_size_text_md": 14,
-            "font_size_text": 14,
-            "font_weight_text": 400,
-            "letter_spacing_text": 0
           },
           "blocks": {}
         },
@@ -233,6 +193,46 @@
           },
           "blocks": {}
         },
+        "text_7BqxXn": {
+          "type": "text",
+          "name": "Text",
+          "settings": {
+            "text": "<p><strong>Address</strong></p>",
+            "icon_source": "",
+            "icon": "car",
+            "hidden_br_mobile": false,
+            "hidden_on_mobile": false,
+            "text_size": "base",
+            "font_weight": "",
+            "text_color": "hdt-s-text",
+            "font_size_text_lg": 16,
+            "font_size_text_md": 14,
+            "font_size_text": 14,
+            "font_weight_text": 400,
+            "letter_spacing_text": 0
+          },
+          "blocks": {}
+        },
+        "text_kBkyPt": {
+          "type": "text",
+          "name": "Text",
+          "settings": {
+            "text": "<p>9032 Yermo Way, Westminster, CA, US</p>",
+            "icon_source": "",
+            "icon": "car",
+            "hidden_br_mobile": false,
+            "hidden_on_mobile": false,
+            "text_size": "base",
+            "font_weight": "",
+            "text_color": "hdt-text-secondary",
+            "font_size_text_lg": 16,
+            "font_size_text_md": 14,
+            "font_size_text": 14,
+            "font_weight_text": 400,
+            "letter_spacing_text": 0
+          },
+          "blocks": {}
+        },
         "spacer_qaVkc4": {
           "type": "spacer",
           "name": "Spacer",
@@ -256,14 +256,14 @@
       },
       "block_order": [
         "heading_Gmbrfa",
-        "text_7BqxXn",
-        "text_kBkyPt",
         "text_y7YHPq",
         "text_zezNww",
         "text_aBNkyU",
         "text_Kd7zri",
         "text_UK4JK7",
         "text_EfiFcL",
+        "text_7BqxXn",
+        "text_kBkyPt",
         "spacer_qaVkc4",
         "socials_Yp3hA3"
       ],
