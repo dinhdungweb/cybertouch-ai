@@ -64,6 +64,16 @@
               },
               "blocks": {}
             },
+            "brand_image_RqChbw": {
+              "type": "_brand_image",
+              "name": "Brand image",
+              "settings": {
+                "brand_image": "shopify://shop_images/Promotion_Combo.png",
+                "image_width": 300,
+                "image_fit": "fill"
+              },
+              "blocks": {}
+            },
             "product_variant_picker_38CYRz": {
               "type": "_product-variant-picker",
               "disabled": true,
@@ -159,6 +169,7 @@
             "product_badges_kMw3gg",
             "product_price_ncPbVE",
             "product_countdown_fQiPYd",
+            "brand_image_RqChbw",
             "product_variant_picker_38CYRz",
             "quantity_selector_bxE9gA",
             "product_buy_button_Pgyajq",
