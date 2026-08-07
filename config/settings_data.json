@@ -304,7 +304,7 @@
           ".hdt-coppy-right {color: #00eefc !important;}"
         ],
         "settings": {
-          "enable_age_verify": true,
+          "enable_age_verify": false,
           "logo": "shopify://shop_images/cai_Transparent.png",
           "logo_width": 200,
           "heading": "Age verification",
@@ -341,11 +341,6 @@
     "blocks": {
       "10746902591489815047": {
         "type": "shopify://apps/rt-google-fonts-custom-fonts/blocks/app-embed/2caf2c68-0038-455e-b0b9-066a7c2ad923",
-        "disabled": true,
-        "settings": {}
-      },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": true,
         "settings": {}
       }
