@@ -16,6 +16,17 @@
           "type": "_group-product",
           "settings": {},
           "blocks": {
+            "product_live_review_L8riwb": {
+              "type": "_product-live-review",
+              "name": "t:sections.main-product.blocks.live_view.name",
+              "settings": {
+                "min": 10,
+                "max": 40,
+                "time": 7,
+                "content": "[count] People are viewing this right now"
+              },
+              "blocks": {}
+            },
             "product_title_xLAeEV": {
               "type": "_product-title",
               "settings": {
@@ -143,6 +154,7 @@
             }
           },
           "block_order": [
+            "product_live_review_L8riwb",
             "product_title_xLAeEV",
             "product_badges_kMw3gg",
             "product_price_ncPbVE",
